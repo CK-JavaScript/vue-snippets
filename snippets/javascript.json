@@ -83,7 +83,7 @@
     "prefix": "vPD",
     "body": [
       "props: {",
-      "  ${1:propName}: {",
+      "  ${1:name}: {",
       "    type: ${2:type},",
       "    default: ${3:default}",
       "  }",
@@ -94,7 +94,7 @@
     "prefix": "vPDR",
     "body": [
       "props: {",
-      "  ${1:propName}: {",
+      "  ${1:name}: {",
       "    type: ${2:type},",
       "    default: ${3:default},",
       "    required: true",
@@ -106,7 +106,7 @@
     "prefix": "vMethods",
     "body": [
       "methods: {",
-      "  ${1:methodName}() {",
+      "  ${1:name}() {",
       "",
       "  }",
       "},"
@@ -116,7 +116,7 @@
     "prefix": "vComputed",
     "body": [
       "computed: {",
-      "  ${1:computedName}() {",
+      "  ${1:name}() {",
       "    return $2",
       "  }",
       "},"
@@ -126,7 +126,7 @@
     "prefix": "vComputedSetter",
     "body": [
       "computed: {",
-      "  ${1:computedName}() {",
+      "  ${1:name}() {",
       "    get() {",
       "",
       "      return ",
@@ -142,7 +142,7 @@
     "prefix": "vWatch",
     "body": [
       "watch: {",
-      "  ${1:watchName}(newValue, oldValue) {",
+      "  ${1:name}(newValue, oldValue) {",
       "    $2",
       "  }",
       "},"
@@ -152,7 +152,7 @@
     "prefix": "vWD",
     "body": [
       "watch: {",
-      "  ${1:watchName}: {",
+      "  ${1:name}: {",
       "    handler(newValue, oldValue) {",
       "      $2",
       "    },",
@@ -165,7 +165,7 @@
     "prefix": "vWI",
     "body": [
       "watch: {",
-      "  ${1:watchName}: {",
+      "  ${1:name}: {",
       "    handler(newValue, oldValue) {",
       "      $2",
       "    },",
@@ -178,7 +178,7 @@
     "prefix": "vWDI",
     "body": [
       "watch: {",
-      "  ${1:watchName}: {",
+      "  ${1:name}: {",
       "    handler(newValue, oldValue) {",
       "      $2",
       "    },",
@@ -192,7 +192,7 @@
     "prefix": "vFilters",
     "body": [
       "filters: {",
-      "  ${1:filtersName}(value) {",
+      "  ${1:name}(value) {",
       "    return value;",
       "  }",
       "},"
@@ -201,7 +201,7 @@
   "🎯 v2 mixins": {
     "prefix": "vMixins",
     "body": [
-      "mixins: [${1:mixinName}],"
+      "mixins: [${1:name}],"
     ]
   },
   "🎯 v2 beforeCreate": {
@@ -268,10 +268,24 @@
       "},"
     ]
   },
+  "🎯 v3 ref": {
+    "prefix": "vvref",
+    "body": [
+      "const ${1:name} = ref(${2:variable})"
+    ]
+  },
+  "🎯 v3 reactive": {
+    "prefix": "vvreactive",
+    "body": [
+      "const ${1:name} = reactive({",
+      "  $2",
+      "})"
+    ]
+  },
   "🎯 v3 computed": {
     "prefix": "vvComputed",
     "body": [
-      "const ${1:computedName} = computed(() => {",
+      "const ${1:name} = computed(() => {",
       "  return ",
       "})"
     ]
@@ -306,6 +320,14 @@
       "watch([${1:nameA}, ${2:nameB}], ([new${1:nameA}, new${2:nameB}], [old${1:nameA}, old${2:nameB}]) => {",
       "  $3",
       "},{ immediate: true })"
+    ]
+  },
+  "🎯 v3 watchEffect": {
+    "prefix": "vvWe",
+    "body": [
+      "watchEffect(() => {",
+      "  ",
+      "})"
     ]
   },
   "🎯 v3 onBeforeMount": {
@@ -354,6 +376,86 @@
       "onUnmounted((${1:params}) => {",
       "",
       "})"
+    ]
+  },
+  "🎯 vuex store": {
+    "prefix": "vStore",
+    "body": [
+      "import Vue from \"vue\";",
+      "import Vuex from \"vuex\";",
+      "Vue.use(Vuex);",
+      "export default new Vuex.Store({",
+      "  state: {},",
+      "  mutations: {},",
+      "  actions: {},",
+      "});"
+    ]
+  },
+  "🎯 vuex getters": {
+    "prefix": "vGetters",
+    "body": [
+      "getters: {",
+      "  ${1:name}(state) {",
+      "    return state.${1:name};",
+      "  }",
+      "}"
+    ]
+  },
+  "🎯 vuex mutations": {
+    "prefix": "vMutations",
+    "body": [
+      "mutations: {",
+      "  ${1:name}(state, ${2:parame}) {",
+      "    $3",
+      "  }",
+      "}"
+    ]
+  },
+  "🎯 vuex actions": {
+    "prefix": "vActions",
+    "body": [
+      "actions: {",
+      "  ${1:name}({commit}, ${2:parame}) {",
+      "    commit(${1:name}', ${2:parame});",
+      "  }",
+      "}"
+    ]
+  },
+  "🎯 vuex module": {
+    "prefix": "vModule",
+    "body": [
+      "export default {",
+      "  namespaced: true,",
+      "  state: {},",
+      "  mutations: {},",
+      "  actions: {},",
+      "};"
+    ]
+  },
+  "🎯 vueRouter router": {
+    "prefix": "vRouter",
+    "body": [
+      "import Vue from \"vue\";",
+      "import VueRouter from \"vue-router\";",
+      "",
+      "Vue.use(VueRouter);",
+      "",
+      "const routes = [",
+      "  {",
+      "    path: \"\",",
+      "    name: \"\",",
+      "    alias: \"\",",
+      "    component: ${2:name},",
+      "  },",
+      "];",
+      "",
+      "const router = new VueRouter({",
+      "  mode: \"history\",",
+      "  base: process.env.BASE_URL,",
+      "  routes,",
+      "});",
+      "",
+      "export default router;"
     ]
   }
 }
