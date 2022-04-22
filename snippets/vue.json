@@ -1,0 +1,160 @@
+{
+  "🎯 v2 base ( less )": {
+    "prefix": "vless",
+    "body": [
+      "<template>",
+      "  <div class=\"$0\">",
+      "",
+      "  </div>",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "",
+      "}",
+      "</script>",
+      "",
+      "<style lang=\"less\" scoped>",
+      "</style>"
+    ]
+  },
+  "🎯 v2 base ( scss )": {
+    "prefix": "vscss",
+    "body": [
+      "<template>",
+      "  <div class=\"$0\">",
+      "",
+      "  </div>",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "",
+      "}",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "</style>"
+    ]
+  },
+  "🎯 v3 base ( less )": {
+    "prefix": "vvless",
+    "body": [
+      "<template>",
+      "  <div class=\"$0\">",
+      "",
+      "  </div>",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "  setup(){",
+      "",
+      "  }",
+      "}",
+      "</script>",
+      "",
+      "<style lang=\"less\" scoped>",
+      "</style>"
+    ]
+  },
+  "🎯 v3 base ( scss )": {
+    "prefix": "vvscss",
+    "body": [
+      "<template>",
+      "  <div class=\"$0\">",
+      "",
+      "  </div>",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "  setup(){",
+      "",
+      "  }",
+      "}",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "</style>"
+    ]
+  },
+  "🎯 v3 base ( ts-dc less )": {
+    "prefix": "vvless-defineComponent",
+    "body": [
+      "<template>",
+      "  <div class=\"$0\">",
+      "",
+      "  </div>",
+      "</template>",
+      "",
+      "<script>",
+      "import { defineComponent } from 'vue'",
+      "export default defineComponent({",
+      "  setup(){",
+      "",
+      "  }",
+      "})",
+      "</script>",
+      "",
+      "<style lang=\"less\" scoped>",
+      "</style>"
+    ]
+  },
+  "🎯 v3 base ( ts scss )": {
+    "prefix": "vvscss-defineComponent",
+    "body": [
+      "<template>",
+      "  <div class=\"$0\">",
+      "",
+      "  </div>",
+      "</template>",
+      "",
+      "<script>",
+      "import { defineComponent } from 'vue'",
+      "export default defineComponent({",
+      "  setup(){",
+      "",
+      "  }",
+      "})",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "</style>"
+    ]
+  },
+  "🎯 v3 base ( setup less )": {
+    "prefix": "vvless-setup",
+    "body": [
+      "<template>",
+      "  <div class=\"$0\">",
+      "",
+      "  </div>",
+      "</template>",
+      "",
+      "<script setup>",
+      "",
+      "</script>",
+      "",
+      "<style lang=\"less\" scoped>",
+      "</style>"
+    ]
+  },
+  "🎯 v3 base ( setup scss )": {
+    "prefix": "vvscss-setup",
+    "body": [
+      "<template>",
+      "  <div class=\"$0\">",
+      "",
+      "  </div>",
+      "</template>",
+      "",
+      "<script setup>",
+      "",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "</style>"
+    ]
+  }
+}

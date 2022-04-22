@@ -1,0 +1,23 @@
+# 欢迎使用 VS Code 扩展
+
+## 文件夹里有什么
+
+- 此文件夹包含扩展所需的所有文件。
+- `package.json` - 这是定义片段文件位置并指定片段语言的清单文件。
+- `snippets/snippets.json` - 包含所有片段的文件。
+
+## Get up and running straight away
+
+- 按 F5 打开一个加载了扩展程序的新窗口。
+- 创建一个文件名后缀与您的语言匹配的新文件。
+- 验证您的片段是否在智能感知上提出。
+
+## 做出改变
+
+- 对上面列出的文件进行更改后，您可以从调试工具栏中重新启动扩展。
+- 您还可以使用您的扩展重新加载 ( 在 Mac 上为 Ctrl+R 或 Cmd+R ) VS Code 窗口以加载您的更改。
+
+## 安装你的扩展
+
+- 要开始在 Visual Studio Code 中使用您的扩展，请将其复制到 `<user home>/.vscode/extensions` 文件夹并重新启动 Code。
+- 要与全世界分享您的扩展程序，请阅读 https://code.visualstudio.com/docs 上有关发布扩展程序的信息。

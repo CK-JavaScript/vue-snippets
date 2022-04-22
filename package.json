@@ -1,0 +1,41 @@
+{
+    "name": "sunshinec-code-snippets",
+    "displayName": "SunshineC Code Snippets",
+    "description": "SunshineC 的开发常用代码片段",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "icon": "images/smile.png",
+    "contributes": {
+        "snippets": [
+            {
+                "language": "vue",
+                "path": "./snippets/vue.json"
+            },
+            {
+                "language": "vue-html",
+                "path": "./snippets/vue-html.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/typescript.json"
+            },
+            {
+                "language": "less",
+                "path": "./snippets/less.json"
+            },
+            {
+                "language": "scss",
+                "path": "./snippets/scss.json"
+            }
+        ]
+    }
+}
