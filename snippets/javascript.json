@@ -30,26 +30,32 @@
   "🎯 箭头函数": {
     "prefix": "jF",
     "body": [
-      "(parame) => {};"
+      "(parame) => {",
+      "  $1",
+      "};"
     ]
   },
   "🎯 带名字的箭头函数": {
     "prefix": "jFN",
     "body": [
-      "const ${1:name} = () => {};"
+      "const ${1:name} = () => {",
+      "  $2",
+      "};"
     ]
   },
   "🎯 数组 forEach": {
     "prefix": "AFE",
     "body": [
-      "${1:array}.forEach(item => {})"
+      "${1:array}.forEach(item => {",
+      "  $2",
+      "})"
     ]
   },
   "🎯 for 循环": {
     "prefix": "forLoop",
     "body": [
       "for (let i = 0; i < ${1:array}; i++) {",
-      "",
+      "  $2",
       "}"
     ]
   },
@@ -57,7 +63,7 @@
     "prefix": "fof",
     "body": [
       "for (const item of ${1:object}) {",
-      "",
+      "  $2",
       "}"
     ]
   },
@@ -65,7 +71,7 @@
     "prefix": "fin",
     "body": [
       "for (const item in ${1:object}) {",
-      "",
+      "  $2",
       "}"
     ]
   },

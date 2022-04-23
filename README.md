@@ -629,37 +629,43 @@ console.log($1);
 > **`jF`** - 箭头函数
 
 ```js
-($1) => {};
+($1) => {
+  $2
+};
 ```
 > **`jFN`** - 带名字的箭头函数
 
 ```js
-const $1 = () => {};
+const $1 = () => {
+  $2
+};
 ```
 > **`AFE`** - array.forEach(()=>{})
 
 ```js
-$1.forEach(item => {})
+$1.forEach(item => {
+  $2
+})
 ```
 > **`forLoop`** - for 循环
 
 ```js
 for (let i = 0; i < $1; i++) {
-
+ $2
 }
 ```
 > **`fin`** - forIn 循环
 
 ```js
 for (const item in $1) {
-  
+  $2
 }
 ```
 > **`fof`** - forOf 循环
 
 ```js
 for (const item of $1) {
-  
+  $2
 }
 ```
 
@@ -674,9 +680,6 @@ justify-content: center;
 # Contact
 有什么建议和意见请加微信联系：
 > Wechat ID：C-ChenKun
-# Changelog
 
-## 1.0.1
-
-完善常用代码片段
+# Version：1.0.3
 
