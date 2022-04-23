@@ -5,6 +5,18 @@
       " v-if=\"$1\""
     ]
   },
+  "🎯 vElseIf=''": {
+    "prefix": "vElseIf",
+    "body": [
+      " v-else-if=\"$1\""
+    ]
+  },
+  "🎯 vElse": {
+    "prefix": "vElse",
+    "body": [
+      " v-else"
+    ]
+  },
   "🎯 vFor='item in data'": {
     "prefix": "vForI",
     "body": [
