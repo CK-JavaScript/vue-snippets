@@ -12,7 +12,7 @@
     "icon": "images/icon.jpg",
     "repository": {
         "type": "git",
-        "url": "https://github.com/anyexinglue/bst-snippets/"
+        "url": "https://gitee.com/SunshineC/vscode-snippet"
     },
     "contributes": {
         "snippets": [
