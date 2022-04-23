@@ -4,9 +4,9 @@
 
 - 此文件夹包含扩展所需的所有文件。
 - `package.json` - 这是定义片段文件位置并指定片段语言的清单文件。
-- `snippets/snippets.json` - 包含所有片段的文件。
+- `snippets` - 包含所有片段的文件。
 
-## Get up and running straight away
+## 测试
 
 - 按 F5 打开一个加载了扩展程序的新窗口。
 - 创建一个文件名后缀与您的语言匹配的新文件。

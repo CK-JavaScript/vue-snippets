@@ -1,6 +1,6 @@
 {
     "name": "sunshinec-code-snippets",
-    "displayName": "SunshineC Code Snippets",
+    "displayName": "VSCode Snippets",
     "description": "SunshineC 的开发常用代码片段",
     "version": "1.0.0",
     "engines": {
@@ -9,7 +9,11 @@
     "categories": [
         "Snippets"
     ],
-    "icon": "images/smile.png",
+    "icon": "images/icon.jpg",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/anyexinglue/bst-snippets/"
+    },
     "contributes": {
         "snippets": [
             {

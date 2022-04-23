@@ -79,8 +79,8 @@
       "</style>"
     ]
   },
-  "🎯 v3 base ( ts-dc less )": {
-    "prefix": "vvless-defineComponent",
+  "🎯 v3 base ( less dc )": {
+    "prefix": "vvless-DC",
     "body": [
       "<template>",
       "  <div class=\"$0\">",
@@ -101,8 +101,8 @@
       "</style>"
     ]
   },
-  "🎯 v3 base ( ts scss )": {
-    "prefix": "vvscss-defineComponent",
+  "🎯 v3 base ( scss dc )": {
+    "prefix": "vvscss-DC",
     "body": [
       "<template>",
       "  <div class=\"$0\">",

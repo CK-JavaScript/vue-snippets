@@ -1,1 +1,10 @@
-{}
+{
+  "🎯 flex 横向垂直居中": {
+    "prefix": "fcc",
+    "body": [
+      "display: flex;",
+      "align-items: center;",
+      "justify-content: center;"
+    ]
+  }
+}

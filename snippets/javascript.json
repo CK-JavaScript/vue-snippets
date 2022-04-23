@@ -11,6 +11,64 @@
       "console.log(${1:variable});"
     ]
   },
+  "🎯 普通函数": {
+    "prefix": "FN",
+    "body": [
+      "function ${1:name}(params) {",
+      "",
+      "},"
+    ]
+  },
+  "🎯 对象函数的简写": {
+    "prefix": "OF",
+    "body": [
+      "${1:name}(params) {",
+      "",
+      "},"
+    ]
+  },
+  "🎯 箭头函数": {
+    "prefix": "jF",
+    "body": [
+      "(parame) => {};"
+    ]
+  },
+  "🎯 带名字的箭头函数": {
+    "prefix": "jFN",
+    "body": [
+      "const ${1:name} = () => {};"
+    ]
+  },
+  "🎯 数组 forEach": {
+    "prefix": "AFE",
+    "body": [
+      "${1:array}.forEach(item => {})"
+    ]
+  },
+  "🎯 for 循环": {
+    "prefix": "forLoop",
+    "body": [
+      "for (let i = 0; i < ${1:array}; i++) {",
+      "",
+      "}"
+    ]
+  },
+  "🎯 for-of 循环": {
+    "prefix": "fof",
+    "body": [
+      "for (const item of ${1:object}) {",
+      "",
+      "}"
+    ]
+  },
+  "🎯 for-in 循环": {
+    "prefix": "fin",
+    "body": [
+      "for (const item in ${1:object}) {",
+      "",
+      "}"
+    ]
+  },
   "🎯 v2 data": {
     "prefix": "vdata",
     "body": [
@@ -79,7 +137,7 @@
       "},"
     ]
   },
-  "🎯 v2 props default ": {
+  "🎯 v2 props default": {
     "prefix": "vPD",
     "body": [
       "props: {",
@@ -123,10 +181,10 @@
     ]
   },
   "🎯 v2 computed setter": {
-    "prefix": "vComputedSetter",
+    "prefix": "vCS",
     "body": [
       "computed: {",
-      "  ${1:name}() {",
+      "  ${1:name}: {",
       "    get() {",
       "",
       "      return ",
@@ -239,7 +297,7 @@
   "🎯 v2 beforeUpdate": {
     "prefix": "vBUpdate",
     "body": [
-      "beforeMount () {",
+      "beforeUpdate () {",
       "",
       "},"
     ]
@@ -269,13 +327,13 @@
     ]
   },
   "🎯 v3 ref": {
-    "prefix": "vvref",
+    "prefix": "vvRef",
     "body": [
       "const ${1:name} = ref(${2:variable})"
     ]
   },
   "🎯 v3 reactive": {
-    "prefix": "vvreactive",
+    "prefix": "vvReactive",
     "body": [
       "const ${1:name} = reactive({",
       "  $2",
@@ -307,7 +365,7 @@
     ]
   },
   "🎯 v3 watch arr": {
-    "prefix": "vvWatchArr",
+    "prefix": "vvWA",
     "body": [
       "watch([${1:nameA}, ${2:nameB}], ([new${1:nameA}, new${2:nameB}], [old${1:nameA}, old${2:nameB}]) => {",
       "  $3",
@@ -323,7 +381,7 @@
     ]
   },
   "🎯 v3 watchEffect": {
-    "prefix": "vvWe",
+    "prefix": "vvWE",
     "body": [
       "watchEffect(() => {",
       "  ",
@@ -349,7 +407,7 @@
   "🎯 v3 onBeforeUpdate": {
     "prefix": "vvBUpdate",
     "body": [
-      "onMounted((${1:params}) => {",
+      "onBeforeUpdate((${1:params}) => {",
       "",
       "})"
     ]
@@ -445,7 +503,7 @@
       "    path: \"\",",
       "    name: \"\",",
       "    alias: \"\",",
-      "    component: ${2:name},",
+      "    component: ",
       "  },",
       "];",
       "",
