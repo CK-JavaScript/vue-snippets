@@ -79,49 +79,79 @@
       "},"
     ]
   },
-  "🎯 导入 vue": {
+  "🎯 import vue": {
     "prefix": "iVue",
     "body": [
       "import { $1 } from 'vue'"
     ]
   },
-  "🎯 导入 reactive": {
+  "🎯 import reactive": {
     "prefix": "iReactive",
     "body": [
       "reactive"
     ]
   },
-  "🎯 导入 onBeforeMount": {
+  "🎯 import defineProps": {
+    "prefix": "iProps",
+    "body": [
+      "defineProps"
+    ]
+  },
+  "🎯 import defineEmits": {
+    "prefix": "iEmits",
+    "body": [
+      "defineProps"
+    ]
+  },
+  "🎯 import useSlots": {
+    "prefix": "iSlots",
+    "body": [
+      "useSlots"
+    ]
+  },
+  "🎯 import useAttrs": {
+    "prefix": "iAttrs",
+    "body": [
+      "useAttrs"
+    ]
+  },
+  "🎯 import defineExpose": {
+    "prefix": "iExpose",
+    "body": [
+      "defineExpose"
+    ]
+  },
+  "🎯 import onBeforeMount": {
     "prefix": "iBMount",
     "body": [
       "onBeforeMount "
     ]
   },
-  "🎯 导入 onMounted ": {
+  "🎯 import onMounted ": {
     "prefix": "iMounted",
     "body": [
       "onMounted "
     ]
   },
-  "🎯 导入 onBeforeUpdate ": {
+  "🎯 import onBeforeUpdate ": {
     "prefix": "iBUpdate",
     "body": [
       "onBeforeUpdate "
     ]
   },
-  "🎯 导入 onUpdated ": {
+  "🎯 import onUpdated ": {
     "prefix": "iUpdated",
     "body": [
       "onUpdated "
     ]
   },
-  "🎯 导入 onBeforeUnmount ": {
+  "🎯 import onBeforeUnmount ": {
     "prefix": "iBUnmount",
     "body": [
       "onBeforeUnmount "
     ]
   },
-  "🎯 导入 onUnmounted": {
+  "🎯 import onUnmounted": {
     "prefix": "iUnmounted",
     "body": [
       "onUnmounted "
@@ -338,6 +368,44 @@
       "const ${1:name} = reactive({",
       "  $2",
       "})"
+    ]
+  },
+  "🎯 v3 defineProps": {
+    "prefix": "vvProps",
+    "body": [
+      "defineProps({",
+      "  $1: {",
+      "    type: $2,",
+      "    datault: $3,",
+      "    required: true",
+      "  }",
+      "})"
+    ]
+  },
+  "🎯 v3 defineEmits": {
+    "prefix": "vvEmits",
+    "body": [
+      "defineEmits(['$1']);"
+    ]
+  },
+  "🎯 v3 useSlots": {
+    "prefix": "vvSlots",
+    "body": [
+      "const slots = useSlots()"
+    ]
+  },
+  "🎯 v3 useAttrs": {
+    "prefix": "vvAttrs",
+    "body": [
+      "const attrs = useAttrs()"
+    ]
+  },
+  "🎯 v3 defineExpose": {
+    "prefix": "vvExpose",
+    "body": [
+      "defineExpose({",
+      "  $1",
+      "});"
     ]
   },
   "🎯 v3 computed": {

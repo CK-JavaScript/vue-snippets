@@ -419,6 +419,39 @@ const $1 = reactive({
 	$2
 });
 ```
+> **`vvProps`** - v3 defineProps
+
+```js
+defineProps({
+	$1: {
+    type: $2,
+    datault: $3,
+    required: true
+  }
+});
+```
+> **`vvEmits`** - v3 defineEmits
+
+```js
+defineEmits(['$1']);
+```
+> **`vvEmits`** - v3 useSlots
+
+```js
+const slots = useSlots()
+```
+> **`vvEmits`** - v3 useAttrs
+
+```js
+const attrs = useAttrs()
+```
+> **`vvEmits`** - v3 defineExpose
+
+```js
+defineExpose({
+  $1
+})
+```
 > **`vvComputed`** - v3 computed
 
 ```js
@@ -643,7 +676,7 @@ justify-content: center;
 > Wechat ID：C-ChenKun
 # Changelog
 
-## 1.0.0
+## 1.0.1
 
-初次发布，仅设置常用代码片段。
+完善常用代码片段
 
