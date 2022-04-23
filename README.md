@@ -433,7 +433,7 @@ defineProps({
 > **`vvEmits`** - v3 defineEmits
 
 ```js
-defineEmits(['$1']);
+const emit = defineEmits(['$1']);
 ```
 > **`vvEmits`** - v3 useSlots
 

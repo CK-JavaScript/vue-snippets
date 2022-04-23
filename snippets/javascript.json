@@ -100,7 +100,7 @@
   "🎯 import defineEmits": {
     "prefix": "iEmits",
     "body": [
-      "defineProps"
+      "defineEmits"
     ]
   },
   "🎯 import useSlots": {
@@ -385,7 +385,7 @@
   "🎯 v3 defineEmits": {
     "prefix": "vvEmits",
     "body": [
-      "defineEmits(['$1']);"
+      "const emit = defineEmits(['$1']);"
     ]
   },
   "🎯 v3 useSlots": {

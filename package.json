@@ -3,7 +3,7 @@
     "publisher":"VSCodeCodeSnippets",
     "displayName": "VSCodeCodeSnippets",
     "description": "SunshineC 的开发常用代码片段",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "engines": {
         "vscode": "^1.66.0"
     },
