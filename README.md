@@ -191,12 +191,6 @@ export default defineComponent({
 
 ## Vue Api
 
-> **`iVue`** - 导入 vue
-
-```js
-import { $1 } from "vue";
-```
-
 > **`vdata`** - v2 data
 
 ```js
@@ -416,127 +410,131 @@ const $1 = ref($2);
 
 ```js
 const $1 = reactive({
-	$2
+	$2,
 });
 ```
+
 > **`vvProps`** - v3 defineProps
 
 ```js
 defineProps({
 	$1: {
-    type: $2,
-    datault: $3,
-    required: true
-  }
+		type: $2,
+		datault: $3,
+		required: true,
+	},
 });
 ```
+
 > **`vvEmits`** - v3 defineEmits
 
 ```js
-const emit = defineEmits(['$1']);
+const emit = defineEmits(["$1"]);
 ```
+
 > **`vvEmits`** - v3 useSlots
 
 ```js
-const slots = useSlots()
+const slots = useSlots();
 ```
+
 > **`vvEmits`** - v3 useAttrs
 
 ```js
-const attrs = useAttrs()
+const attrs = useAttrs();
 ```
+
 > **`vvEmits`** - v3 defineExpose
 
 ```js
 defineExpose({
-  $1
-})
+	$1,
+});
 ```
+
 > **`vvComputed`** - v3 computed
 
 ```js
 const $1 = reactive({
-	$2
+	$2,
 });
 ```
+
 > **`vvWatch`** - v3 watch
 
 ```js
-watch(() => $1, (newValue, oldValue) => {
-  
-})
+watch(
+	() => $1,
+	(newValue, oldValue) => {}
+);
 ```
+
 > **`vvWI`** - v3 watch immediate
 
 ```js
-watch(() => $1, (newValue, oldValue) => {
-  
-},{ immediate: true })
+watch(
+	() => $1,
+	(newValue, oldValue) => {},
+	{ immediate: true }
+);
 ```
+
 > **`vvWA`** - v3 watch arr
 
 ```js
-watch([$1, $2], ([new$1, new$2], [old$1, old$2]) => {
-  
-})
+watch([$1, $2], ([new$1, new$2], [old$1, old$2]) => {});
 ```
+
 > **`vvWAI`** - v3 watch arr immediate
 
 ```js
-watch([$1, $2], ([new$1, new$2], [old$1, old$2]) => {
-  
-},{ immediate: true })
+watch([$1, $2], ([new$1, new$2], [old$1, old$2]) => {}, { immediate: true });
 ```
+
 > **`vvWE`** - v3 watchEffect
 
 ```js
-watchEffect(() => {
-  
-})
+watchEffect(() => {});
 ```
+
 > **`vvBMounted`** - v3 onBeforeMount
 
 ```js
-onBeforeMount(($1) => {
-
-})
+onBeforeMount($1 => {});
 ```
+
 > **`vvMounted`** - v3 onMounted
 
 ```js
-onMounted(($1) => {
-
-})
+onMounted($1 => {});
 ```
+
 > **`vvBUpdate`** - v3 onBeforeUpdate
 
 ```js
-onBeforeUpdate(($1) => {
-
-})
+onBeforeUpdate($1 => {});
 ```
+
 > **`vvUpdated`** - v3 onUpdated
 
 ```js
-onUpdated(($1) => {
-
-})
+onUpdated($1 => {});
 ```
+
 > **`vvBUnmount`** - v3 onBeforeUnmount
 
 ```js
-onBeforeUnmount(($1) => {
-
-})
+onBeforeUnmount($1 => {});
 ```
+
 > **`vvUnmounted`** - v3 onUnmounted
 
 ```js
-onUnmounted(($1) => {
-
-})
+onUnmounted($1 => {});
 ```
+
 ## vuex
+
 > **`vStore`** - vuex store
 
 ```js
@@ -544,11 +542,12 @@ import Vue from "vue";
 import Vuex from "vuex";
 Vue.use(Vuex);
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
-  actions: {},
+	state: {},
+	mutations: {},
+	actions: {},
 });
 ```
+
 > **`vGetters`** - vuex getters
 
 ```js
@@ -558,6 +557,7 @@ getters: {
   }
 }
 ```
+
 > **`vMutations`** - vuex mutations
 
 ```js
@@ -567,6 +567,7 @@ mutations: {
   }
 }
 ```
+
 > **`vActions`** - vuex actions
 
 ```js
@@ -576,18 +577,20 @@ actions: {
   }
 }
 ```
+
 > **`vModule`** - vuex module
 
 ```js
 export default {
-  namespaced: true,
-  state: {},
-  mutations: {},
-  actions: {},
+	namespaced: true,
+	state: {},
+	mutations: {},
+	actions: {},
 };
 ```
 
 ## vue-router
+
 > **`vRouter`** - vueRouter router
 
 ```js
@@ -619,57 +622,77 @@ export default router;
 > **`cls`** - log 字符:变量
 
 ```js
-console.log('$1 >>',$1);
+console.log("$1 >>", $1);
 ```
+
 > **`clv`** - log 变量
 
 ```js
 console.log($1);
 ```
+
+> **`imp`** - import
+
+```js
+import $2 from "$1";
+```
+
+> **`imd`** - import 解构
+
+```js
+import { $1 } from "$1";
+```
+
 > **`jF`** - 箭头函数
 
 ```js
-($1) => {
-  $2
+$1 => {
+	$2;
 };
 ```
+
 > **`jFN`** - 带名字的箭头函数
 
 ```js
 const $1 = () => {
-  $2
+	$2;
 };
 ```
+
 > **`AFE`** - array.forEach(()=>{})
 
 ```js
 $1.forEach(item => {
-  $2
-})
+	$2;
+});
 ```
+
 > **`forLoop`** - for 循环
 
 ```js
 for (let i = 0; i < $1; i++) {
- $2
+	$2;
 }
 ```
+
 > **`fin`** - forIn 循环
 
 ```js
 for (const item in $1) {
-  $2
+	$2;
 }
 ```
+
 > **`fof`** - forOf 循环
 
 ```js
 for (const item of $1) {
-  $2
+	$2;
 }
 ```
 
 ## less & scss
+
 > **`fcc`** - flex 横向垂直居中
 
 ```css
@@ -677,9 +700,11 @@ display: flex;
 align-items: center;
 justify-content: center;
 ```
+
 # Contact
+
 有什么建议和意见请加微信联系：
+
 > Wechat ID：C-ChenKun
 
-# Version：1.0.3
-
+# Version：1.0.4

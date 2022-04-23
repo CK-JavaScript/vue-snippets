@@ -85,10 +85,16 @@
       "},"
     ]
   },
-  "🎯 import vue": {
-    "prefix": "iVue",
+  "🎯 import": {
+    "prefix": "imp",
     "body": [
-      "import { $1 } from 'vue'"
+      "import $2 from '$1'"
+    ]
+  },
+  "🎯 import 解构": {
+    "prefix": "imd",
+    "body": [
+      "import { $2 } from '$1'"
     ]
   },
   "🎯 import reactive": {
