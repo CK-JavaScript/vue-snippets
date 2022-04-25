@@ -7,699 +7,144 @@ VSCode 代码片段包含，直接安装插件即可使用。
 - vue
 - JavaScript
 - typescript
+- css
 - less
 - scss
 ```
 
-# Code Snippets
-
-## vue.html
-
-> **`vIf`**
-
-```
-v-if="$1"
-```
-
-> **`vForI`**
-
-```
-v-for="item in $1" :key="item"
-```
-
-> **`vForII`**
-
-```
-v-for="(item, index) in $1" :key="item"
-```
-
-> **`vModel`**
-
-```
-v-model="$1"
-```
-
-> **`vCData`**
-
-```
-:class="{ $1 : $2 }"
-```
-
-> **`vCCalc`**
-
-```
-:class="[ $1 ? $2 : $3 ]"
-```
-
-> **`vStyle`**
-
-```
-:style="{}"
-```
-
-> **`vSData`**
-
-```
-:style="{ $1 : $2 }"
-```
-
-> **`vSCalc`**
-
-```
-:style="{ $1 : $2 ? $3 : $4}"
-```
-
-## vue
-
-> **`vless`**
-
-```vue
-<template>
-	<div class="$1"></div>
-</template>
-
-<script>
-export default {};
-</script>
-
-<style lang="less" scoped></style>
-```
-
-> **`vscss`**
-
-```vue
-<template>
-	<div class="$1"></div>
-</template>
-
-<script>
-export default {};
-</script>
-
-<style lang="scss" scoped></style>
-```
-
-> **`vvless`**
-
-```vue
-<template>
-	<div class="$1"></div>
-</template>
-
-<script>
-export default {
-	setup() {},
-};
-</script>
-
-<style lang="less" scoped></style>
-```
-
-> **`vvscss`**
-
-```vue
-<template>
-	<div class="$1"></div>
-</template>
-
-<script>
-export default {
-	setup() {},
-};
-</script>
-
-<style lang="scss" scoped></style>
-```
-
-> **`vvless-DC`**
-
-```vue
-<template>
-	<div class="$1"></div>
-</template>
-
-<script>
-import { defineComponent } from "vue";
-export default defineComponent({
-	setup() {},
-});
-</script>
-
-<style lang="less" scoped></style>
-```
-
-> **`vvscss-DC`**
-
-```vue
-<template>
-	<div class="$1"></div>
-</template>
-
-<script>
-import { defineComponent } from "vue";
-export default defineComponent({
-	setup() {},
-});
-</script>
-
-<style lang="scss" scoped></style>
-```
-
-> **`vvless-setup`**
-
-```vue
-<template>
-	<div class="$1"></div>
-</template>
-
-<script setup></script>
-
-<style lang="less" scoped></style>
-```
-
-> **`vvscss-setup`**
-
-```vue
-<template>
-	<div class="$1"></div>
-</template>
-
-<script setup></script>
-
-<style lang="scss" scoped></style>
-```
-
-## Vue Api
-
-> **`vdata`** - v2 data
-
-```js
-data() {
-  return {
-    $1
-  }
-},
-```
-
-> **`vProp`** - v2 props
-
-```js
-props: {
-  $1: {
-    type: $2
-  }
-},
-```
-
-> **`vPD`** - v2 props default
-
-```js
-props: {
-  $1: {
-    type: $2,
-    default: $3
-  }
-},
-```
-
-> **`vPDR`** - v2 props default required
-
-```js
-props: {
-  $1: {
-    type: $2,
-    default: $3,
-    required: true
-  }
-},
-```
-
-> **`vMixins`** - v2 mixins
-
-```js
-mixins: [ $1 ],
-```
-
-> **`vMethods`** - v2 methods
-
-```js
-methods: {
-  $1() {
-
-  }
-},
-```
-
-> **`vComputed`** - v2 computed
-
-```js
-computed: {
-  $1() {
-    return $2
-  }
-},
-```
-
-> **`vCS`** - v2 computed setter
-
-```js
-computed: {
-  $1: {
-    get() {
-
-      return
-    },
-    set(newValue) {
-
-    }
-  }
-},
-```
-
-> **`vWatch`** - v2 watch
-
-```js
-watch: {
-  $1(newValue, oldValue) {
-    $2
-  }
-},
-```
-
-> **`vWD`** - v2 watch deep
-
-```js
-watch: {
-  $1: {
-    handler(newValue, oldValue) {
-      $2
-    },
-    deep:true,
-  }
-},
-```
-
-> **`vWI`** - v2 watch immediate
-
-```js
-watch: {
-  $1: {
-    handler(newValue, oldValue) {
-      $2
-    },
-    immediate:true,
-  }
-},
-```
-
-> **`vWDI`** - v2 watch deep immediate
-
-```js
-watch: {
-  $1: {
-    handler(newValue, oldValue) {
-      $2
-    },
-    deep:true,
-    immediate:true,
-  }
-},
-```
-
-> **`vFilters`** - v2 filters
-
-```js
-filters: {
-  $1(value) {
-    return value;
-  }
-},
-```
-
-> **`vBCreate`** - v2 beforeCreate
-
-```js
-beforeCreate () {
-
-},
-```
-
-> **`vCreated`** - v2 created
-
-```js
-created () {
-
-},
-```
-
-> **`vBMount`** - v2 beforeMount
-
-```js
-beforeMount () {
-
-},
-```
-
-> **`vMounted`** - v2 mounted
-
-```js
-mounted () {
-
-},
-```
-
-> **`vBUpdate`** - v2 beforeUpdate
-
-```js
-beforeUpdate () {
-
-},
-```
-
-> **`vUpdated`** - v2 updated
-
-```js
-updated () {
-
-},
-```
-
-> **`vBUnmount`** - v2 beforeUnmount
-
-```js
-beforeUnmount () {
-
-},
-```
-
-> **`vUnmounted`** - v2 unmounted
-
-```js
-unmounted () {
-
-},
-```
-
-> **`vvRef`** - v3 ref
-
-```js
-const $1 = ref($2);
-```
-
-> **`vvReactive`** - v3 reactive
-
-```js
-const $1 = reactive({
-	$2,
-});
-```
-
-> **`vvProps`** - v3 defineProps
-
-```js
-defineProps({
-	$1: {
-		type: $2,
-		datault: $3,
-		required: true,
-	},
-});
-```
-
-> **`vvEmits`** - v3 defineEmits
-
-```js
-const emit = defineEmits(["$1"]);
-```
-
-> **`vvEmits`** - v3 useSlots
-
-```js
-const slots = useSlots();
-```
-
-> **`vvEmits`** - v3 useAttrs
-
-```js
-const attrs = useAttrs();
-```
-
-> **`vvEmits`** - v3 defineExpose
-
-```js
-defineExpose({
-	$1,
-});
-```
-
-> **`vvComputed`** - v3 computed
-
-```js
-const $1 = reactive({
-	$2,
-});
-```
-
-> **`vvWatch`** - v3 watch
-
-```js
-watch(
-	() => $1,
-	(newValue, oldValue) => {}
-);
-```
-
-> **`vvWI`** - v3 watch immediate
-
-```js
-watch(
-	() => $1,
-	(newValue, oldValue) => {},
-	{ immediate: true }
-);
-```
-
-> **`vvWA`** - v3 watch arr
-
-```js
-watch([$1, $2], ([new$1, new$2], [old$1, old$2]) => {});
-```
-
-> **`vvWAI`** - v3 watch arr immediate
-
-```js
-watch([$1, $2], ([new$1, new$2], [old$1, old$2]) => {}, { immediate: true });
-```
-
-> **`vvWE`** - v3 watchEffect
-
-```js
-watchEffect(() => {});
-```
-
-> **`vvBMounted`** - v3 onBeforeMount
-
-```js
-onBeforeMount($1 => {});
-```
-
-> **`vvMounted`** - v3 onMounted
-
-```js
-onMounted($1 => {});
-```
-
-> **`vvBUpdate`** - v3 onBeforeUpdate
-
-```js
-onBeforeUpdate($1 => {});
-```
-
-> **`vvUpdated`** - v3 onUpdated
-
-```js
-onUpdated($1 => {});
-```
-
-> **`vvBUnmount`** - v3 onBeforeUnmount
-
-```js
-onBeforeUnmount($1 => {});
-```
-
-> **`vvUnmounted`** - v3 onUnmounted
-
-```js
-onUnmounted($1 => {});
-```
-
-## vuex
-
-> **`vStore`** - vuex store
-
-```js
-import Vue from "vue";
-import Vuex from "vuex";
-Vue.use(Vuex);
-export default new Vuex.Store({
-	state: {},
-	mutations: {},
-	actions: {},
-});
-```
-
-> **`vGetters`** - vuex getters
-
-```js
-getters: {
-  $1(state) {
-    return state.$1;
-  }
-}
-```
-
-> **`vMutations`** - vuex mutations
-
-```js
-mutations: {
-  $1(state, $2) {
-    $3;
-  }
-}
-```
-
-> **`vActions`** - vuex actions
-
-```js
-actions: {
-  $1({commit}, $2) {
-    commit($1,$2);
-  }
-}
-```
-
-> **`vModule`** - vuex module
-
-```js
-export default {
-	namespaced: true,
-	state: {},
-	mutations: {},
-	actions: {},
-};
-```
-
-## vue-router
-
-> **`vRouter`** - vueRouter router
-
-```js
-import Vue from "vue";
-import VueRouter from "vue-router";
-
-Vue.use(VueRouter);
-
-const routes = [
-  {
-    path: "",
-    name: "",
-    alias: "",
-    component: ,
-  },
-];
-
-const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
-  routes,
-});
-
-export default router;
-```
+# Prefix
 
 ## JavaScript
 
-> **`cls`** - log 字符:变量
+| Prefix    | Snippets                      |
+| --------- | ----------------------------- |
+| `cls`     | console.log( ' $1 >> ', $1 ); |
+| `clv`     | console.log( $1 )             |
+| `obj`     | name:{}                       |
+| `fun`     | function name(){}             |
+| `oFun`    | name(){}                      |
+| `jFun`    | () => {}                      |
+| `jFunN`   | const name = () => {}         |
+| `AFE`     | name.forEach(item => {})      |
+| `forLoop` | for loop                      |
+| `fof`     | fof loop                      |
+| `fin`     | fin loop                      |
 
-```js
-console.log("$1 >>", $1);
-```
+## import
 
-> **`clv`** - log 变量
+| Prefix | Snippets                |
+| ------ | ----------------------- |
+| `imp`  | import $2 from '$1'     |
+| `imd`  | import { $2 } from '$1' |
 
-```js
-console.log($1);
-```
+## Vue.html
 
-> **`imp`** - import
+| Prefix   | Snippets                                |
+| -------- | --------------------------------------- |
+| `vIf`    | v-if="$1"                               |
+| `vForI`  | v-for="item in $1" :key="item"          |
+| `vForII` | v-for="(item, index) in $1" :key="item" |
+| `vModel` | v-model="$1"                            |
+| `vCData` | :class="{ $1 : $2 }"                    |
+| `vCCalc` | :class="[ $1 ? $2 : $3 ]"               |
+| `vStyle` | :style="{}"                             |
+| `vSData` | :style="{ $1 : $2 }"                    |
+| `vSCalc` | :style="{ $1 : $2 ? $3 : $4}"           |
 
-```js
-import $2 from "$1";
-```
+## Vue base
 
-> **`imd`** - import 解构
+| Prefix          | Snippets                           |
+| --------------- | ---------------------------------- |
+| `vcss `         | vue2 css base                      |
+| `vless `        | vue2 less base                     |
+| `vscss`         | vue2 scss base                     |
+| `vvcss`         | vue3 css base                      |
+| `vvless`        | vue3 less base                     |
+| `vvscss`        | vue3 scss base                     |
+| `vvcss-DC`      | vue3 css base ( defineComponent )  |
+| `vvless-DC`     | vue3 less base ( defineComponent ) |
+| `vvscss-DC`     | vue3 scss base ( defineComponent ) |
+| `vvcss-setup`   | vue2 css base ( setup 语法糖 )     |
+| `vvless-setup ` | vue2 less base ( setup 语法糖 )    |
+| `vvscss-setup ` | vue2 scss base ( setup 语法糖 )    |
 
-```js
-import { $1 } from "$1";
-```
+## Vue2 Api
 
-> **`jF`** - 箭头函数
+| Prefix       | Snippets                        |
+| ------------ | ------------------------------- |
+| `vdata `     | vue2 data                       |
+| `vProp `     | vue2 props                      |
+| `vPD`        | vue2 props ( default )          |
+| `vPDR`       | vue2 props ( default required ) |
+| `vMixins`    | vue2 mixins                     |
+| `vMethods`   | vue2 methods                    |
+| `vComputed`  | vue2 computed                   |
+| `vCS`        | vue2 computed ( setter )        |
+| `vWatch`     | vue2 watch                      |
+| `vWD`        | vue2 watch ( deep )             |
+| `vWI`        | vue2 watch ( immediate )        |
+| `vWDI`       | vue2 watch ( deep immediate )   |
+| `vFilters`   | vue2 filters                    |
+| `vBCreate`   | vue2 beforeCreate               |
+| `vCreated`   | vue2 created                    |
+| `vBMount`    | vue2 beforeMount                |
+| `vMounted`   | vue2 mounted                    |
+| `vBUpdate`   | vue2 beforeUpdate               |
+| `vUpdated`   | vue2 updated                    |
+| `vBUnmount`  | vue2 beforeUnmount              |
+| `vUnmounted` | vue2 unmounted                  |
 
-```js
-$1 => {
-	$2;
-};
-```
+## Vue3 Api
 
-> **`jFN`** - 带名字的箭头函数
+| Prefix        | Snippets                           |
+| ------------- | ---------------------------------- |
+| `vvRoute`     | vue3 useRoute                      |
+| `vvRouter`    | vue3 useRouter                     |
+| `vvRef`       | vue3 ref                           |
+| `vvReactive`  | vue3 reactive                      |
+| `vvProps`     | vue3 defineProps                   |
+| `vvSlots`     | vue3 useSlots                      |
+| `vvAttrs`     | vue3 useAttrs                      |
+| `vvExpose`    | vue3 defineExpose                  |
+| `vvComputed`  | vue3 computed                      |
+| `vvWatch`     | vue3 watch                         |
+| `vvWD`        | vue3 watch ( deep )                |
+| `vvWI`        | vue3 watch ( immediate )           |
+| `vvWDI`       | vue3 watch ( deep immediate )      |
+| `vvW-MR`      | vue3 Watch more ref                |
+| `vvW-SR`      | vue3 Watch single data in reactive |
+| `vvWE`        | vue3 watchEffect                   |
+| `vvBMounted`  | vue3 onBeforeMount                 |
+| `vvMounted`   | vue3 onMounted                     |
+| `vvBUpdate`   | vue3 onBeforeUpdate                |
+| `vvUpdated`   | vue3 onUpdated                     |
+| `vvBUnmount`  | vue3 onBeforeUnmount               |
+| `vvUnmounted` | vue3 onUnmounted                   |
+| `vvGP`        | vue3 globalProperties              |
 
-```js
-const $1 = () => {
-	$2;
-};
-```
+## vueRouter
 
-> **`AFE`** - array.forEach(()=>{})
+### vueRouter3.x
 
-```js
-$1.forEach(item => {
-	$2;
-});
-```
-
-> **`forLoop`** - for 循环
-
-```js
-for (let i = 0; i < $1; i++) {
-	$2;
-}
-```
-
-> **`fin`** - forIn 循环
-
-```js
-for (const item in $1) {
-	$2;
-}
-```
-
-> **`fof`** - forOf 循环
-
-```js
-for (const item of $1) {
-	$2;
-}
-```
+| Prefix       | Snippets                                |
+| ------------ | --------------------------------------- |
+| `vrBEach`    | beforeEach 全局前置守卫                 |
+| `vrBResolve` | beforeResolve 全局解析守卫              |
+| `vrAEach`    | afterEach 全局后置钩子                  |
+| `vrBEnter`   | beforeEnter 路由独享的守卫              |
+| `vrBREnter`  | beforeRouteEnter 组件内的守卫 ( 进入 )  |
+| `vrBRUpdate` | beforeRouteUpdate 组件内的守卫 ( 更新 ) |
+| `vrBRLeave`  | beforeRouteLeave 组件内的守卫 ( 离开 )  |
 
 ## less & scss
 
-> **`fcc`** - flex 横向垂直居中
-
-```css
-display: flex;
-align-items: center;
-justify-content: center;
-```
+| Prefix                 | Snippets            |
+| ---------------------- | ------------------- |
+| `imp`                  | @import url("")     |
+| `fcc`                  | flex 横向垂直居中   |
+| `txt1` ,`txt2`, `txt3` | 文本溢出省略 1~3 行 |
+| `scroll-l`             | 左边滚动条样式      |
+| `scroll-b`             | 下边滚动条样式      |
 
 # Contact
 
@@ -707,4 +152,4 @@ justify-content: center;
 
 > Wechat ID：C-ChenKun
 
-# Version：1.0.4
+# Version：1.0.5

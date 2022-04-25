@@ -6,5 +6,11 @@
       "align-items: center;",
       "justify-content: center;"
     ]
+  },
+  "🎯 @import url()": {
+    "prefix": "imp",
+    "body": [
+      "@import url(\"$1\");"
+    ]
   }
 }

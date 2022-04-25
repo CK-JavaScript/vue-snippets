@@ -11,8 +11,16 @@
       "console.log(${1:variable});"
     ]
   },
+  "🎯 obj 对象": {
+    "prefix": "obj",
+    "body": [
+      "$1: {",
+      "  $2",
+      "}"
+    ]
+  },
   "🎯 普通函数": {
-    "prefix": "FN",
+    "prefix": "fun",
     "body": [
       "function ${1:name}(params) {",
       "",
@@ -20,7 +28,7 @@
     ]
   },
   "🎯 对象函数的简写": {
-    "prefix": "OF",
+    "prefix": "oFun",
     "body": [
       "${1:name}(params) {",
       "",
@@ -28,7 +36,7 @@
     ]
   },
   "🎯 箭头函数": {
-    "prefix": "jF",
+    "prefix": "jFun",
     "body": [
       "(parame) => {",
       "  $1",
@@ -36,7 +44,7 @@
     ]
   },
   "🎯 带名字的箭头函数": {
-    "prefix": "jFN",
+    "prefix": "jFunN",
     "body": [
       "const ${1:name} = () => {",
       "  $2",
@@ -75,16 +83,6 @@
       "}"
     ]
   },
-  "🎯 v2 data": {
-    "prefix": "vdata",
-    "body": [
-      "data() {",
-      "  return {",
-      "    $1",
-      "  }",
-      "},"
-    ]
-  },
   "🎯 import": {
     "prefix": "imp",
     "body": [
@@ -101,6 +99,30 @@
     "prefix": "iReactive",
     "body": [
       "reactive"
+    ]
+  },
+  "🎯 import watch": {
+    "prefix": "iWatch",
+    "body": [
+      "watch"
+    ]
+  },
+  "🎯 import mixins": {
+    "prefix": "iMixins",
+    "body": [
+      "mixins: [${1:name}],"
+    ]
+  },
+  "🎯 import defineComponent": {
+    "prefix": "iDComponent",
+    "body": [
+      "defineComponent"
+    ]
+  },
+  "🎯 import defineAsyncComponent": {
+    "prefix": "iDAComponent",
+    "body": [
+      "defineAsyncComponent"
     ]
   },
   "🎯 import defineProps": {
@@ -169,12 +191,46 @@
       "onUnmounted "
     ]
   },
+  "🎯 import useRouter": {
+    "prefix": "iRouter",
+    "body": [
+      "onBeforeRouteLeave"
+    ]
+  },
+  "🎯 import useRoute ": {
+    "prefix": "iRoute",
+    "body": [
+      "onBeforeRouteLeave"
+    ]
+  },
+  "🎯 import onBeforeRouteLeave": {
+    "prefix": "iBRLeave",
+    "body": [
+      "onBeforeRouteLeave"
+    ]
+  },
+  "🎯 import onBeforeRouteUpdate ": {
+    "prefix": "iBRupdata",
+    "body": [
+      "onBeforeRouteUpdate"
+    ]
+  },
+  "🎯 v2 data": {
+    "prefix": "vdata",
+    "body": [
+      "data() {",
+      "  return {",
+      "    $1",
+      "  }",
+      "},"
+    ]
+  },
   "🎯 v2 props": {
     "prefix": "vProp",
     "body": [
       "props: {",
       "  ${1:propName}: {",
-      "    type: ${2:type}",
+      "    type: null",
       "  }",
       "},"
     ]
@@ -184,8 +240,8 @@
     "body": [
       "props: {",
       "  ${1:name}: {",
-      "    type: ${2:type},",
-      "    default: ${3:default}",
+      "    type: null,",
+      "    default: ${2:default}",
       "  }",
       "},"
     ]
@@ -195,8 +251,8 @@
     "body": [
       "props: {",
       "  ${1:name}: {",
-      "    type: ${2:type},",
-      "    default: ${3:default},",
+      "    type: null,",
+      "    default: ${2:default},",
       "    required: true",
       "  }",
       "},"
@@ -368,6 +424,18 @@
       "},"
     ]
   },
+  "🎯 v3 useRouter": {
+    "prefix": "vvRouter",
+    "body": [
+      "const router = useRouter()"
+    ]
+  },
+  "🎯 v3 useRoute ": {
+    "prefix": "vvRoute",
+    "body": [
+      "const route = useRoute()"
+    ]
+  },
   "🎯 v3 ref": {
     "prefix": "vvRef",
     "body": [
@@ -382,13 +450,18 @@
       "})"
     ]
   },
+  "🎯 v3 mixins": {
+    "prefix": "vvMixins",
+    "body": [
+      "mixins: [${1:name}],"
+    ]
+  },
   "🎯 v3 defineProps": {
     "prefix": "vvProps",
     "body": [
-      "defineProps({",
+      "const props = defineProps({",
       "  $1: {",
-      "    type: $2,",
-      "    datault: $3,",
+      "    type: null,",
       "    required: true",
       "  }",
       "})"
@@ -431,33 +504,49 @@
   "🎯 v3 watch": {
     "prefix": "vvWatch",
     "body": [
-      "watch(() => ${1:name}, (newValue, oldValue) => {",
+      "watch(${1:name}, (newValue, oldValue) => {",
       "  $2",
       "})"
+    ]
+  },
+  "🎯 v3 watch deep": {
+    "prefix": "vvWD",
+    "body": [
+      "watch(${1:name}, (newValue, oldValue) => {",
+      "  $2",
+      "},{ deep: true })"
     ]
   },
   "🎯 v3 watch immediate": {
     "prefix": "vvWI",
     "body": [
-      "watch(() => ${1:name}, (newValue, oldValue) => {",
+      "watch(${1:name}, (newValue, oldValue) => {",
       "  $2",
       "},{ immediate: true })"
     ]
   },
-  "🎯 v3 watch arr": {
-    "prefix": "vvWA",
+  "🎯 v3 watch deep immediate": {
+    "prefix": "vvWDI",
     "body": [
-      "watch([${1:nameA}, ${2:nameB}], ([new${1:nameA}, new${2:nameB}], [old${1:nameA}, old${2:nameB}]) => {",
-      "  $3",
+      "watch(${1:name}, (newValue, oldValue) => {",
+      "  $2",
+      "},{ deep: true }, { immediate: true })"
+    ]
+  },
+  "🎯 v3 watch 多个 ref 数据": {
+    "prefix": "vvW-MRef",
+    "body": [
+      "watch([name$1, name$2], (newValue, oldValue) => {",
+      "  $2",
       "})"
     ]
   },
-  "🎯 v3 watch arr immediate": {
-    "prefix": "vvWAI",
+  "🎯 v3 watch reactive 中的单个数据": {
+    "prefix": "vvW-SReactive",
     "body": [
-      "watch([${1:nameA}, ${2:nameB}], ([new${1:nameA}, new${2:nameB}], [old${1:nameA}, old${2:nameB}]) => {",
-      "  $3",
-      "},{ immediate: true })"
+      "watch(() => ${1:a.b}, (newValue, oldValue) => {",
+      "  $2",
+      "})"
     ]
   },
   "🎯 v3 watchEffect": {
@@ -516,84 +605,82 @@
       "})"
     ]
   },
-  "🎯 vuex store": {
-    "prefix": "vStore",
+  "🎯 v3 onBeforeRouteLeave": {
+    "prefix": "vvUnmounted",
     "body": [
-      "import Vue from \"vue\";",
-      "import Vuex from \"vuex\";",
-      "Vue.use(Vuex);",
-      "export default new Vuex.Store({",
-      "  state: {},",
-      "  mutations: {},",
-      "  actions: {},",
-      "});"
+      "onBeforeRouteLeave((to, from) => {",
+      "",
+      "})"
     ]
   },
-  "🎯 vuex getters": {
-    "prefix": "vGetters",
+  "🎯 v3 onBeforeRouteUpdate": {
+    "prefix": "vvUnmounted",
     "body": [
-      "getters: {",
-      "  ${1:name}(state) {",
-      "    return state.${1:name};",
-      "  }",
+      "onBeforeRouteUpdate((to, from) => {",
+      "",
+      "})"
+    ]
+  },
+  "🎯 v3 globalProperties": {
+    "prefix": "vvGP",
+    "body": [
+      "app.config.globalProperties._bus = () => {}"
+    ]
+  },
+  "🎯 vueRouter beforeEach 全局前置守卫": {
+    "prefix": "vrBEach",
+    "body": [
+      "router.beforeEach((to, from, next) => {",
+      "  $1",
       "}"
     ]
   },
-  "🎯 vuex mutations": {
-    "prefix": "vMutations",
+  "🎯 vueRouter beforeResolve 全局解析守卫": {
+    "prefix": "vrBResolve",
     "body": [
-      "mutations: {",
-      "  ${1:name}(state, ${2:parame}) {",
-      "    $3",
-      "  }",
+      "router.beforeResolve((to, from, next) => {",
+      "  $1",
       "}"
     ]
   },
-  "🎯 vuex actions": {
-    "prefix": "vActions",
+  "🎯 vueRouter afterEach 全局后置钩子": {
+    "prefix": "vrAEach",
     "body": [
-      "actions: {",
-      "  ${1:name}({commit}, ${2:parame}) {",
-      "    commit(${1:name}', ${2:parame});",
-      "  }",
+      "router.afterEach((to, from) => {",
+      "  $1",
       "}"
     ]
   },
-  "🎯 vuex module": {
-    "prefix": "vModule",
+  "🎯 vueRouter beforeEnter 路由独享的守卫": {
+    "prefix": "vrBEach",
     "body": [
-      "export default {",
-      "  namespaced: true,",
-      "  state: {},",
-      "  mutations: {},",
-      "  actions: {},",
-      "};"
+      "beforeEnter: (to, from, next) => {",
+      "  $1",
+      "}"
     ]
   },
-  "🎯 vueRouter router": {
-    "prefix": "vRouter",
+  "🎯 vueRouter beforeRouteEnter  组件内的守卫 ( 进入 ) ": {
+    "prefix": "vrBREnter",
     "body": [
-      "import Vue from \"vue\";",
-      "import VueRouter from \"vue-router\";",
-      "",
-      "Vue.use(VueRouter);",
-      "",
-      "const routes = [",
-      "  {",
-      "    path: \"\",",
-      "    name: \"\",",
-      "    alias: \"\",",
-      "    component: ",
-      "  },",
-      "];",
-      "",
-      "const router = new VueRouter({",
-      "  mode: \"history\",",
-      "  base: process.env.BASE_URL,",
-      "  routes,",
-      "});",
-      "",
-      "export default router;"
+      "beforeRouteEnter(to, from, next) {",
+      "  $1",
+      "}"
+    ]
+  },
+  "🎯 vueRouter beforeRouteUpdate 组件内的守卫 ( 更新 )": {
+    "prefix": "vrBRUpdate",
+    "body": [
+      "beforeRouteUpdate(to, from, next) {",
+      "  $1",
+      "}"
+    ]
+  },
+  "🎯 vueRouter beforeRouteLeave 组件内的守卫 ( 离开 ) ": {
+    "prefix": "vrBRLeave",
+    "body": [
+      "beforeRouteLeave(to, from, next) {",
+      "  $1",
+      "}"
     ]
   }
 }

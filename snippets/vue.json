@@ -1,4 +1,23 @@
 {
+  "🎯 v2 base ( css )": {
+    "prefix": "vcss",
+    "body": [
+      "<template>",
+      "  <div class=\"$0\">",
+      "",
+      "  </div>",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "",
+      "}",
+      "</script>",
+      "",
+      "<style scoped>",
+      "</style>"
+    ]
+  },
   "🎯 v2 base ( less )": {
     "prefix": "vless",
     "body": [
@@ -34,6 +53,27 @@
       "</script>",
       "",
       "<style lang=\"scss\" scoped>",
+      "</style>"
+    ]
+  },
+  "🎯 v3 base ( css )": {
+    "prefix": "vvcss",
+    "body": [
+      "<template>",
+      "  <div class=\"$0\">",
+      "",
+      "  </div>",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "  setup(){",
+      "",
+      "  }",
+      "}",
+      "</script>",
+      "",
+      "<style scoped>",
       "</style>"
     ]
   },
@@ -79,6 +119,28 @@
       "</style>"
     ]
   },
+  "🎯 v3 base ( css dc )": {
+    "prefix": "vvcss-DC",
+    "body": [
+      "<template>",
+      "  <div class=\"$0\">",
+      "",
+      "  </div>",
+      "</template>",
+      "",
+      "<script>",
+      "import { defineComponent } from 'vue'",
+      "export default defineComponent({",
+      "  setup(){",
+      "",
+      "  }",
+      "})",
+      "</script>",
+      "",
+      "<style scoped>",
+      "</style>"
+    ]
+  },
   "🎯 v3 base ( less dc )": {
     "prefix": "vvless-DC",
     "body": [
@@ -120,6 +182,23 @@
       "</script>",
       "",
       "<style lang=\"scss\" scoped>",
+      "</style>"
+    ]
+  },
+  "🎯 v3 base ( setup css )": {
+    "prefix": "vvcss-setup",
+    "body": [
+      "<template>",
+      "  <div class=\"$0\">",
+      "",
+      "  </div>",
+      "</template>",
+      "",
+      "<script setup>",
+      "",
+      "</script>",
+      "",
+      "<style scoped>",
       "</style>"
     ]
   },
