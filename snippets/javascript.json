@@ -424,6 +424,22 @@
       "},"
     ]
   },
+  "🎯 v2 Commit ": {
+    "prefix": "vCommit ",
+    "body": [
+      "${1:mutationName}() {",
+      "  this.$store.commit('${1:mutationName}', ${2:payload});",
+      "},"
+    ]
+  },
+  "🎯 v2 dispatch ": {
+    "prefix": "vDispatch ",
+    "body": [
+      "${1:actionName}() {",
+      "  this.$store.dispatch('${1:actionName}', ${2:payload});",
+      "},"
+    ]
+  },
   "🎯 v3 useRouter": {
     "prefix": "vvRouter",
     "body": [

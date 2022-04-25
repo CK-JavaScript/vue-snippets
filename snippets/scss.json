@@ -1,4 +1,10 @@
 {
+  "🎯 @import url()": {
+    "prefix": "imp",
+    "body": [
+      "@import url(\"$1\");"
+    ]
+  },
   "🎯 flex 横向垂直居中": {
     "prefix": "fcc",
     "body": [
@@ -7,10 +13,56 @@
       "justify-content: center;"
     ]
   },
-  "🎯 @import url()": {
-    "prefix": "imp",
+  "🎯 单行文本溢出显示省略号": {
+    "prefix": "txt1",
     "body": [
-      "@import url(\"$1\");"
+      "overflow: hidden;",
+      "text-overflow: ellipsis",
+      "white-space: nowrap;"
+    ]
+  },
+  "🎯 两行文本溢出显示省略号": {
+    "prefix": "txt2",
+    "body": [
+      "overflow: hidden;",
+      "text-overflow: ellipsis",
+      "white-space: nowrap;"
+    ]
+  },
+  "🎯 三行文本溢出显示省略号": {
+    "prefix": "txt3",
+    "body": [
+      "overflow: hidden;",
+      "text-overflow: ellipsis",
+      "white-space: nowrap;"
+    ]
+  },
+  "🎯 左边滚动条样式": {
+    "prefix": "scroll-l",
+    "body": [
+      "&::-webkit-scrollbar {",
+      "  width: 8px;",
+      "  background-color: #f1f1f1;",
+      "  border-radius: 4px;",
+      "}",
+      "&::-webkit-scrollbar-thumb {",
+      "  background-color: #ccc;",
+      "  border-radius: 4px;",
+      "}"
+    ]
+  },
+  "🎯 下边滚动条样式": {
+    "prefix": "scroll-b",
+    "body": [
+      "&::-webkit-scrollbar {",
+      "  height: 8px;",
+      "  background-color: #f1f1f1;",
+      "  border-radius: 4px;",
+      "}",
+      "&::-webkit-scrollbar-thumb {",
+      "  background-color: #ccc;",
+      "  border-radius: 4px;",
+      "}"
     ]
   }
 }

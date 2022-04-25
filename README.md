@@ -53,74 +53,76 @@ VSCode 代码片段包含，直接安装插件即可使用。
 
 ## Vue base
 
-| Prefix          | Snippets                           |
-| --------------- | ---------------------------------- |
-| `vcss `         | vue2 css base                      |
-| `vless `        | vue2 less base                     |
-| `vscss`         | vue2 scss base                     |
-| `vvcss`         | vue3 css base                      |
-| `vvless`        | vue3 less base                     |
-| `vvscss`        | vue3 scss base                     |
-| `vvcss-DC`      | vue3 css base ( defineComponent )  |
-| `vvless-DC`     | vue3 less base ( defineComponent ) |
-| `vvscss-DC`     | vue3 scss base ( defineComponent ) |
-| `vvcss-setup`   | vue2 css base ( setup 语法糖 )     |
-| `vvless-setup ` | vue2 less base ( setup 语法糖 )    |
-| `vvscss-setup ` | vue2 scss base ( setup 语法糖 )    |
+| Prefix          | Snippets                               |
+| --------------- | -------------------------------------- |
+| `vcss `         | vue2 css 基础代码                      |
+| `vless `        | vue2 less 基础代码                     |
+| `vscss`         | vue2 scss 基础代码                     |
+| `vvcss`         | vue3 css 基础代码                      |
+| `vvless`        | vue3 less 基础代码                     |
+| `vvscss`        | vue3 scss 基础代码                     |
+| `vvcss-DC`      | vue3 css 基础代码 ( defineComponent )  |
+| `vvless-DC`     | vue3 less 基础代码 ( defineComponent ) |
+| `vvscss-DC`     | vue3 scss 基础代码 ( defineComponent ) |
+| `vvcss-setup`   | vue2 css 基础代码 ( setup 语法糖 )     |
+| `vvless-setup ` | vue2 less 基础代码 ( setup 语法糖 )    |
+| `vvscss-setup ` | vue2 scss 基础代码 ( setup 语法糖 )    |
 
 ## Vue2 Api
 
-| Prefix       | Snippets                        |
-| ------------ | ------------------------------- |
-| `vdata `     | vue2 data                       |
-| `vProp `     | vue2 props                      |
-| `vPD`        | vue2 props ( default )          |
-| `vPDR`       | vue2 props ( default required ) |
-| `vMixins`    | vue2 mixins                     |
-| `vMethods`   | vue2 methods                    |
-| `vComputed`  | vue2 computed                   |
-| `vCS`        | vue2 computed ( setter )        |
-| `vWatch`     | vue2 watch                      |
-| `vWD`        | vue2 watch ( deep )             |
-| `vWI`        | vue2 watch ( immediate )        |
-| `vWDI`       | vue2 watch ( deep immediate )   |
-| `vFilters`   | vue2 filters                    |
-| `vBCreate`   | vue2 beforeCreate               |
-| `vCreated`   | vue2 created                    |
-| `vBMount`    | vue2 beforeMount                |
-| `vMounted`   | vue2 mounted                    |
-| `vBUpdate`   | vue2 beforeUpdate               |
-| `vUpdated`   | vue2 updated                    |
-| `vBUnmount`  | vue2 beforeUnmount              |
-| `vUnmounted` | vue2 unmounted                  |
+| Prefix       | Snippets                             |
+| ------------ | ------------------------------------ |
+| `vdata `     | vue2 data                            |
+| `vProp `     | vue2 props                           |
+| `vPD`        | vue2 props ( default )               |
+| `vPDR`       | vue2 props ( default required )      |
+| `vMixins`    | vue2 混入 mixins                     |
+| `vMethods`   | vue2 方法 methods                    |
+| `vComputed`  | vue2 计算属性 computed               |
+| `vCS`        | vue2 计算属性 computed ( setter )    |
+| `vWatch`     | vue2 侦听器 watch                    |
+| `vWD`        | vue2 侦听器 watch ( deep )           |
+| `vWI`        | vue2 侦听器 watch ( immediate )      |
+| `vWDI`       | vue2 侦听器 watch ( deep immediate ) |
+| `vFilters`   | vue2 过滤器 filters                  |
+| `vBCreate`   | vue2 生命周期 beforeCreate           |
+| `vCreated`   | vue2 生命周期 created                |
+| `vBMount`    | vue2 生命周期 beforeMount            |
+| `vMounted`   | vue2 生命周期 mounted                |
+| `vBUpdate`   | vue2 生命周期 beforeUpdate           |
+| `vUpdated`   | vue2 生命周期 updated                |
+| `vBUnmount`  | vue2 生命周期 beforeUnmount          |
+| `vUnmounted` | vue2 生命周期 unmounted              |
+| `vCommit`    | vue2 提交一个 commit                 |
+| `vDispatch`  | vue2 提交一个 dispatch               |
 
 ## Vue3 Api
 
-| Prefix        | Snippets                           |
-| ------------- | ---------------------------------- |
-| `vvRoute`     | vue3 useRoute                      |
-| `vvRouter`    | vue3 useRouter                     |
-| `vvRef`       | vue3 ref                           |
-| `vvReactive`  | vue3 reactive                      |
-| `vvProps`     | vue3 defineProps                   |
-| `vvSlots`     | vue3 useSlots                      |
-| `vvAttrs`     | vue3 useAttrs                      |
-| `vvExpose`    | vue3 defineExpose                  |
-| `vvComputed`  | vue3 computed                      |
-| `vvWatch`     | vue3 watch                         |
-| `vvWD`        | vue3 watch ( deep )                |
-| `vvWI`        | vue3 watch ( immediate )           |
-| `vvWDI`       | vue3 watch ( deep immediate )      |
-| `vvW-MR`      | vue3 Watch more ref                |
-| `vvW-SR`      | vue3 Watch single data in reactive |
-| `vvWE`        | vue3 watchEffect                   |
-| `vvBMounted`  | vue3 onBeforeMount                 |
-| `vvMounted`   | vue3 onMounted                     |
-| `vvBUpdate`   | vue3 onBeforeUpdate                |
-| `vvUpdated`   | vue3 onUpdated                     |
-| `vvBUnmount`  | vue3 onBeforeUnmount               |
-| `vvUnmounted` | vue3 onUnmounted                   |
-| `vvGP`        | vue3 globalProperties              |
+| Prefix        | Snippets                                  |
+| ------------- | ----------------------------------------- |
+| `vvRoute`     | vue3 useRoute                             |
+| `vvRouter`    | vue3 useRouter                            |
+| `vvRef`       | vue3 ref                                  |
+| `vvReactive`  | vue3 reactive                             |
+| `vvProps`     | vue3 defineProps                          |
+| `vvSlots`     | vue3 useSlots                             |
+| `vvAttrs`     | vue3 useAttrs                             |
+| `vvExpose`    | vue3 暴露数据 defineExpose                |
+| `vvComputed`  | vue3 计算属性 computed                    |
+| `vvWatch`     | vue3 侦听器 watch                         |
+| `vvWD`        | vue3 侦听器 watch ( deep )                |
+| `vvWI`        | vue3 侦听器 watch ( immediate )           |
+| `vvWDI`       | vue3 侦听器 watch ( deep immediate )      |
+| `vvW-MR`      | vue3 侦听器 Watch more ref                |
+| `vvW-SR`      | vue3 侦听器 Watch single data in reactive |
+| `vvWE`        | vue3 侦听器 watchEffect                   |
+| `vvBMounted`  | vue3 生命周期 onBeforeMount               |
+| `vvMounted`   | vue3 生命周期 onMounted                   |
+| `vvBUpdate`   | vue3 生命周期 onBeforeUpdate              |
+| `vvUpdated`   | vue3 生命周期 onUpdated                   |
+| `vvBUnmount`  | vue3 生命周期 onBeforeUnmount             |
+| `vvUnmounted` | vue3 生命周期 onUnmounted                 |
+| `vvGP`        | vue3 全局属性 globalProperties            |
 
 ## vueRouter
 
