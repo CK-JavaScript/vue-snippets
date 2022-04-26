@@ -154,4 +154,4 @@ VSCode 代码片段包含，直接安装插件即可使用。
 
 > Wechat ID：C-ChenKun
 
-# Version：1.0.5
+# Version：1.0.0
