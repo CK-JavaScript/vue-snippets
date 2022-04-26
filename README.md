@@ -29,6 +29,7 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `forLoop` | for loop                      |
 | `fof`     | fof loop                      |
 | `fin`     | fin loop                      |
+| `SCLoop`  | switch case loop              |
 
 ## import
 

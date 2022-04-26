@@ -83,6 +83,16 @@
       "}"
     ]
   },
+  "🎯 switch case 循环": {
+    "prefix": "SCLoop",
+    "body": [
+      "switch (val) {",
+      "  case \"\":",
+      "    break;",
+      "  default:",
+      "}"
+    ]
+  },
   "🎯 import": {
     "prefix": "imp",
     "body": [
