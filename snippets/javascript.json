@@ -114,7 +114,13 @@
     "body": [
       "new Promise(function (resolve, reject) {",
       "  resolve();",
-      "}).then(value=>{}).catch(reason=>{}).finally(()=>{});"
+      "}).then(value => {",
+      "  ",
+      "}).catch(reason => {",
+      "  ",
+      "}).finally(() => {",
+      "  ",
+      "});"
     ]
   },
   "🎯 import": {
