@@ -16,20 +16,23 @@ VSCode 代码片段包含，直接安装插件即可使用。
 
 ## JavaScript
 
-| Prefix    | Snippets                      |
-| --------- | ----------------------------- |
-| `cls`     | console.log( ' $1 >> ', $1 ); |
-| `clv`     | console.log( $1 )             |
-| `obj`     | name:{}                       |
-| `fun`     | function name(){}             |
-| `oFun`    | name(){}                      |
-| `jFun`    | () => {}                      |
-| `jFunN`   | const name = () => {}         |
-| `AFE`     | name.forEach(item => {})      |
-| `forLoop` | for loop                      |
-| `fof`     | fof loop                      |
-| `fin`     | fin loop                      |
-| `SCLoop`  | switch case loop              |
+| Prefix    | Snippets                               |
+| --------- | -------------------------------------- |
+| `cls`     | console.log( ' $1 >> ', $1 );          |
+| `clv`     | console.log( $1 )                      |
+| `fun`     | function name(){}                      |
+| `OF`      | name(){}                               |
+| `AF`      | arrow function                         |
+| `AFN`     | named arrow function                   |
+| `AFE`     | name.forEach(item => {})               |
+| `forLoop` | for loop                               |
+| `fof`     | fof loop                               |
+| `fin`     | fin loop                               |
+| `SCLoop`  | switch case loop                       |
+| `sit`     | setInterval                            |
+| `st`      | setTimeout                             |
+| `prom`    | new Promise                            |
+| `promTCF` | new Promise().then().catch().finally() |
 
 ## import
 
@@ -69,7 +72,7 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `vvless-setup ` | vue2 less 基础代码 ( setup 语法糖 )    |
 | `vvscss-setup ` | vue2 scss 基础代码 ( setup 语法糖 )    |
 
-## Vue2 Api
+## Vue2
 
 | Prefix       | Snippets                             |
 | ------------ | ------------------------------------ |
@@ -97,12 +100,16 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `vCommit`    | vue2 提交一个 commit                 |
 | `vDispatch`  | vue2 提交一个 dispatch               |
 
-## Vue3 Api
+## Vue3
 
 | Prefix        | Snippets                                  |
 | ------------- | ----------------------------------------- |
+| `vvSetup`     | vue3 setup(){}                            |
 | `vvRoute`     | vue3 useRoute                             |
 | `vvRouter`    | vue3 useRouter                            |
+| `vvStore`     | vue3 useStore                             |
+| `vvCommit`    | vue3 store.commit("")                     |
+| `vvDispatch`  | vue3 store.dispatch("")                   |
 | `vvRef`       | vue3 ref                                  |
 | `vvReactive`  | vue3 reactive                             |
 | `vvProps`     | vue3 defineProps                          |
@@ -124,30 +131,47 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `vvBUnmount`  | vue3 生命周期 onBeforeUnmount             |
 | `vvUnmounted` | vue3 生命周期 onUnmounted                 |
 | `vvGP`        | vue3 全局属性 globalProperties            |
+| `vvNextTick`  | vue3 NextTick                             |
 
 ## vueRouter
 
-### vueRouter3.x
+| Prefix       | Snippets                                  |
+| ------------ | ----------------------------------------- |
+| `vrBEach`    | beforeEach 全局前置守卫                   |
+| `vrBResolve` | beforeResolve 全局解析守卫                |
+| `vrAEach`    | afterEach 全局后置钩子                    |
+| `vrBEnter`   | beforeEnter 路由独享的守卫                |
+| `vrBREnter`  | beforeRouteEnter 组件内的守卫 ( Enter )   |
+| `vrBRUpdate` | beforeRouteUpdate 组件内的守卫 ( Update ) |
+| `vrBRLeave`  | beforeRouteLeave 组件内的守卫 ( Leave )   |
 
-| Prefix       | Snippets                                |
-| ------------ | --------------------------------------- |
-| `vrBEach`    | beforeEach 全局前置守卫                 |
-| `vrBResolve` | beforeResolve 全局解析守卫              |
-| `vrAEach`    | afterEach 全局后置钩子                  |
-| `vrBEnter`   | beforeEnter 路由独享的守卫              |
-| `vrBREnter`  | beforeRouteEnter 组件内的守卫 ( 进入 )  |
-| `vrBRUpdate` | beforeRouteUpdate 组件内的守卫 ( 更新 ) |
-| `vrBRLeave`  | beforeRouteLeave 组件内的守卫 ( 离开 )  |
+## Vuex
+
+| Prefix       | Snippets                                  |
+| ------------ | ----------------------------------------- |
+| `vrBEach`    | beforeEach 全局前置守卫                   |
+| `vrBResolve` | beforeResolve 全局解析守卫                |
+| `vrAEach`    | afterEach 全局后置钩子                    |
+| `vrBEnter`   | beforeEnter 路由独享的守卫                |
+| `vrBREnter`  | beforeRouteEnter 组件内的守卫 ( Enter )   |
+| `vrBRUpdate` | beforeRouteUpdate 组件内的守卫 ( Update ) |
+| `vrBRLeave`  | beforeRouteLeave 组件内的守卫 ( Leave )   |
 
 ## less & scss
 
 | Prefix                 | Snippets            |
 | ---------------------- | ------------------- |
-| `imp`                  | @import url("")     |
 | `fcc`                  | flex 横向垂直居中   |
 | `txt1` ,`txt2`, `txt3` | 文本溢出省略 1~3 行 |
 | `scroll-l`             | 左边滚动条样式      |
 | `scroll-b`             | 下边滚动条样式      |
+
+## pinia
+
+| Prefix         | Snippets          |
+| -------------- | ----------------- |
+| `pinia`        | pinia base        |
+| `pinia-toRefs` | pinia storeToRefs |
 
 # Contact
 

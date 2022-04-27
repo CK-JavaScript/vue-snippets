@@ -11,14 +11,6 @@
       "console.log(${1:variable});"
     ]
   },
-  "🎯 obj 对象": {
-    "prefix": "obj",
-    "body": [
-      "$1: {",
-      "  $2",
-      "}"
-    ]
-  },
   "🎯 普通函数": {
     "prefix": "fun",
     "body": [
@@ -93,6 +85,38 @@
       "}"
     ]
   },
+  "🎯 setInterval": {
+    "prefix": "sit",
+    "body": [
+      "setInterval(() => {",
+      "  $1",
+      "}, ${1:intervalInms});"
+    ]
+  },
+  "🎯 setTimeout": {
+    "prefix": "st",
+    "body": [
+      "setTimeout(() => {",
+      "  $1",
+      "}, ${2:delayInms});"
+    ]
+  },
+  "🎯 new Promise": {
+    "prefix": "newPro",
+    "body": [
+      "new Promise(function (resolve, reject) {",
+      "  resolve();",
+      "});"
+    ]
+  },
+  "🎯 new Promise().then().catch().finally()": {
+    "prefix": "newProAll",
+    "body": [
+      "new Promise(function (resolve, reject) {",
+      "  resolve();",
+      "}).then(value=>{}).catch(reason=>{}).finally(()=>{});"
+    ]
+  },
   "🎯 import": {
     "prefix": "imp",
     "body": [
@@ -121,6 +145,12 @@
     "prefix": "iMixins",
     "body": [
       "mixins: [${1:name}],"
+    ]
+  },
+  "🎯 import nextTick": {
+    "prefix": "iNextTick",
+    "body": [
+      "nextTick"
     ]
   },
   "🎯 import defineComponent": {
@@ -450,6 +480,14 @@
       "},"
     ]
   },
+  "🎯 v3 setup(){}": {
+    "prefix": "vvSetup",
+    "body": [
+      "setup(){",
+      "  ",
+      "}"
+    ]
+  },
   "🎯 v3 useRouter": {
     "prefix": "vvRouter",
     "body": [
@@ -460,6 +498,24 @@
     "prefix": "vvRoute",
     "body": [
       "const route = useRoute()"
+    ]
+  },
+  "🎯 v3 useStore ": {
+    "prefix": "vvStore",
+    "body": [
+      "const store = useStore()"
+    ]
+  },
+  "🎯 v3 store.commit(\"\")": {
+    "prefix": "vvCommit",
+    "body": [
+      "store.commit(\"${1:method}\",$2)"
+    ]
+  },
+  "🎯 v3 store.dispatch(\"\")": {
+    "prefix": "vvDispatch",
+    "body": [
+      "store.dispatch(\"${1:method}\",$2)"
     ]
   },
   "🎯 v3 ref": {
@@ -653,6 +709,14 @@
       "app.config.globalProperties._bus = () => {}"
     ]
   },
+  "🎯 v3 NextTick": {
+    "prefix": "vvNextTick",
+    "body": [
+      "nextTick(()=>{",
+      "  $1",
+      "})"
+    ]
+  },
   "🎯 vueRouter beforeEach 全局前置守卫": {
     "prefix": "vrBEach",
     "body": [
@@ -707,6 +771,27 @@
       "beforeRouteLeave(to, from, next) {",
       "  $1",
       "}"
+    ]
+  },
+  "🎯 Pinia": {
+    "prefix": "pinia",
+    "body": [
+      "import { defineStore } from \"pinia\";",
+      "export const userStore = defineStore(\"${1:id}\", {",
+      "  state: () => {",
+      "    return {",
+      "    };",
+      "  },",
+      "  getters: {},",
+      "  actions: {},",
+      "});"
+    ]
+  },
+  "🎯 Pinia storeToRefs": {
+    "prefix": "pinia-toRefs",
+    "body": [
+      "import { storeToRefs } from \"pinia\";",
+      "const { $2 } = storeToRefs(${1:name})"
     ]
   }
 }
