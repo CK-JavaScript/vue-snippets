@@ -2,8 +2,8 @@
     "name": "public-snippets",
     "publisher": "public-snippets",
     "displayName": "public snippets",
-    "description": "public snippets 开发常用代码片段",
-    "version": "1.0.2",
+    "description": "public snippets",
+    "version": "1.0.3",
     "engines": {
         "vscode": "^1.66.0"
     },

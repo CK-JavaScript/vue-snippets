@@ -16,23 +16,23 @@ VSCode 代码片段包含，直接安装插件即可使用。
 
 ## JavaScript
 
-| Prefix    | Snippets                               |
-| --------- | -------------------------------------- |
-| `cls`     | console.log( ' $1 >> ', $1 );          |
-| `clv`     | console.log( $1 )                      |
-| `fun`     | function name(){}                      |
-| `OF`      | name(){}                               |
-| `AF`      | arrow function                         |
-| `AFN`     | named arrow function                   |
-| `AFE`     | name.forEach(item => {})               |
-| `forLoop` | for loop                               |
-| `fof`     | fof loop                               |
-| `fin`     | fin loop                               |
-| `SCLoop`  | switch case loop                       |
-| `sit`     | setInterval                            |
-| `st`      | setTimeout                             |
-| `prom`    | new Promise                            |
-| `promTCF` | new Promise().then().catch().finally() |
+| Prefix      | Snippets                               |
+| ----------- | -------------------------------------- |
+| `cls`       | console.log( ' $1 >> ', $1 );          |
+| `clv`       | console.log( $1 )                      |
+| `fun`       | function name(){}                      |
+| `OF`        | name(){}                               |
+| `AF`        | arrow function                         |
+| `AFN`       | named arrow function                   |
+| `AFE`       | name.forEach(item => {})               |
+| `forLoop`   | for loop                               |
+| `fof`       | fof loop                               |
+| `fin`       | fin loop                               |
+| `SCLoop`    | switch case loop                       |
+| `sit`       | setInterval                            |
+| `st`        | setTimeout                             |
+| `newPro`    | new Promise                            |
+| `newProTCF` | new Promise().then().catch().finally() |
 
 ## import
 

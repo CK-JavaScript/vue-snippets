@@ -110,7 +110,7 @@
     ]
   },
   "🎯 new Promise().then().catch().finally()": {
-    "prefix": "newProAll",
+    "prefix": "newProTCF",
     "body": [
       "new Promise(function (resolve, reject) {",
       "  resolve();",
