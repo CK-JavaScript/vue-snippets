@@ -20,7 +20,7 @@
     ]
   },
   "🎯 对象函数的简写": {
-    "prefix": "oFun",
+    "prefix": "OF",
     "body": [
       "${1:name}(params) {",
       "",
@@ -32,7 +32,7 @@
     "body": [
       "(parame) => {",
       "  $1",
-      "};"
+      "}"
     ]
   },
   "🎯 带名字的箭头函数": {
@@ -40,15 +40,7 @@
     "body": [
       "const ${1:name} = () => {",
       "  $2",
-      "};"
-    ]
-  },
-  "🎯 数组 forEach": {
-    "prefix": "AFE",
-    "body": [
-      "${1:array}.forEach(item => {",
-      "  $2",
-      "})"
+      "}"
     ]
   },
   "🎯 for 循环": {
@@ -89,7 +81,7 @@
     "prefix": "SIT",
     "body": [
       "setInterval(() => {",
-      "  $1",
+      "  $2",
       "}, ${1:intervalInms});"
     ]
   },
@@ -97,8 +89,8 @@
     "prefix": "ST",
     "body": [
       "setTimeout(() => {",
-      "  $1",
-      "}, ${2:delayInms});"
+      "  $2",
+      "}, ${1:delayInms});"
     ]
   },
   "🎯 new Promise": {
@@ -268,7 +260,7 @@
       "  return {",
       "    $1",
       "  }",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 props": {
@@ -278,7 +270,7 @@
       "  ${1:propName}: {",
       "    type: null",
       "  }",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 props default": {
@@ -289,7 +281,7 @@
       "    type: null,",
       "    default: ${2:default}",
       "  }",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 props default required": {
@@ -301,7 +293,7 @@
       "    default: ${2:default},",
       "    required: true",
       "  }",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 emit": {
@@ -315,7 +307,7 @@
     "body": [
       "methods: {",
       "  ${1:name}() {",
-      "",
+      "    ",
       "  }",
       "},"
     ]
@@ -336,14 +328,14 @@
       "computed: {",
       "  ${1:name}: {",
       "    get() {",
-      "",
+      "      ",
       "      return ",
       "    },",
       "    set(newValue) {",
-      "",
+      "      ",
       "    },",
       "  }",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 watch": {
@@ -353,7 +345,7 @@
       "  ${1:name}(newValue, oldValue) {",
       "    $2",
       "  }",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 watch deep": {
@@ -366,7 +358,7 @@
       "    },",
       "    deep:true,",
       "  }",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 watch immediate": {
@@ -379,7 +371,7 @@
       "    },",
       "    immediate:true,",
       "  }",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 watch deep immediate": {
@@ -393,7 +385,7 @@
       "    deep:true,",
       "    immediate:true,",
       "  }",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 filters": {
@@ -416,7 +408,7 @@
     "prefix": "vBCreate",
     "body": [
       "beforeCreate () {",
-      "",
+      "  ",
       "},"
     ]
   },
@@ -424,7 +416,7 @@
     "prefix": "vCreated",
     "body": [
       "created () {",
-      "",
+      "  ",
       "},"
     ]
   },
@@ -432,7 +424,7 @@
     "prefix": "vBMount",
     "body": [
       "beforeMount () {",
-      "",
+      "  ",
       "},"
     ]
   },
@@ -440,7 +432,7 @@
     "prefix": "vMounted",
     "body": [
       "mounted () {",
-      "",
+      "  ",
       "},"
     ]
   },
@@ -456,7 +448,7 @@
     "prefix": "vUpdated",
     "body": [
       "updated () {",
-      "",
+      "  ",
       "},"
     ]
   },
@@ -464,7 +456,7 @@
     "prefix": "vBUnmount",
     "body": [
       "beforeUnmount () {",
-      "",
+      "  ",
       "},"
     ]
   },
@@ -472,7 +464,7 @@
     "prefix": "vUnmounted",
     "body": [
       "unmounted () {",
-      "",
+      "  ",
       "},"
     ]
   },
@@ -480,7 +472,7 @@
     "prefix": "vCommit ",
     "body": [
       "${1:mutationName}() {",
-      "  this.$store.commit('${1:mutationName}', ${2:payload});",
+      "  this.$store.commit('${1:mutationName}', ${2:payload})",
       "},"
     ]
   },
@@ -488,7 +480,7 @@
     "prefix": "vDispatch ",
     "body": [
       "${1:actionName}() {",
-      "  this.$store.dispatch('${1:actionName}', ${2:payload});",
+      "  this.$store.dispatch('${1:actionName}', ${2:payload})",
       "},"
     ]
   },
@@ -547,7 +539,7 @@
   "🎯 v3 mixins": {
     "prefix": "vvMixins",
     "body": [
-      "mixins: [${1:name}],"
+      "mixins: [${1:name}]"
     ]
   },
   "🎯 v3 defineProps": {
@@ -564,7 +556,7 @@
   "🎯 v3 defineEmits": {
     "prefix": "vvEmits",
     "body": [
-      "const emit = defineEmits(['$1']);"
+      "const emit = defineEmits(['$1'])"
     ]
   },
   "🎯 v3 useSlots": {
@@ -584,7 +576,7 @@
     "body": [
       "defineExpose({",
       "  $1",
-      "});"
+      "})"
     ]
   },
   "🎯 v3 computed": {
@@ -655,7 +647,7 @@
     "prefix": "vvBMounted",
     "body": [
       "onBeforeMount((${1:params}) => {",
-      "",
+      "  ",
       "})"
     ]
   },
@@ -663,7 +655,7 @@
     "prefix": "vvMounted",
     "body": [
       "onMounted((${1:params}) => {",
-      "",
+      "  ",
       "})"
     ]
   },
@@ -671,7 +663,7 @@
     "prefix": "vvBUpdate",
     "body": [
       "onBeforeUpdate((${1:params}) => {",
-      "",
+      "  ",
       "})"
     ]
   },
@@ -679,7 +671,7 @@
     "prefix": "vvUpdated",
     "body": [
       "onUpdated((${1:params}) => {",
-      "",
+      "  ",
       "})"
     ]
   },
@@ -687,7 +679,7 @@
     "prefix": "vvBUnmount",
     "body": [
       "onBeforeUnmount((${1:params}) => {",
-      "",
+      "  ",
       "})"
     ]
   },
@@ -695,7 +687,7 @@
     "prefix": "vvUnmounted",
     "body": [
       "onUnmounted((${1:params}) => {",
-      "",
+      "  ",
       "})"
     ]
   },
@@ -703,7 +695,7 @@
     "prefix": "vvUnmounted",
     "body": [
       "onBeforeRouteLeave((to, from) => {",
-      "",
+      "  ",
       "})"
     ]
   },
@@ -711,7 +703,7 @@
     "prefix": "vvUnmounted",
     "body": [
       "onBeforeRouteUpdate((to, from) => {",
-      "",
+      "  ",
       "})"
     ]
   },
@@ -792,6 +784,7 @@
       "export const userStore = defineStore(\"${1:id}\", {",
       "  state: () => {",
       "    return {",
+      "      $2",
       "    };",
       "  },",
       "  getters: {},",

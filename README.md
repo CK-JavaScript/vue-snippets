@@ -24,7 +24,6 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `OF`        | name(){}                               |
 | `AF`        | arrow function                         |
 | `AFN`       | named arrow function                   |
-| `AFE`       | array.forEach(item => {})              |
 | `for`       | for loop                               |
 | `fof`       | fof loop                               |
 | `fin`       | fin loop                               |
