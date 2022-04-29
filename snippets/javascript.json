@@ -28,7 +28,7 @@
     ]
   },
   "🎯 箭头函数": {
-    "prefix": "jFun",
+    "prefix": "AF",
     "body": [
       "(parame) => {",
       "  $1",
@@ -36,7 +36,7 @@
     ]
   },
   "🎯 带名字的箭头函数": {
-    "prefix": "jFunN",
+    "prefix": "AFN",
     "body": [
       "const ${1:name} = () => {",
       "  $2",
@@ -52,7 +52,7 @@
     ]
   },
   "🎯 for 循环": {
-    "prefix": "forLoop",
+    "prefix": "for",
     "body": [
       "for (let i = 0; i < ${1:array}; i++) {",
       "  $2",
@@ -76,7 +76,7 @@
     ]
   },
   "🎯 switch case 循环": {
-    "prefix": "SCLoop",
+    "prefix": "SC",
     "body": [
       "switch (val) {",
       "  case \"\":",
@@ -86,7 +86,7 @@
     ]
   },
   "🎯 setInterval": {
-    "prefix": "sit",
+    "prefix": "SIT",
     "body": [
       "setInterval(() => {",
       "  $1",
@@ -94,7 +94,7 @@
     ]
   },
   "🎯 setTimeout": {
-    "prefix": "st",
+    "prefix": "ST",
     "body": [
       "setTimeout(() => {",
       "  $1",
@@ -302,6 +302,12 @@
       "    required: true",
       "  }",
       "},"
+    ]
+  },
+  "🎯 v2 emit": {
+    "prefix": "vEmit",
+    "body": [
+      "this.$emit(\"${1:name}\")"
     ]
   },
   "🎯 v2 methods": {

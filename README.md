@@ -24,13 +24,13 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `OF`        | name(){}                               |
 | `AF`        | arrow function                         |
 | `AFN`       | named arrow function                   |
-| `AFE`       | name.forEach(item => {})               |
-| `forLoop`   | for loop                               |
+| `AFE`       | array.forEach(item => {})              |
+| `for`       | for loop                               |
 | `fof`       | fof loop                               |
 | `fin`       | fin loop                               |
-| `SCLoop`    | switch case loop                       |
-| `sit`       | setInterval                            |
-| `st`        | setTimeout                             |
+| `SC`        | switch case loop                       |
+| `SIT`       | setInterval                            |
+| `ST`        | setTimeout                             |
 | `newPro`    | new Promise                            |
 | `newProTCF` | new Promise().then().catch().finally() |
 
@@ -80,6 +80,7 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `vProp `     | vue2 props                           |
 | `vPD`        | vue2 props ( default )               |
 | `vPDR`       | vue2 props ( default required )      |
+| `vEmit`      | vue2 emit                            |
 | `vMixins`    | vue2 混入 mixins                     |
 | `vMethods`   | vue2 方法 methods                    |
 | `vComputed`  | vue2 计算属性 computed               |
@@ -113,6 +114,7 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `vvRef`       | vue3 ref                                  |
 | `vvReactive`  | vue3 reactive                             |
 | `vvProps`     | vue3 defineProps                          |
+| `vvEmits`     | vue3 defineEmits                          |
 | `vvSlots`     | vue3 useSlots                             |
 | `vvAttrs`     | vue3 useAttrs                             |
 | `vvExpose`    | vue3 暴露数据 defineExpose                |
