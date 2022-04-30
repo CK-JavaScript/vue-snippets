@@ -2,29 +2,29 @@
   "🎯 log 字符:变量": {
     "prefix": "cls",
     "body": [
-      "console.log('${0:string} >>',${0:variable});"
+      "console.log('${0:string} >>',${0:variable})"
     ]
   },
   "🎯 log 变量": {
     "prefix": "clv",
     "body": [
-      "console.log(${1:variable});"
+      "console.log(${1:variable})"
     ]
   },
   "🎯 普通函数": {
     "prefix": "fun",
     "body": [
       "function ${1:name}(params) {",
-      "",
-      "},"
+      "  ",
+      "}"
     ]
   },
   "🎯 对象函数的简写": {
     "prefix": "OF",
     "body": [
       "${1:name}(params) {",
-      "",
-      "},"
+      "  ",
+      "}"
     ]
   },
   "🎯 箭头函数": {
@@ -72,8 +72,10 @@
     "body": [
       "switch (val) {",
       "  case \"\":",
+      "    ",
       "    break;",
       "  default:",
+      "    ",
       "}"
     ]
   },
@@ -82,7 +84,7 @@
     "body": [
       "setInterval(() => {",
       "  $2",
-      "}, ${1:intervalInms});"
+      "}, ${1:intervalInms})"
     ]
   },
   "🎯 setTimeout": {
@@ -90,15 +92,15 @@
     "body": [
       "setTimeout(() => {",
       "  $2",
-      "}, ${1:delayInms});"
+      "}, ${1:delayInms})"
     ]
   },
   "🎯 new Promise": {
     "prefix": "newPro",
     "body": [
       "new Promise(function (resolve, reject) {",
-      "  resolve();",
-      "});"
+      "  resolve()",
+      "})"
     ]
   },
   "🎯 new Promise().then().catch().finally()": {
@@ -112,7 +114,7 @@
       "  ",
       "}).finally(() => {",
       "  ",
-      "});"
+      "})"
     ]
   },
   "🎯 import": {
@@ -128,127 +130,127 @@
     ]
   },
   "🎯 import reactive": {
-    "prefix": "iReactive",
+    "prefix": " iReactive",
     "body": [
       "reactive"
     ]
   },
   "🎯 import watch": {
-    "prefix": "iWatch",
+    "prefix": " iWatch",
     "body": [
       "watch"
     ]
   },
   "🎯 import mixins": {
-    "prefix": "iMixins",
+    "prefix": " iMixins",
     "body": [
       "mixins: [${1:name}],"
     ]
   },
   "🎯 import nextTick": {
-    "prefix": "iNextTick",
+    "prefix": " iNextTick",
     "body": [
       "nextTick"
     ]
   },
   "🎯 import defineComponent": {
-    "prefix": "iDComponent",
+    "prefix": " iDComponent",
     "body": [
       "defineComponent"
     ]
   },
   "🎯 import defineAsyncComponent": {
-    "prefix": "iDAComponent",
+    "prefix": " iDAComponent",
     "body": [
       "defineAsyncComponent"
     ]
   },
   "🎯 import defineProps": {
-    "prefix": "iProps",
+    "prefix": " iProps",
     "body": [
       "defineProps"
     ]
   },
   "🎯 import defineEmits": {
-    "prefix": "iEmits",
+    "prefix": " iEmits",
     "body": [
       "defineEmits"
     ]
   },
   "🎯 import useSlots": {
-    "prefix": "iSlots",
+    "prefix": " iSlots",
     "body": [
       "useSlots"
     ]
   },
   "🎯 import useAttrs": {
-    "prefix": "iAttrs",
+    "prefix": " iAttrs",
     "body": [
       "useAttrs"
     ]
   },
   "🎯 import defineExpose": {
-    "prefix": "iExpose",
+    "prefix": " iExpose",
     "body": [
       "defineExpose"
     ]
   },
   "🎯 import onBeforeMount": {
-    "prefix": "iBMount",
+    "prefix": " iBMount",
     "body": [
       "onBeforeMount "
     ]
   },
   "🎯 import onMounted ": {
-    "prefix": "iMounted",
+    "prefix": " iMounted",
     "body": [
       "onMounted "
     ]
   },
   "🎯 import onBeforeUpdate ": {
-    "prefix": "iBUpdate",
+    "prefix": " iBUpdate",
     "body": [
       "onBeforeUpdate "
     ]
   },
   "🎯 import onUpdated ": {
-    "prefix": "iUpdated",
+    "prefix": " iUpdated",
     "body": [
       "onUpdated "
     ]
   },
   "🎯 import onBeforeUnmount ": {
-    "prefix": "iBUnmount",
+    "prefix": " iBUnmount",
     "body": [
       "onBeforeUnmount "
     ]
   },
   "🎯 import onUnmounted": {
-    "prefix": "iUnmounted",
+    "prefix": " iUnmounted",
     "body": [
-      "onUnmounted "
+      "onUnmounted"
     ]
   },
   "🎯 import useRouter": {
-    "prefix": "iRouter",
+    "prefix": " iRouter",
     "body": [
       "onBeforeRouteLeave"
     ]
   },
   "🎯 import useRoute ": {
-    "prefix": "iRoute",
+    "prefix": " iRoute",
     "body": [
       "onBeforeRouteLeave"
     ]
   },
   "🎯 import onBeforeRouteLeave": {
-    "prefix": "iBRLeave",
+    "prefix": " iBRLeave",
     "body": [
       "onBeforeRouteLeave"
     ]
   },
   "🎯 import onBeforeRouteUpdate ": {
-    "prefix": "iBRupdata",
+    "prefix": " iBRupdata",
     "body": [
       "onBeforeRouteUpdate"
     ]
@@ -260,6 +262,14 @@
       "  return {",
       "    $1",
       "  }",
+      "}"
+    ]
+  },
+  "🎯 v2 components": {
+    "prefix": "vComponents",
+    "body": [
+      "components: {",
+      "  $1",
       "}"
     ]
   },
@@ -309,7 +319,7 @@
       "  ${1:name}() {",
       "    ",
       "  }",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 computed": {
@@ -319,7 +329,7 @@
       "  ${1:name}() {",
       "    return $2",
       "  }",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 computed setter": {
@@ -393,15 +403,15 @@
     "body": [
       "filters: {",
       "  ${1:name}(value) {",
-      "    return value;",
+      "    return value",
       "  }",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 mixins": {
     "prefix": "vMixins",
     "body": [
-      "mixins: [${1:name}],"
+      "mixins: [${1:name}]"
     ]
   },
   "🎯 v2 beforeCreate": {
@@ -409,7 +419,7 @@
     "body": [
       "beforeCreate () {",
       "  ",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 created": {
@@ -417,7 +427,7 @@
     "body": [
       "created () {",
       "  ",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 beforeMount": {
@@ -425,7 +435,7 @@
     "body": [
       "beforeMount () {",
       "  ",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 mounted": {
@@ -433,15 +443,15 @@
     "body": [
       "mounted () {",
       "  ",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 beforeUpdate": {
     "prefix": "vBUpdate",
     "body": [
       "beforeUpdate () {",
-      "",
-      "},"
+      "  ",
+      "}"
     ]
   },
   "🎯 v2 updated": {
@@ -449,7 +459,7 @@
     "body": [
       "updated () {",
       "  ",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 beforeUnmount": {
@@ -457,7 +467,7 @@
     "body": [
       "beforeUnmount () {",
       "  ",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 unmounted": {
@@ -465,7 +475,7 @@
     "body": [
       "unmounted () {",
       "  ",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 Commit ": {
@@ -473,7 +483,7 @@
     "body": [
       "${1:mutationName}() {",
       "  this.$store.commit('${1:mutationName}', ${2:payload})",
-      "},"
+      "}"
     ]
   },
   "🎯 v2 dispatch ": {
@@ -481,13 +491,21 @@
     "body": [
       "${1:actionName}() {",
       "  this.$store.dispatch('${1:actionName}', ${2:payload})",
-      "},"
+      "}"
     ]
   },
-  "🎯 v3 setup(){}": {
+  "🎯 v3 setup": {
     "prefix": "vvSetup",
     "body": [
       "setup(){",
+      "  ",
+      "}"
+    ]
+  },
+  "🎯 v3 setup 带参数": {
+    "prefix": "vvSetup-parame",
+    "body": [
+      "setup(props, {attrs, slots, emit}){",
       "  ",
       "}"
     ]
@@ -785,17 +803,17 @@
       "  state: () => {",
       "    return {",
       "      $2",
-      "    };",
+      "    }",
       "  },",
       "  getters: {},",
       "  actions: {},",
-      "});"
+      "})"
     ]
   },
   "🎯 Pinia storeToRefs": {
     "prefix": "pinia-toRefs",
     "body": [
-      "import { storeToRefs } from \"pinia\";",
+      "import { storeToRefs } from \"pinia\"",
       "const { $2 } = storeToRefs(${1:name})"
     ]
   }

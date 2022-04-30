@@ -73,32 +73,33 @@ VSCode 代码片段包含，直接安装插件即可使用。
 
 ## Vue2
 
-| Prefix       | Snippets                             |
-| ------------ | ------------------------------------ |
-| `vdata `     | vue2 data                            |
-| `vProp `     | vue2 props                           |
-| `vPD`        | vue2 props ( default )               |
-| `vPDR`       | vue2 props ( default required )      |
-| `vEmit`      | vue2 emit                            |
-| `vMixins`    | vue2 混入 mixins                     |
-| `vMethods`   | vue2 方法 methods                    |
-| `vComputed`  | vue2 计算属性 computed               |
-| `vCS`        | vue2 计算属性 computed ( setter )    |
-| `vWatch`     | vue2 侦听器 watch                    |
-| `vWD`        | vue2 侦听器 watch ( deep )           |
-| `vWI`        | vue2 侦听器 watch ( immediate )      |
-| `vWDI`       | vue2 侦听器 watch ( deep immediate ) |
-| `vFilters`   | vue2 过滤器 filters                  |
-| `vBCreate`   | vue2 生命周期 beforeCreate           |
-| `vCreated`   | vue2 生命周期 created                |
-| `vBMount`    | vue2 生命周期 beforeMount            |
-| `vMounted`   | vue2 生命周期 mounted                |
-| `vBUpdate`   | vue2 生命周期 beforeUpdate           |
-| `vUpdated`   | vue2 生命周期 updated                |
-| `vBUnmount`  | vue2 生命周期 beforeUnmount          |
-| `vUnmounted` | vue2 生命周期 unmounted              |
-| `vCommit`    | vue2 提交一个 commit                 |
-| `vDispatch`  | vue2 提交一个 dispatch               |
+| Prefix        | Snippets                             |
+| ------------- | ------------------------------------ |
+| `vdata`       | vue2 data                            |
+| `vComponents` | vue2 components                      |
+| `vProp`       | vue2 props                           |
+| `vPD`         | vue2 props ( default )               |
+| `vPDR`        | vue2 props ( default required )      |
+| `vEmit`       | vue2 emit                            |
+| `vMixins`     | vue2 混入 mixins                     |
+| `vMethods`    | vue2 方法 methods                    |
+| `vComputed`   | vue2 计算属性 computed               |
+| `vCS`         | vue2 计算属性 computed ( setter )    |
+| `vWatch`      | vue2 侦听器 watch                    |
+| `vWD`         | vue2 侦听器 watch ( deep )           |
+| `vWI`         | vue2 侦听器 watch ( immediate )      |
+| `vWDI`        | vue2 侦听器 watch ( deep immediate ) |
+| `vFilters`    | vue2 过滤器 filters                  |
+| `vBCreate`    | vue2 生命周期 beforeCreate           |
+| `vCreated`    | vue2 生命周期 created                |
+| `vBMount`     | vue2 生命周期 beforeMount            |
+| `vMounted`    | vue2 生命周期 mounted                |
+| `vBUpdate`    | vue2 生命周期 beforeUpdate           |
+| `vUpdated`    | vue2 生命周期 updated                |
+| `vBUnmount`   | vue2 生命周期 beforeUnmount          |
+| `vUnmounted`  | vue2 生命周期 unmounted              |
+| `vCommit`     | vue2 提交一个 commit                 |
+| `vDispatch`   | vue2 提交一个 dispatch               |
 
 ## Vue3
 
@@ -146,22 +147,11 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `vrBRUpdate` | beforeRouteUpdate 组件内的守卫 ( Update ) |
 | `vrBRLeave`  | beforeRouteLeave 组件内的守卫 ( Leave )   |
 
-## Vuex
-
-| Prefix       | Snippets                                  |
-| ------------ | ----------------------------------------- |
-| `vrBEach`    | beforeEach 全局前置守卫                   |
-| `vrBResolve` | beforeResolve 全局解析守卫                |
-| `vrAEach`    | afterEach 全局后置钩子                    |
-| `vrBEnter`   | beforeEnter 路由独享的守卫                |
-| `vrBREnter`  | beforeRouteEnter 组件内的守卫 ( Enter )   |
-| `vrBRUpdate` | beforeRouteUpdate 组件内的守卫 ( Update ) |
-| `vrBRLeave`  | beforeRouteLeave 组件内的守卫 ( Leave )   |
-
 ## less & scss
 
 | Prefix                 | Snippets            |
 | ---------------------- | ------------------- |
+| `flex`                 | display flex        |
 | `fcc`                  | flex 横向垂直居中   |
 | `txt1` ,`txt2`, `txt3` | 文本溢出省略 1~3 行 |
 | `scroll-l`             | 左边滚动条样式      |
