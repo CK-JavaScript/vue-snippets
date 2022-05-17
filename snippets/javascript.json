@@ -481,13 +481,13 @@
   "🎯 v2 Commit ": {
     "prefix": "vCommit ",
     "body": [
-      "this.$store.commit('${1:mutationName}', ${2:payload})",
+      "this.$store.commit('${1:mutationName}', ${2:payload})"
     ]
   },
   "🎯 v2 dispatch ": {
     "prefix": "vDispatch ",
     "body": [
-      "this.$store.dispatch('${1:actionName}', ${2:payload})",
+      "this.$store.dispatch('${1:actionName}', ${2:payload})"
     ]
   },
   "🎯 v3 setup": {
