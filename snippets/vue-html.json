@@ -1,66 +1,66 @@
 {
   "🎯 vIf=''": {
-    "prefix": " vIf",
+    "prefix": " if",
     "body": [
       " v-if=\"$1\""
     ]
   },
   "🎯 vElseIf=''": {
-    "prefix": " vElseIf",
+    "prefix": " eif",
     "body": [
       " v-else-if=\"$1\""
     ]
   },
   "🎯 vElse": {
-    "prefix": " vElse",
+    "prefix": " else",
     "body": [
-      " v-else"
+      " v-else=\"$1\""
     ]
   },
   "🎯 vFor='item in data'": {
-    "prefix": " vForI",
+    "prefix": " fi",
     "body": [
       " v-for=\"item in $1\" :key=\"item\""
     ]
   },
   "🎯 vFor='(item,index) in data'": {
-    "prefix": " vForII",
+    "prefix": " fii",
     "body": [
       " v-for=\"(item,index) in $1\" :key=\"item\""
     ]
   },
   "🎯 vModel": {
-    "prefix": " vModel",
+    "prefix": " model",
     "body": [
       " v-model=\"${1:variable}\""
     ]
   },
   "🎯 :class='{class:calc}'": {
-    "prefix": " vCData",
+    "prefix": " cData",
     "body": [
       " :class=\"{${1:class}:${2:data}}\""
     ]
   },
   "🎯 :class='[calc ? classA : classB]'": {
-    "prefix": " vCCalc",
+    "prefix": " cCalc",
     "body": [
       " :class=\"[${1:calc} ? '${2:classA}' : '${3:classB}']\""
     ]
   },
   "🎯 :style='{}'": {
-    "prefix": " vStyle",
+    "prefix": " style",
     "body": [
       " :style=\"{}\""
     ]
   },
   "🎯 :style='{style:calc}'": {
-    "prefix": " vSData",
+    "prefix": " sData",
     "body": [
       " :style=\"{${1:style}:${2:data}}\""
     ]
   },
   "🎯 :style='[styleName:calc ? styleA : styleB]'": {
-    "prefix": " vSCalc",
+    "prefix": " sCalc",
     "body": [
       " :style=\"{${1:styleName}:${2:calc}?${3:styleA}:${4:styleB}}\""
     ]

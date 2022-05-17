@@ -15,7 +15,7 @@
     "prefix": "fun",
     "body": [
       "function ${1:name}(params) {",
-      "  ",
+      "  $2",
       "}"
     ]
   },
@@ -23,7 +23,7 @@
     "prefix": "OF",
     "body": [
       "${1:name}(params) {",
-      "  ",
+      "  $2",
       "}"
     ]
   },
@@ -76,7 +76,7 @@
       "    break;",
       "  default:",
       "    ",
-      "}"
+      "},"
     ]
   },
   "🎯 setInterval": {
@@ -262,7 +262,7 @@
       "  return {",
       "    $1",
       "  }",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 components": {
@@ -270,7 +270,7 @@
     "body": [
       "components: {",
       "  $1",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 props": {
@@ -280,7 +280,7 @@
       "  ${1:propName}: {",
       "    type: null",
       "  }",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 props default": {
@@ -291,7 +291,7 @@
       "    type: null,",
       "    default: ${2:default}",
       "  }",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 props default required": {
@@ -303,7 +303,7 @@
       "    default: ${2:default},",
       "    required: true",
       "  }",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 emit": {
@@ -319,7 +319,7 @@
       "  ${1:name}() {",
       "    ",
       "  }",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 computed": {
@@ -329,7 +329,7 @@
       "  ${1:name}() {",
       "    return $2",
       "  }",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 computed setter": {
@@ -345,7 +345,7 @@
       "      ",
       "    },",
       "  }",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 watch": {
@@ -355,7 +355,7 @@
       "  ${1:name}(newValue, oldValue) {",
       "    $2",
       "  }",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 watch deep": {
@@ -368,7 +368,7 @@
       "    },",
       "    deep:true,",
       "  }",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 watch immediate": {
@@ -381,7 +381,7 @@
       "    },",
       "    immediate:true,",
       "  }",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 watch deep immediate": {
@@ -395,7 +395,7 @@
       "    deep:true,",
       "    immediate:true,",
       "  }",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 filters": {
@@ -405,7 +405,7 @@
       "  ${1:name}(value) {",
       "    return value",
       "  }",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 mixins": {
@@ -419,7 +419,7 @@
     "body": [
       "beforeCreate () {",
       "  ",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 created": {
@@ -427,7 +427,7 @@
     "body": [
       "created () {",
       "  ",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 beforeMount": {
@@ -435,7 +435,7 @@
     "body": [
       "beforeMount () {",
       "  ",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 mounted": {
@@ -443,7 +443,7 @@
     "body": [
       "mounted () {",
       "  ",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 beforeUpdate": {
@@ -451,7 +451,7 @@
     "body": [
       "beforeUpdate () {",
       "  ",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 updated": {
@@ -459,7 +459,7 @@
     "body": [
       "updated () {",
       "  ",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 beforeUnmount": {
@@ -467,7 +467,7 @@
     "body": [
       "beforeUnmount () {",
       "  ",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 unmounted": {
@@ -475,23 +475,19 @@
     "body": [
       "unmounted () {",
       "  ",
-      "}"
+      "},"
     ]
   },
   "🎯 v2 Commit ": {
     "prefix": "vCommit ",
     "body": [
-      "${1:mutationName}() {",
-      "  this.$store.commit('${1:mutationName}', ${2:payload})",
-      "}"
+      "this.$store.commit('${1:mutationName}', ${2:payload})",
     ]
   },
   "🎯 v2 dispatch ": {
     "prefix": "vDispatch ",
     "body": [
-      "${1:actionName}() {",
-      "  this.$store.dispatch('${1:actionName}', ${2:payload})",
-      "}"
+      "this.$store.dispatch('${1:actionName}', ${2:payload})",
     ]
   },
   "🎯 v3 setup": {
@@ -499,7 +495,7 @@
     "body": [
       "setup(){",
       "  ",
-      "}"
+      "},"
     ]
   },
   "🎯 v3 setup 带参数": {
@@ -507,7 +503,7 @@
     "body": [
       "setup(props, {attrs, slots, emit}){",
       "  ",
-      "}"
+      "},"
     ]
   },
   "🎯 v3 useRouter": {
@@ -744,7 +740,7 @@
     "body": [
       "router.beforeEach((to, from, next) => {",
       "  $1",
-      "}"
+      "},"
     ]
   },
   "🎯 vueRouter beforeResolve 全局解析守卫": {
@@ -752,7 +748,7 @@
     "body": [
       "router.beforeResolve((to, from, next) => {",
       "  $1",
-      "}"
+      "},"
     ]
   },
   "🎯 vueRouter afterEach 全局后置钩子": {
@@ -760,7 +756,7 @@
     "body": [
       "router.afterEach((to, from) => {",
       "  $1",
-      "}"
+      "},"
     ]
   },
   "🎯 vueRouter beforeEnter 路由独享的守卫": {
@@ -768,7 +764,7 @@
     "body": [
       "beforeEnter: (to, from, next) => {",
       "  $1",
-      "}"
+      "},"
     ]
   },
   "🎯 vueRouter beforeRouteEnter  组件内的守卫 ( 进入 ) ": {
@@ -776,7 +772,7 @@
     "body": [
       "beforeRouteEnter(to, from, next) {",
       "  $1",
-      "}"
+      "},"
     ]
   },
   "🎯 vueRouter beforeRouteUpdate 组件内的守卫 ( 更新 )": {
@@ -784,7 +780,7 @@
     "body": [
       "beforeRouteUpdate(to, from, next) {",
       "  $1",
-      "}"
+      "},"
     ]
   },
   "🎯 vueRouter beforeRouteLeave 组件内的守卫 ( 离开 ) ": {
@@ -792,7 +788,7 @@
     "body": [
       "beforeRouteLeave(to, from, next) {",
       "  $1",
-      "}"
+      "},"
     ]
   },
   "🎯 Pinia": {

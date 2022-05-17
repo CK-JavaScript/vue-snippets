@@ -45,8 +45,8 @@
       "-webkit-box-orient: vertical;"
     ]
   },
-  "🎯 左边滚动条样式": {
-    "prefix": "scroll-l",
+  "🎯 x 滚动条样式": {
+    "prefix": "scroll-x",
     "body": [
       "overflow-x: auto;",
       "&::-webkit-scrollbar {",
@@ -60,7 +60,7 @@
       "}"
     ]
   },
-  "🎯 下边滚动条样式": {
+  "🎯 y 滚动条样式": {
     "prefix": "scroll-b",
     "body": [
       "overflow-y: auto;",

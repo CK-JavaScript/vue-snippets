@@ -7,7 +7,6 @@ VSCode 代码片段包含，直接安装插件即可使用。
 - vue
 - JavaScript
 - typescript
-- css
 - less
 - scss
 ```
@@ -44,15 +43,17 @@ VSCode 代码片段包含，直接安装插件即可使用。
 
 | Prefix   | Snippets                                |
 | -------- | --------------------------------------- |
-| `vIf`    | v-if="$1"                               |
-| `vForI`  | v-for="item in $1" :key="item"          |
-| `vForII` | v-for="(item, index) in $1" :key="item" |
-| `vModel` | v-model="$1"                            |
-| `vCData` | :class="{ $1 : $2 }"                    |
-| `vCCalc` | :class="[ $1 ? $2 : $3 ]"               |
-| `vStyle` | :style="{}"                             |
-| `vSData` | :style="{ $1 : $2 }"                    |
-| `vSCalc` | :style="{ $1 : $2 ? $3 : $4}"           |
+| ` if`    | v-if="$1"                               |
+| ` eif`   | v-else-if="$1"                          |
+| ` else`  | v-else="$1"                             |
+| ` fi`    | v-for="item in $1" :key="item"          |
+| ` fii`   | v-for="(item, index) in $1" :key="item" |
+| ` model` | v-model="$1"                            |
+| ` cData` | :class="{ $1 : $2 }"                    |
+| ` cCalc` | :class="[ $1 ? $2 : $3 ]"               |
+| ` style` | :style="{}"                             |
+| ` sData` | :style="{ $1 : $2 }"                    |
+| ` sCalc` | :style="{ $1 : $2 ? $3 : $4}"           |
 
 ## Vue base
 
@@ -154,8 +155,8 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `flex`                 | display flex        |
 | `fcc`                  | flex 横向垂直居中   |
 | `txt1` ,`txt2`, `txt3` | 文本溢出省略 1~3 行 |
-| `scroll-l`             | 左边滚动条样式      |
-| `scroll-b`             | 下边滚动条样式      |
+| `scrollX`              | X 滚动条样式        |
+| `scrollY`              | Y 滚动条样式        |
 
 ## pinia
 
