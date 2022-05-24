@@ -104,37 +104,38 @@ VSCode 代码片段包含，直接安装插件即可使用。
 
 ## Vue3
 
-| Prefix        | Snippets                                  |
-| ------------- | ----------------------------------------- |
-| `vvSetup`     | vue3 setup(){}                            |
-| `vvRoute`     | vue3 useRoute                             |
-| `vvRouter`    | vue3 useRouter                            |
-| `vvStore`     | vue3 useStore                             |
-| `vvCommit`    | vue3 store.commit("")                     |
-| `vvDispatch`  | vue3 store.dispatch("")                   |
-| `vvRef`       | vue3 ref                                  |
-| `vvReactive`  | vue3 reactive                             |
-| `vvProps`     | vue3 defineProps                          |
-| `vvEmits`     | vue3 defineEmits                          |
-| `vvSlots`     | vue3 useSlots                             |
-| `vvAttrs`     | vue3 useAttrs                             |
-| `vvExpose`    | vue3 暴露数据 defineExpose                |
-| `vvComputed`  | vue3 计算属性 computed                    |
-| `vvWatch`     | vue3 侦听器 watch                         |
-| `vvWD`        | vue3 侦听器 watch ( deep )                |
-| `vvWI`        | vue3 侦听器 watch ( immediate )           |
-| `vvWDI`       | vue3 侦听器 watch ( deep immediate )      |
-| `vvW-MR`      | vue3 侦听器 Watch more ref                |
-| `vvW-SR`      | vue3 侦听器 Watch single data in reactive |
-| `vvWE`        | vue3 侦听器 watchEffect                   |
-| `vvBMounted`  | vue3 生命周期 onBeforeMount               |
-| `vvMounted`   | vue3 生命周期 onMounted                   |
-| `vvBUpdate`   | vue3 生命周期 onBeforeUpdate              |
-| `vvUpdated`   | vue3 生命周期 onUpdated                   |
-| `vvBUnmount`  | vue3 生命周期 onBeforeUnmount             |
-| `vvUnmounted` | vue3 生命周期 onUnmounted                 |
-| `vvGP`        | vue3 全局属性 globalProperties            |
-| `vvNextTick`  | vue3 NextTick                             |
+| Prefix         | Snippets                                  |
+| -------------- | ----------------------------------------- |
+| `vvFun`        | vue3 定义一个函数                         |
+| `vvSetup`      | vue3 setup(){}                            |
+| `vvRoute`      | vue3 useRoute                             |
+| `vvRouter`     | vue3 useRouter                            |
+| `vvStore`      | vue3 useStore                             |
+| `vvCommit`     | vue3 store.commit("")                     |
+| `vvDispatch`   | vue3 store.dispatch("")                   |
+| `vvRef`        | vue3 ref                                  |
+| `vvReactive`   | vue3 reactive                             |
+| `vvProps`      | vue3 defineProps                          |
+| `vvEmits`      | vue3 defineEmits                          |
+| `vvSlots`      | vue3 useSlots                             |
+| `vvAttrs`      | vue3 useAttrs                             |
+| `vvExpose`     | vue3 暴露数据 defineExpose                |
+| `vvComputed`   | vue3 计算属性 computed                    |
+| `vvWatch`      | vue3 侦听器 watch                         |
+| `vvWD`         | vue3 侦听器 watch ( deep )                |
+| `vvWI`         | vue3 侦听器 watch ( immediate )           |
+| `vvWDI`        | vue3 侦听器 watch ( deep immediate )      |
+| `vvWMRef`      | vue3 侦听器 Watch more ref                |
+| `vvWSReactive` | vue3 侦听器 Watch single data in reactive |
+| `vvWE`         | vue3 侦听器 watchEffect                   |
+| `vvBMounted`   | vue3 生命周期 onBeforeMount               |
+| `vvMounted`    | vue3 生命周期 onMounted                   |
+| `vvBUpdate`    | vue3 生命周期 onBeforeUpdate              |
+| `vvUpdated`    | vue3 生命周期 onUpdated                   |
+| `vvBUnmount`   | vue3 生命周期 onBeforeUnmount             |
+| `vvUnmounted`  | vue3 生命周期 onUnmounted                 |
+| `vvGP`         | vue3 全局属性 globalProperties            |
+| `vvNextTick`   | vue3 NextTick                             |
 
 ## vueRouter
 

@@ -490,6 +490,14 @@
       "this.$store.dispatch('${1:actionName}', ${2:payload})"
     ]
   },
+  "🎯 v3 定义一个函数 ": {
+    "prefix": "vvFun",
+    "body": [
+      "const ${1:name} = () => {",
+      "  $2",
+      "}"
+    ]
+  },
   "🎯 v3 setup": {
     "prefix": "vvSetup",
     "body": [
@@ -539,13 +547,13 @@
   "🎯 v3 ref": {
     "prefix": "vvRef",
     "body": [
-      "const ${1:name} = ref(${2:variable})"
+      "const ${1:variable} = ref(${2:variable})"
     ]
   },
   "🎯 v3 reactive": {
     "prefix": "vvReactive",
     "body": [
-      "const ${1:name} = reactive({",
+      "const ${1:variable} = reactive({",
       "  $2",
       "})"
     ]
@@ -634,7 +642,7 @@
     ]
   },
   "🎯 v3 watch 多个 ref 数据": {
-    "prefix": "vvW-MRef",
+    "prefix": "vvWMRef",
     "body": [
       "watch([name$1, name$2], (newValue, oldValue) => {",
       "  $2",
@@ -642,7 +650,7 @@
     ]
   },
   "🎯 v3 watch reactive 中的单个数据": {
-    "prefix": "vvW-SReactive",
+    "prefix": "vvWSReactive",
     "body": [
       "watch(() => ${1:a.b}, (newValue, oldValue) => {",
       "  $2",
