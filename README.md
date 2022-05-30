@@ -43,11 +43,12 @@ VSCode 代码片段包含，直接安装插件即可使用。
 
 | Prefix   | Snippets                                |
 | -------- | --------------------------------------- |
+| ` click` | @click="$1"                             |
 | ` if`    | v-if="$1"                               |
 | ` eif`   | v-else-if="$1"                          |
 | ` else`  | v-else="$1"                             |
-| ` fi`    | v-for="item in $1" :key="item"          |
-| ` fii`   | v-for="(item, index) in $1" :key="item" |
+| ` fori`  | v-for="item in $1" :key="item"          |
+| ` forii` | v-for="(item, index) in $1" :key="item" |
 | ` model` | v-model="$1"                            |
 | ` cData` | :class="{ $1 : $2 }"                    |
 | ` cCalc` | :class="[ $1 ? $2 : $3 ]"               |

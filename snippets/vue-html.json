@@ -1,4 +1,10 @@
 {
+  "🎯 @click=''": {
+    "prefix": " click",
+    "body": [
+      " @click=\"$1\""
+    ]
+  },
   "🎯 vIf=''": {
     "prefix": " if",
     "body": [
@@ -18,13 +24,13 @@
     ]
   },
   "🎯 vFor='item in data'": {
-    "prefix": " fi",
+    "prefix": " fori",
     "body": [
       " v-for=\"item in $1\" :key=\"item\""
     ]
   },
   "🎯 vFor='(item,index) in data'": {
-    "prefix": " fii",
+    "prefix": " forii",
     "body": [
       " v-for=\"(item,index) in $1\" :key=\"item\""
     ]

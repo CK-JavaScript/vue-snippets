@@ -2,7 +2,7 @@
   "🎯 log 字符:变量": {
     "prefix": "cls",
     "body": [
-      "console.log('${0:string} >>',${0:variable})"
+      "console.log(`🚀 ${0:string}`)"
     ]
   },
   "🎯 log 变量": {
@@ -76,7 +76,7 @@
       "    break;",
       "  default:",
       "    ",
-      "},"
+      "}"
     ]
   },
   "🎯 setInterval": {
@@ -274,7 +274,7 @@
     ]
   },
   "🎯 v2 props": {
-    "prefix": "vProp",
+    "prefix": "vProps",
     "body": [
       "props: {",
       "  ${1:propName}: {",
