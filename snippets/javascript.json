@@ -2,13 +2,13 @@
   "🎯 log 字符:变量": {
     "prefix": "cls",
     "body": [
-      "console.log(`🚀 ${0:string}`)"
+      "console.log(`🚀 ~ ${0:string}`)"
     ]
   },
   "🎯 log 变量": {
     "prefix": "clv",
     "body": [
-      "console.log(${1:variable})"
+      "console.log(`🚀 ~ ${1:variable}`)"
     ]
   },
   "🎯 普通函数": {
@@ -20,7 +20,7 @@
     ]
   },
   "🎯 对象函数的简写": {
-    "prefix": "OF",
+    "prefix": "of",
     "body": [
       "${1:name}(params) {",
       "  $2",
@@ -28,7 +28,7 @@
     ]
   },
   "🎯 箭头函数": {
-    "prefix": "AF",
+    "prefix": "af",
     "body": [
       "(parame) => {",
       "  $1",
@@ -36,7 +36,7 @@
     ]
   },
   "🎯 带名字的箭头函数": {
-    "prefix": "AFN",
+    "prefix": "afn",
     "body": [
       "const ${1:name} = () => {",
       "  $2",
@@ -68,7 +68,7 @@
     ]
   },
   "🎯 switch case 循环": {
-    "prefix": "SC",
+    "prefix": "sc",
     "body": [
       "switch (val) {",
       "  case \"\":",
@@ -80,7 +80,7 @@
     ]
   },
   "🎯 setInterval": {
-    "prefix": "SIT",
+    "prefix": "si",
     "body": [
       "setInterval(() => {",
       "  $2",
@@ -88,7 +88,7 @@
     ]
   },
   "🎯 setTimeout": {
-    "prefix": "ST",
+    "prefix": "st",
     "body": [
       "setTimeout(() => {",
       "  $2",
