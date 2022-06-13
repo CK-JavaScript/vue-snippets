@@ -1,1 +1,114 @@
-{}
+{
+  "🎯 log 变量": {
+    "prefix": "clv",
+    "body": [
+      "console.log(`🚀 ~ ${1:variable}`)"
+    ]
+  },
+  "🎯 普通函数": {
+    "prefix": "fun",
+    "body": [
+      "function ${1:name}(params) {",
+      "  $2",
+      "}"
+    ]
+  },
+  "🎯 对象函数的简写": {
+    "prefix": "of",
+    "body": [
+      "${1:name}(params) {",
+      "  $2",
+      "}"
+    ]
+  },
+  "🎯 箭头函数": {
+    "prefix": "af",
+    "body": [
+      "(res) => {",
+      "  $1",
+      "}"
+    ]
+  },
+  "🎯 带名字的箭头函数": {
+    "prefix": "afn",
+    "body": [
+      "const ${1:name} = () => {",
+      "  $2",
+      "}"
+    ]
+  },
+  "🎯 for 循环": {
+    "prefix": "for",
+    "body": [
+      "for (let i = 0; i < ${1:array}; i++) {",
+      "  $2",
+      "}"
+    ]
+  },
+  "🎯 for-of 循环": {
+    "prefix": "fof",
+    "body": [
+      "for (const item of ${1:object}) {",
+      "  $2",
+      "}"
+    ]
+  },
+  "🎯 for-in 循环": {
+    "prefix": "fin",
+    "body": [
+      "for (const item in ${1:object}) {",
+      "  $2",
+      "}"
+    ]
+  },
+  "🎯 switch case 循环": {
+    "prefix": "sc",
+    "body": [
+      "switch (val) {",
+      "  case \"\":",
+      "    ",
+      "    break;",
+      "  default:",
+      "    ",
+      "}"
+    ]
+  },
+  "🎯 setInterval": {
+    "prefix": "si",
+    "body": [
+      "setInterval(() => {",
+      "  $2",
+      "}, ${1:intervalInms})"
+    ]
+  },
+  "🎯 setTimeout": {
+    "prefix": "st",
+    "body": [
+      "setTimeout(() => {",
+      "  $2",
+      "}, ${1:delayInms})"
+    ]
+  },
+  "🎯 new Promise": {
+    "prefix": "newPro",
+    "body": [
+      "new Promise(function (resolve, reject) {",
+      "  resolve()",
+      "})"
+    ]
+  },
+  "🎯 new Promise().then().catch().finally()": {
+    "prefix": "newProTCF",
+    "body": [
+      "new Promise(function (resolve, reject) {",
+      "  resolve();",
+      "}).then(value => {",
+      "  ",
+      "}).catch(reason => {",
+      "  ",
+      "}).finally(() => {",
+      "  ",
+      "})"
+    ]
+  }
+}
