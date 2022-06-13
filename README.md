@@ -20,15 +20,15 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `cls`       | console.log( ' $1 >> ', $1 );          |
 | `clv`       | console.log( $1 )                      |
 | `fun`       | function name(){}                      |
-| `OF`        | name(){}                               |
-| `AF`        | arrow function                         |
-| `AFN`       | named arrow function                   |
+| `of`        | name(){}                               |
+| `af`        | arrow function                         |
+| `afn`       | named arrow function                   |
 | `for`       | for loop                               |
 | `fof`       | fof loop                               |
 | `fin`       | fin loop                               |
-| `SC`        | switch case loop                       |
-| `SIT`       | setInterval                            |
-| `ST`        | setTimeout                             |
+| `sc`        | switch case loop                       |
+| `sit`       | setInterval                            |
+| `st`        | setTimeout                             |
 | `newPro`    | new Promise                            |
 | `newProTCF` | new Promise().then().catch().finally() |
 
