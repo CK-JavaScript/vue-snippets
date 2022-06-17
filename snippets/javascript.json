@@ -1,8 +1,14 @@
 {
+    "🎯 log 字符串": {
+      "prefix": "cls",
+      "body": [
+        "console.log(`🚀 ~ $1`)"
+      ]
+    },
   "🎯 log 变量": {
     "prefix": "clv",
     "body": [
-      "console.log(`🚀 ~ ${1:variable}`)"
+      "console.log(`🚀 ~ `, $1)"
     ]
   },
   "🎯 普通函数": {

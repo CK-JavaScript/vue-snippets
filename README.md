@@ -17,8 +17,8 @@ VSCode 代码片段包含，直接安装插件即可使用。
 
 | Prefix      | Snippets                               |
 | ----------- | -------------------------------------- |
-| `cls`       | console.log( ' $1 >> ', $1 );          |
-| `clv`       | console.log( $1 )                      |
+| `cls`       | console.log( string )                      |
+| `clv`       | console.log( variable )                      |
 | `fun`       | function name(){}                      |
 | `of`        | name(){}                               |
 | `af`        | arrow function                         |
