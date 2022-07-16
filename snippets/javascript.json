@@ -1,14 +1,14 @@
 {
-    "🎯 log 字符串": {
-      "prefix": "cls",
-      "body": [
-        "console.log(`🚀 ~ $1`)"
-      ]
-    },
+  "🎯 log 字符串": {
+    "prefix": "cls",
+    "body": [
+      "console.log(`🎯 ~ $1`)"
+    ]
+  },
   "🎯 log 变量": {
     "prefix": "clv",
     "body": [
-      "console.log(`🚀 ~ `, $1)"
+      "console.log(`🎯 ~ `, $1)"
     ]
   },
   "🎯 普通函数": {
@@ -120,13 +120,13 @@
   "🎯 import": {
     "prefix": "imp",
     "body": [
-      "import $2 from '$1'"
+      "import $1 from '$2'"
     ]
   },
   "🎯 import 解构": {
     "prefix": "imd",
     "body": [
-      "import { $2 } from '$1'"
+      "import { $1 } from '$2'"
     ]
   },
   "🎯 import reactive": {
@@ -198,31 +198,31 @@
   "🎯 import onBeforeMount": {
     "prefix": " iBMount",
     "body": [
-      "onBeforeMount "
+      "onBeforeMount"
     ]
   },
   "🎯 import onMounted ": {
     "prefix": " iMounted",
     "body": [
-      "onMounted "
+      "onMounted"
     ]
   },
   "🎯 import onBeforeUpdate ": {
     "prefix": " iBUpdate",
     "body": [
-      "onBeforeUpdate "
+      "onBeforeUpdate"
     ]
   },
   "🎯 import onUpdated ": {
     "prefix": " iUpdated",
     "body": [
-      "onUpdated "
+      "onUpdated"
     ]
   },
   "🎯 import onBeforeUnmount ": {
     "prefix": " iBUnmount",
     "body": [
-      "onBeforeUnmount "
+      "onBeforeUnmount"
     ]
   },
   "🎯 import onUnmounted": {
