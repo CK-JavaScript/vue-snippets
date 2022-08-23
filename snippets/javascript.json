@@ -414,6 +414,32 @@
       "mixins: [${1:name}]"
     ]
   },
+  "🎯 v2 nextNick": {
+    "prefix": "vNextNick",
+    "body": [
+      "this.$nextTick(() => {",
+      "  $1",
+      "})"
+    ]
+  },
+  "🎯 v2 vRouterPush": {
+    "prefix": "vRouterPush",
+    "body": [
+      "this.$router.push()"
+    ]
+  },
+  "🎯 v2 vRouterReplace": {
+    "prefix": "vRouterReplace",
+    "body": [
+      "this.$router.replace()"
+    ]
+  },
+  "🎯 v2 vRouterGo": {
+    "prefix": "vRouterGo",
+    "body": [
+      "this.$router.go()"
+    ]
+  },
   "🎯 v2 beforeCreate": {
     "prefix": "vBCreate",
     "body": [

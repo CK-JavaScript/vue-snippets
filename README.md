@@ -17,8 +17,8 @@ VSCode 代码片段包含，直接安装插件即可使用。
 
 | Prefix      | Snippets                               |
 | ----------- | -------------------------------------- |
-| `cls`       | console.log( string )                      |
-| `clv`       | console.log( variable )                      |
+| `cls`       | console.log( string )                  |
+| `clv`       | console.log( variable )                |
 | `fun`       | function name(){}                      |
 | `of`        | name(){}                               |
 | `af`        | arrow function                         |
@@ -75,33 +75,37 @@ VSCode 代码片段包含，直接安装插件即可使用。
 
 ## Vue2
 
-| Prefix        | Snippets                             |
-| ------------- | ------------------------------------ |
-| `vdata`       | vue2 data                            |
-| `vComponents` | vue2 components                      |
-| `vProp`       | vue2 props                           |
-| `vPD`         | vue2 props ( default )               |
-| `vPDR`        | vue2 props ( default required )      |
-| `vEmit`       | vue2 emit                            |
-| `vMixins`     | vue2 混入 mixins                     |
-| `vMethods`    | vue2 方法 methods                    |
-| `vComputed`   | vue2 计算属性 computed               |
-| `vCS`         | vue2 计算属性 computed ( setter )    |
-| `vWatch`      | vue2 侦听器 watch                    |
-| `vWD`         | vue2 侦听器 watch ( deep )           |
-| `vWI`         | vue2 侦听器 watch ( immediate )      |
-| `vWDI`        | vue2 侦听器 watch ( deep immediate ) |
-| `vFilters`    | vue2 过滤器 filters                  |
-| `vBCreate`    | vue2 生命周期 beforeCreate           |
-| `vCreated`    | vue2 生命周期 created                |
-| `vBMount`     | vue2 生命周期 beforeMount            |
-| `vMounted`    | vue2 生命周期 mounted                |
-| `vBUpdate`    | vue2 生命周期 beforeUpdate           |
-| `vUpdated`    | vue2 生命周期 updated                |
-| `vBUnmount`   | vue2 生命周期 beforeUnmount          |
-| `vUnmounted`  | vue2 生命周期 unmounted              |
-| `vCommit`     | vue2 提交一个 commit                 |
-| `vDispatch`   | vue2 提交一个 dispatch               |
+| Prefix           | Snippets                             |
+| ---------------- | ------------------------------------ |
+| `vdata`          | vue2 data                            |
+| `vComponents`    | vue2 components                      |
+| `vProp`          | vue2 props                           |
+| `vPD`            | vue2 props ( default )               |
+| `vPDR`           | vue2 props ( default required )      |
+| `vEmit`          | vue2 emit                            |
+| `vMixins`        | vue2 混入 mixins                     |
+| `vMethods`       | vue2 方法 methods                    |
+| `vComputed`      | vue2 计算属性 computed               |
+| `vCS`            | vue2 计算属性 computed ( setter )    |
+| `vWatch`         | vue2 侦听器 watch                    |
+| `vWD`            | vue2 侦听器 watch ( deep )           |
+| `vWI`            | vue2 侦听器 watch ( immediate )      |
+| `vWDI`           | vue2 侦听器 watch ( deep immediate ) |
+| `vFilters`       | vue2 过滤器 filters                  |
+| `vNextNick`      | vue2 NextNick                        |
+| `vRouterPush`    | vue2 this.$router.push()             |
+| `vRouterReplace` | vue2 this.$router.replace()          |
+| `vRouterGo`      | vue2 this.$router.go()               |
+| `vBCreate`       | vue2 生命周期 beforeCreate           |
+| `vCreated`       | vue2 生命周期 created                |
+| `vBMount`        | vue2 生命周期 beforeMount            |
+| `vMounted`       | vue2 生命周期 mounted                |
+| `vBUpdate`       | vue2 生命周期 beforeUpdate           |
+| `vUpdated`       | vue2 生命周期 updated                |
+| `vBUnmount`      | vue2 生命周期 beforeUnmount          |
+| `vUnmounted`     | vue2 生命周期 unmounted              |
+| `vCommit`        | vue2 提交一个 commit                 |
+| `vDispatch`      | vue2 提交一个 dispatch               |
 
 ## Vue3
 
