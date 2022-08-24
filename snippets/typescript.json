@@ -1,17 +1,17 @@
 {
-  "🎯 log 字符串": {
+  "log 字符串": {
     "prefix": "cls",
     "body": [
       "console.log(`🚀 ~ $1`)"
     ]
   },
-  "🎯 log 变量": {
+  "log 变量": {
     "prefix": "clv",
     "body": [
       "console.log(`🚀 ~ `, $1)"
     ]
   },
-  "🎯 普通函数": {
+  "普通函数": {
     "prefix": "fun",
     "body": [
       "function ${1:name}(params) {",
@@ -19,7 +19,7 @@
       "}"
     ]
   },
-  "🎯 对象函数的简写": {
+  "对象函数的简写": {
     "prefix": "of",
     "body": [
       "${1:name}(params) {",
@@ -27,7 +27,7 @@
       "}"
     ]
   },
-  "🎯 箭头函数": {
+  "箭头函数": {
     "prefix": "af",
     "body": [
       "(res) => {",
@@ -35,7 +35,7 @@
       "}"
     ]
   },
-  "🎯 带名字的箭头函数": {
+  "带名字的箭头函数": {
     "prefix": "afn",
     "body": [
       "const ${1:name} = () => {",
@@ -43,7 +43,7 @@
       "}"
     ]
   },
-  "🎯 for 循环": {
+  "for 循环": {
     "prefix": "for",
     "body": [
       "for (let i = 0; i < ${1:array}; i++) {",
@@ -51,7 +51,7 @@
       "}"
     ]
   },
-  "🎯 for-of 循环": {
+  "for-of 循环": {
     "prefix": "fof",
     "body": [
       "for (const item of ${1:object}) {",
@@ -59,7 +59,7 @@
       "}"
     ]
   },
-  "🎯 for-in 循环": {
+  "for-in 循环": {
     "prefix": "fin",
     "body": [
       "for (const item in ${1:object}) {",
@@ -67,7 +67,7 @@
       "}"
     ]
   },
-  "🎯 switch case 循环": {
+  "switch case 循环": {
     "prefix": "sc",
     "body": [
       "switch (val) {",
@@ -79,7 +79,7 @@
       "}"
     ]
   },
-  "🎯 setInterval": {
+  "setInterval": {
     "prefix": "si",
     "body": [
       "setInterval(() => {",
@@ -87,7 +87,7 @@
       "}, ${1:intervalInms})"
     ]
   },
-  "🎯 setTimeout": {
+  "setTimeout": {
     "prefix": "st",
     "body": [
       "setTimeout(() => {",
@@ -95,7 +95,7 @@
       "}, ${1:delayInms})"
     ]
   },
-  "🎯 new Promise": {
+  "new Promise": {
     "prefix": "newPro",
     "body": [
       "new Promise(function (resolve, reject) {",
@@ -103,7 +103,7 @@
       "})"
     ]
   },
-  "🎯 new Promise().then().catch().finally()": {
+  "new Promise().then().catch().finally()": {
     "prefix": "newProTCF",
     "body": [
       "new Promise(function (resolve, reject) {",

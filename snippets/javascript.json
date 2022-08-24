@@ -1,77 +1,77 @@
 {
-  "🎯 log 字符串": {
+  "log 字符串": {
     "prefix": "cls",
     "body": [
-      "console.log(`🎯 ~ $1`)"
+      "console.log(`~ $1`)"
     ]
   },
-  "🎯 log 变量": {
+  "log 变量": {
     "prefix": "clv",
     "body": [
-      "console.log(`🎯 ~ `, $1)"
+      "console.log(`~ $1`, $1)"
     ]
   },
-  "🎯 普通函数": {
+  "普通函数": {
     "prefix": "fun",
     "body": [
       "function ${1:name}(params) {",
-      "  $2",
+      "  $0",
       "}"
     ]
   },
-  "🎯 对象函数的简写": {
+  "对象函数的简写": {
     "prefix": "of",
     "body": [
       "${1:name}(params) {",
-      "  $2",
+      "  $0",
       "}"
     ]
   },
-  "🎯 箭头函数": {
+  "箭头函数": {
     "prefix": "af",
     "body": [
-      "(res) => {",
-      "  $1",
+      "res => {",
+      "  $0",
       "}"
     ]
   },
-  "🎯 带名字的箭头函数": {
+  "带名字的箭头函数": {
     "prefix": "afn",
     "body": [
       "const ${1:name} = () => {",
-      "  $2",
+      "  $0",
       "}"
     ]
   },
-  "🎯 for 循环": {
+  "for 循环": {
     "prefix": "for",
     "body": [
       "for (let i = 0; i < ${1:array}; i++) {",
-      "  $2",
+      "  $0",
       "}"
     ]
   },
-  "🎯 for-of 循环": {
+  "for-of 循环": {
     "prefix": "fof",
     "body": [
       "for (const item of ${1:object}) {",
-      "  $2",
+      "  $0",
       "}"
     ]
   },
-  "🎯 for-in 循环": {
+  "for-in 循环": {
     "prefix": "fin",
     "body": [
       "for (const item in ${1:object}) {",
-      "  $2",
+      "  $0",
       "}"
     ]
   },
-  "🎯 switch case 循环": {
+  "switch case 循环": {
     "prefix": "sc",
     "body": [
-      "switch (val) {",
-      "  case \"\":",
+      "switch (${1:v}) {",
+      "  case \"$2\":",
       "    ",
       "    break;",
       "  default:",
@@ -79,34 +79,35 @@
       "}"
     ]
   },
-  "🎯 setInterval": {
+  "setInterval": {
     "prefix": "si",
     "body": [
       "setInterval(() => {",
-      "  $2",
+      "  $0",
       "}, ${1:intervalInms})"
     ]
   },
-  "🎯 setTimeout": {
+  "setTimeout": {
     "prefix": "st",
     "body": [
       "setTimeout(() => {",
-      "  $2",
+      "  $0",
       "}, ${1:delayInms})"
     ]
   },
-  "🎯 new Promise": {
-    "prefix": "newPro",
+  "promise": {
+    "prefix": "promise",
     "body": [
       "new Promise(function (resolve, reject) {",
       "  resolve()",
       "})"
     ]
   },
-  "🎯 new Promise().then().catch().finally()": {
-    "prefix": "newProTCF",
+  "promise [then catch finally]": {
+    "prefix": "promiseTCF",
     "body": [
       "new Promise(function (resolve, reject) {",
+      "  ",
       "  resolve();",
       "}).then(value => {",
       "  ",
@@ -117,223 +118,223 @@
       "})"
     ]
   },
-  "🎯 import": {
+  "import": {
     "prefix": "imp",
     "body": [
       "import $1 from '$2'"
     ]
   },
-  "🎯 import 解构": {
+  "import 解构": {
     "prefix": "imd",
     "body": [
       "import { $1 } from '$2'"
     ]
   },
-  "🎯 import reactive": {
+  "import reactive": {
     "prefix": " iReactive",
     "body": [
       "reactive"
     ]
   },
-  "🎯 import watch": {
+  "import watch": {
     "prefix": " iWatch",
     "body": [
       "watch"
     ]
   },
-  "🎯 import mixins": {
+  "import mixins": {
     "prefix": " iMixins",
     "body": [
       "mixins: [${1:name}],"
     ]
   },
-  "🎯 import nextTick": {
+  "import nextTick": {
     "prefix": " iNextTick",
     "body": [
       "nextTick"
     ]
   },
-  "🎯 import defineComponent": {
+  "import defineComponent": {
     "prefix": " iDComponent",
     "body": [
       "defineComponent"
     ]
   },
-  "🎯 import defineAsyncComponent": {
+  "import defineAsyncComponent": {
     "prefix": " iDAComponent",
     "body": [
       "defineAsyncComponent"
     ]
   },
-  "🎯 import defineProps": {
+  "import defineProps": {
     "prefix": " iProps",
     "body": [
       "defineProps"
     ]
   },
-  "🎯 import defineEmits": {
+  "import defineEmits": {
     "prefix": " iEmits",
     "body": [
       "defineEmits"
     ]
   },
-  "🎯 import useSlots": {
+  "import useSlots": {
     "prefix": " iSlots",
     "body": [
       "useSlots"
     ]
   },
-  "🎯 import useAttrs": {
+  "import useAttrs": {
     "prefix": " iAttrs",
     "body": [
       "useAttrs"
     ]
   },
-  "🎯 import defineExpose": {
+  "import defineExpose": {
     "prefix": " iExpose",
     "body": [
       "defineExpose"
     ]
   },
-  "🎯 import onBeforeMount": {
+  "import onBeforeMount": {
     "prefix": " iBMount",
     "body": [
       "onBeforeMount"
     ]
   },
-  "🎯 import onMounted ": {
+  "import onMounted ": {
     "prefix": " iMounted",
     "body": [
       "onMounted"
     ]
   },
-  "🎯 import onBeforeUpdate ": {
+  "import onBeforeUpdate ": {
     "prefix": " iBUpdate",
     "body": [
       "onBeforeUpdate"
     ]
   },
-  "🎯 import onUpdated ": {
+  "import onUpdated ": {
     "prefix": " iUpdated",
     "body": [
       "onUpdated"
     ]
   },
-  "🎯 import onBeforeUnmount ": {
+  "import onBeforeUnmount ": {
     "prefix": " iBUnmount",
     "body": [
       "onBeforeUnmount"
     ]
   },
-  "🎯 import onUnmounted": {
+  "import onUnmounted": {
     "prefix": " iUnmounted",
     "body": [
       "onUnmounted"
     ]
   },
-  "🎯 import useRouter": {
+  "import useRouter": {
     "prefix": " iRouter",
     "body": [
       "onBeforeRouteLeave"
     ]
   },
-  "🎯 import useRoute ": {
+  "import useRoute ": {
     "prefix": " iRoute",
     "body": [
       "onBeforeRouteLeave"
     ]
   },
-  "🎯 import onBeforeRouteLeave": {
+  "import onBeforeRouteLeave": {
     "prefix": " iBRLeave",
     "body": [
       "onBeforeRouteLeave"
     ]
   },
-  "🎯 import onBeforeRouteUpdate ": {
+  "import onBeforeRouteUpdate ": {
     "prefix": " iBRupdata",
     "body": [
       "onBeforeRouteUpdate"
     ]
   },
-  "🎯 v2 data": {
-    "prefix": "vdata",
+  "v2 data": {
+    "prefix": "vData",
     "body": [
       "data() {",
       "  return {",
-      "    $1",
+      "    $0",
       "  }",
       "},"
     ]
   },
-  "🎯 v2 components": {
+  "v2 components": {
     "prefix": "vComponents",
     "body": [
       "components: {",
-      "  $1",
+      "  $0",
       "},"
     ]
   },
-  "🎯 v2 props": {
+  "v2 Props": {
     "prefix": "vProps",
     "body": [
       "props: {",
       "  ${1:propName}: {",
-      "    type: null",
+      "    type: String",
       "  }",
       "},"
     ]
   },
-  "🎯 v2 props default": {
-    "prefix": "vPD",
+  "v2 [ default ]": {
+    "prefix": "vPropsD",
     "body": [
       "props: {",
       "  ${1:name}: {",
-      "    type: null,",
-      "    default: ${2:default}",
+      "    type: String,",
+      "    default: \"\"",
       "  }",
       "},"
     ]
   },
-  "🎯 v2 props default required": {
-    "prefix": "vPDR",
+  "v2 [ default required ]": {
+    "prefix": "vPropsDR",
     "body": [
       "props: {",
       "  ${1:name}: {",
-      "    type: null,",
-      "    default: ${2:default},",
+      "    type: String,",
+      "    default: \"\",",
       "    required: true",
       "  }",
       "},"
     ]
   },
-  "🎯 v2 emit": {
+  "v2 emit": {
     "prefix": "vEmit",
     "body": [
-      "this.$emit(\"${1:name}\")"
+      "this.\\$emit(\"${1:name}\")"
     ]
   },
-  "🎯 v2 methods": {
+  "v2 methods": {
     "prefix": "vMethods",
     "body": [
       "methods: {",
       "  ${1:name}() {",
-      "    ",
+      "    $0",
       "  }",
       "},"
     ]
   },
-  "🎯 v2 computed": {
+  "v2 computed": {
     "prefix": "vComputed",
     "body": [
       "computed: {",
       "  ${1:name}() {",
-      "    return $2",
+      "    return $0",
       "  }",
       "},"
     ]
   },
-  "🎯 v2 computed setter": {
-    "prefix": "vCS",
+  "v2 computed [get set]": {
+    "prefix": "vComputedGS",
     "body": [
       "computed: {",
       "  ${1:name}: {",
@@ -348,49 +349,49 @@
       "},"
     ]
   },
-  "🎯 v2 watch": {
+  "v2 Watch": {
     "prefix": "vWatch",
     "body": [
       "watch: {",
       "  ${1:name}(newValue, oldValue) {",
-      "    $2",
+      "    $0",
       "  }",
       "},"
     ]
   },
-  "🎯 v2 watch deep": {
-    "prefix": "vWD",
+  "v2 [deep]": {
+    "prefix": "vWatchD",
     "body": [
       "watch: {",
       "  ${1:name}: {",
       "    handler(newValue, oldValue) {",
-      "      $2",
+      "      $0",
       "    },",
       "    deep:true,",
       "  }",
       "},"
     ]
   },
-  "🎯 v2 watch immediate": {
-    "prefix": "vWI",
+  "v2 [immediate]": {
+    "prefix": "vWatchI",
     "body": [
       "watch: {",
       "  ${1:name}: {",
       "    handler(newValue, oldValue) {",
-      "      $2",
+      "      $0",
       "    },",
       "    immediate:true,",
       "  }",
       "},"
     ]
   },
-  "🎯 v2 watch deep immediate": {
-    "prefix": "vWDI",
+  "v2 [deep immediate]": {
+    "prefix": "vWatchDI",
     "body": [
       "watch: {",
       "  ${1:name}: {",
       "    handler(newValue, oldValue) {",
-      "      $2",
+      "      $0",
       "    },",
       "    deep:true,",
       "    immediate:true,",
@@ -398,133 +399,134 @@
       "},"
     ]
   },
-  "🎯 v2 filters": {
+  "v2 filters": {
     "prefix": "vFilters",
     "body": [
       "filters: {",
       "  ${1:name}(value) {",
+      "    $0",
       "    return value",
       "  }",
       "},"
     ]
   },
-  "🎯 v2 mixins": {
+  "v2 mixins": {
     "prefix": "vMixins",
     "body": [
       "mixins: [${1:name}]"
     ]
   },
-  "🎯 v2 nextNick": {
+  "v2 nextNick": {
     "prefix": "vNextNick",
     "body": [
-      "this.$nextTick(() => {",
-      "  $1",
+      "this.\\$nextTick(() => {",
+      "  $0",
       "})"
     ]
   },
-  "🎯 v2 vRouterPush": {
-    "prefix": "vRouterPush",
+  "v2 vRouterPush": {
+    "prefix": "vrPush",
     "body": [
-      "this.$router.push()"
+      "this.\\$router.push($0)"
     ]
   },
-  "🎯 v2 vRouterReplace": {
-    "prefix": "vRouterReplace",
+  "v2 vRouterReplace": {
+    "prefix": "vrReplace",
     "body": [
-      "this.$router.replace()"
+      "this.\\$router.replace($0)"
     ]
   },
-  "🎯 v2 vRouterGo": {
-    "prefix": "vRouterGo",
+  "v2 vRouterGo": {
+    "prefix": "vrGo",
     "body": [
-      "this.$router.go()"
+      "this.\\$router.go($0)"
     ]
   },
-  "🎯 v2 beforeCreate": {
+  "v2 beforeCreate": {
     "prefix": "vBCreate",
     "body": [
       "beforeCreate () {",
-      "  ",
+      "  $0",
       "},"
     ]
   },
-  "🎯 v2 created": {
+  "v2 created": {
     "prefix": "vCreated",
     "body": [
       "created () {",
-      "  ",
+      "  $0",
       "},"
     ]
   },
-  "🎯 v2 beforeMount": {
+  "v2 beforeMount": {
     "prefix": "vBMount",
     "body": [
       "beforeMount () {",
-      "  ",
+      "  $0",
       "},"
     ]
   },
-  "🎯 v2 mounted": {
+  "v2 mounted": {
     "prefix": "vMounted",
     "body": [
       "mounted () {",
-      "  ",
+      "  $0",
       "},"
     ]
   },
-  "🎯 v2 beforeUpdate": {
+  "v2 beforeUpdate": {
     "prefix": "vBUpdate",
     "body": [
       "beforeUpdate () {",
-      "  ",
+      "  $0",
       "},"
     ]
   },
-  "🎯 v2 updated": {
+  "v2 updated": {
     "prefix": "vUpdated",
     "body": [
       "updated () {",
-      "  ",
+      "  $0",
       "},"
     ]
   },
-  "🎯 v2 beforeUnmount": {
+  "v2 beforeUnmount": {
     "prefix": "vBUnmount",
     "body": [
       "beforeUnmount () {",
-      "  ",
+      "  $0",
       "},"
     ]
   },
-  "🎯 v2 unmounted": {
+  "v2 unmounted": {
     "prefix": "vUnmounted",
     "body": [
       "unmounted () {",
-      "  ",
+      "  $0",
       "},"
     ]
   },
-  "🎯 v2 Commit ": {
+  "v2 Commit ": {
     "prefix": "vCommit ",
     "body": [
-      "this.$store.commit('${1:mutationName}', ${2:payload})"
+      "this.\\$store.commit('${1:mutationName}', ${2:payload})"
     ]
   },
-  "🎯 v2 dispatch ": {
+  "v2 dispatch ": {
     "prefix": "vDispatch ",
     "body": [
-      "this.$store.dispatch('${1:actionName}', ${2:payload})"
+      "this.\\$store.dispatch('${1:actionName}', ${2:payload})"
     ]
   },
-  "🎯 v3 定义一个函数 ": {
+  "v3 定义一个函数 ": {
     "prefix": "vvFun",
     "body": [
       "const ${1:name} = () => {",
-      "  $2",
+      "  $0",
       "}"
     ]
   },
-  "🎯 v3 setup": {
+  "v3 setup": {
     "prefix": "vvSetup",
     "body": [
       "setup(){",
@@ -532,244 +534,263 @@
       "},"
     ]
   },
-  "🎯 v3 setup 带参数": {
-    "prefix": "vvSetup-parame",
+  "v3 setup 带参数": {
+    "prefix": "vvSetup-param",
     "body": [
       "setup(props, {attrs, slots, emit}){",
-      "  ",
+      "  $0",
       "},"
     ]
   },
-  "🎯 v3 useRouter": {
+  "v3 useRouter": {
     "prefix": "vvRouter",
     "body": [
       "const router = useRouter()"
     ]
   },
-  "🎯 v3 useRoute ": {
+  "v3 router.push()": {
+    "prefix": "vvrPush",
+    "body": [
+      "router.push($0)"
+    ]
+  },
+  "v3 router.replace()": {
+    "prefix": "vvrReplace",
+    "body": [
+      "router.replace($0)"
+    ]
+  },
+  "v3 router.go()": {
+    "prefix": "vvrGo",
+    "body": [
+      "router.go($0)"
+    ]
+  },
+  "v3 useRoute": {
     "prefix": "vvRoute",
     "body": [
       "const route = useRoute()"
     ]
   },
-  "🎯 v3 useStore ": {
+  "v3 useStore": {
     "prefix": "vvStore",
     "body": [
       "const store = useStore()"
     ]
   },
-  "🎯 v3 store.commit(\"\")": {
+  "v3 store.commit(\"\")": {
     "prefix": "vvCommit",
     "body": [
-      "store.commit(\"${1:method}\",$2)"
+      "store.commit(\"${1:method}\",$0)"
     ]
   },
-  "🎯 v3 store.dispatch(\"\")": {
+  "v3 store.dispatch(\"\")": {
     "prefix": "vvDispatch",
     "body": [
-      "store.dispatch(\"${1:method}\",$2)"
+      "store.dispatch(\"${1:method}\",$0)"
     ]
   },
-  "🎯 v3 ref": {
+  "v3 ref": {
     "prefix": "vvRef",
     "body": [
       "const ${1:variable} = ref(${2:variable})"
     ]
   },
-  "🎯 v3 reactive": {
+  "v3 reactive": {
     "prefix": "vvReactive",
     "body": [
       "const ${1:variable} = reactive({",
-      "  $2",
+      "  $0",
       "})"
     ]
   },
-  "🎯 v3 mixins": {
+  "v3 mixins": {
     "prefix": "vvMixins",
     "body": [
       "mixins: [${1:name}]"
     ]
   },
-  "🎯 v3 defineProps": {
+  "v3 defineProps": {
     "prefix": "vvProps",
     "body": [
       "const props = defineProps({",
-      "  $1: {",
-      "    type: null,",
+      "  ${1:name}: {",
+      "    type: String,",
       "    required: true",
       "  }",
       "})"
     ]
   },
-  "🎯 v3 defineEmits": {
+  "v3 defineEmits": {
     "prefix": "vvEmits",
     "body": [
       "const emit = defineEmits(['$1'])"
     ]
   },
-  "🎯 v3 useSlots": {
+  "v3 useSlots": {
     "prefix": "vvSlots",
     "body": [
       "const slots = useSlots()"
     ]
   },
-  "🎯 v3 useAttrs": {
+  "v3 useAttrs": {
     "prefix": "vvAttrs",
     "body": [
       "const attrs = useAttrs()"
     ]
   },
-  "🎯 v3 defineExpose": {
+  "v3 defineExpose": {
     "prefix": "vvExpose",
     "body": [
       "defineExpose({",
-      "  $1",
+      "  $0",
       "})"
     ]
   },
-  "🎯 v3 computed": {
+  "v3 computed": {
     "prefix": "vvComputed",
     "body": [
       "const ${1:name} = computed(() => {",
+      "  $0",
       "  return ",
       "})"
     ]
   },
-  "🎯 v3 watch": {
+  "v3 Watch": {
     "prefix": "vvWatch",
     "body": [
       "watch(${1:name}, (newValue, oldValue) => {",
-      "  $2",
+      "  $0",
       "})"
     ]
   },
-  "🎯 v3 watch deep": {
-    "prefix": "vvWD",
+  "v3 [deep]": {
+    "prefix": "vvWatchD",
     "body": [
       "watch(${1:name}, (newValue, oldValue) => {",
-      "  $2",
+      "  $0",
       "},{ deep: true })"
     ]
   },
-  "🎯 v3 watch immediate": {
-    "prefix": "vvWI",
+  "v3 [immediate]": {
+    "prefix": "vvWatchI",
     "body": [
       "watch(${1:name}, (newValue, oldValue) => {",
-      "  $2",
+      "  $0",
       "},{ immediate: true })"
     ]
   },
-  "🎯 v3 watch deep immediate": {
-    "prefix": "vvWDI",
+  "v3 [deep immediate]": {
+    "prefix": "vvWatchDI",
     "body": [
       "watch(${1:name}, (newValue, oldValue) => {",
-      "  $2",
+      "  $0",
       "},{ deep: true }, { immediate: true })"
     ]
   },
-  "🎯 v3 watch 多个 ref 数据": {
+  "v3 watch 多个 ref 数据": {
     "prefix": "vvWMRef",
     "body": [
       "watch([name$1, name$2], (newValue, oldValue) => {",
-      "  $2",
+      "  $0",
       "})"
     ]
   },
-  "🎯 v3 watch reactive 中的单个数据": {
+  "v3 watch reactive 中的单个数据": {
     "prefix": "vvWSReactive",
     "body": [
       "watch(() => ${1:a.b}, (newValue, oldValue) => {",
-      "  $2",
+      "  $0",
       "})"
     ]
   },
-  "🎯 v3 watchEffect": {
+  "v3 watchEffect": {
     "prefix": "vvWE",
     "body": [
       "watchEffect(() => {",
-      "  ",
+      "  $0",
       "})"
     ]
   },
-  "🎯 v3 onBeforeMount": {
+  "v3 onBeforeMount": {
     "prefix": "vvBMounted",
     "body": [
       "onBeforeMount((${1:params}) => {",
-      "  ",
+      "  $0",
       "})"
     ]
   },
-  "🎯 v3 onMounted": {
+  "v3 onMounted": {
     "prefix": "vvMounted",
     "body": [
       "onMounted((${1:params}) => {",
-      "  ",
+      "  $0",
       "})"
     ]
   },
-  "🎯 v3 onBeforeUpdate": {
+  "v3 onBeforeUpdate": {
     "prefix": "vvBUpdate",
     "body": [
       "onBeforeUpdate((${1:params}) => {",
-      "  ",
+      "  $0",
       "})"
     ]
   },
-  "🎯 v3 onUpdated": {
+  "v3 onUpdated": {
     "prefix": "vvUpdated",
     "body": [
       "onUpdated((${1:params}) => {",
-      "  ",
+      "  $0",
       "})"
     ]
   },
-  "🎯 v3 onBeforeUnmount": {
+  "v3 onBeforeUnmount": {
     "prefix": "vvBUnmount",
     "body": [
       "onBeforeUnmount((${1:params}) => {",
-      "  ",
+      "  $0",
       "})"
     ]
   },
-  "🎯 v3 onUnmounted": {
+  "v3 onUnmounted": {
     "prefix": "vvUnmounted",
     "body": [
       "onUnmounted((${1:params}) => {",
-      "  ",
+      "  $0",
       "})"
     ]
   },
-  "🎯 v3 onBeforeRouteLeave": {
+  "v3 onBeforeRouteLeave": {
     "prefix": "vvUnmounted",
     "body": [
       "onBeforeRouteLeave((to, from) => {",
-      "  ",
+      "  $0",
       "})"
     ]
   },
-  "🎯 v3 onBeforeRouteUpdate": {
+  "v3 onBeforeRouteUpdate": {
     "prefix": "vvUnmounted",
     "body": [
       "onBeforeRouteUpdate((to, from) => {",
-      "  ",
+      "  $0",
       "})"
     ]
   },
-  "🎯 v3 globalProperties": {
+  "v3 globalProperties": {
     "prefix": "vvGP",
     "body": [
       "app.config.globalProperties._bus = () => {}"
     ]
   },
-  "🎯 v3 NextTick": {
+  "v3 NextTick": {
     "prefix": "vvNextTick",
     "body": [
       "nextTick(()=>{",
-      "  $1",
+      "  $0",
       "})"
     ]
   },
-  "🎯 vueRouter beforeEach 全局前置守卫": {
+  "vueRouter beforeEach 全局前置守卫": {
     "prefix": "vrBEach",
     "body": [
       "router.beforeEach((to, from, next) => {",
@@ -777,62 +798,62 @@
       "},"
     ]
   },
-  "🎯 vueRouter beforeResolve 全局解析守卫": {
+  "vueRouter beforeResolve 全局解析守卫": {
     "prefix": "vrBResolve",
     "body": [
       "router.beforeResolve((to, from, next) => {",
-      "  $1",
+      "  $0",
       "},"
     ]
   },
-  "🎯 vueRouter afterEach 全局后置钩子": {
+  "vueRouter afterEach 全局后置钩子": {
     "prefix": "vrAEach",
     "body": [
       "router.afterEach((to, from) => {",
-      "  $1",
+      "  $0",
       "},"
     ]
   },
-  "🎯 vueRouter beforeEnter 路由独享的守卫": {
+  "vueRouter beforeEnter 路由独享的守卫": {
     "prefix": "vrBEach",
     "body": [
       "beforeEnter: (to, from, next) => {",
-      "  $1",
+      "  $0",
       "},"
     ]
   },
-  "🎯 vueRouter beforeRouteEnter  组件内的守卫 ( 进入 ) ": {
+  "vueRouter beforeRouteEnter  组件内的守卫 ( 进入 ) ": {
     "prefix": "vrBREnter",
     "body": [
       "beforeRouteEnter(to, from, next) {",
-      "  $1",
+      "  $0",
       "},"
     ]
   },
-  "🎯 vueRouter beforeRouteUpdate 组件内的守卫 ( 更新 )": {
+  "vueRouter beforeRouteUpdate 组件内的守卫 ( 更新 )": {
     "prefix": "vrBRUpdate",
     "body": [
       "beforeRouteUpdate(to, from, next) {",
-      "  $1",
+      "  $0",
       "},"
     ]
   },
-  "🎯 vueRouter beforeRouteLeave 组件内的守卫 ( 离开 ) ": {
+  "vueRouter beforeRouteLeave 组件内的守卫 ( 离开 ) ": {
     "prefix": "vrBRLeave",
     "body": [
       "beforeRouteLeave(to, from, next) {",
-      "  $1",
+      "  $0",
       "},"
     ]
   },
-  "🎯 Pinia": {
+  "Pinia": {
     "prefix": "pinia",
     "body": [
       "import { defineStore } from \"pinia\";",
       "export const userStore = defineStore(\"${1:id}\", {",
       "  state: () => {",
       "    return {",
-      "      $2",
+      "      $0",
       "    }",
       "  },",
       "  getters: {},",
@@ -840,11 +861,11 @@
       "})"
     ]
   },
-  "🎯 Pinia storeToRefs": {
+  "Pinia storeToRefs": {
     "prefix": "pinia-toRefs",
     "body": [
       "import { storeToRefs } from \"pinia\"",
-      "const { $2 } = storeToRefs(${1:name})"
+      "const { $0 } = storeToRefs(${1:name})"
     ]
   }
 }

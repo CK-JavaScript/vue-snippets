@@ -3,7 +3,7 @@
     "publisher": "public-snippets",
     "displayName": "public snippets",
     "description": "public snippets",
-    "version": "1.0.16",
+    "version": "1.0.17",
     "engines": {
         "vscode": "^1.66.0"
     },
@@ -32,14 +32,6 @@
             {
                 "language": "typescript",
                 "path": "./snippets/typescript.json"
-            },
-            {
-                "language": "less",
-                "path": "./snippets/less.json"
-            },
-            {
-                "language": "scss",
-                "path": "./snippets/scss.json"
             }
         ]
     }

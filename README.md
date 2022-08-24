@@ -5,32 +5,31 @@ VSCode 代码片段包含，直接安装插件即可使用。
 ```text
 - vue.html
 - vue
+- vueRouter
+- vuex
 - JavaScript
-- typescript
-- less
-- scss
 ```
 
 # Prefix
 
 ## JavaScript
 
-| Prefix      | Snippets                               |
-| ----------- | -------------------------------------- |
-| `cls`       | console.log( string )                  |
-| `clv`       | console.log( variable )                |
-| `fun`       | function name(){}                      |
-| `of`        | name(){}                               |
-| `af`        | arrow function                         |
-| `afn`       | named arrow function                   |
-| `for`       | for loop                               |
-| `fof`       | fof loop                               |
-| `fin`       | fin loop                               |
-| `sc`        | switch case loop                       |
-| `sit`       | setInterval                            |
-| `st`        | setTimeout                             |
-| `newPro`    | new Promise                            |
-| `newProTCF` | new Promise().then().catch().finally() |
+| Prefix       | Snippets                               |
+| ------------ | -------------------------------------- |
+| `cls`        | console.log( string )                  |
+| `clv`        | console.log( variable )                |
+| `fun`        | function name(){}                      |
+| `of`         | name(){}                               |
+| `af`         | arrow function                         |
+| `afn`        | named arrow function                   |
+| `for`        | for loop                               |
+| `fof`        | fof loop                               |
+| `fin`        | fin loop                               |
+| `sc`         | switch case loop                       |
+| `sit`        | setInterval                            |
+| `st`         | setTimeout                             |
+| `promise`    | new Promise                            |
+| `promiseTCF` | new Promise().then().catch().finally() |
 
 ## import
 
@@ -41,20 +40,20 @@ VSCode 代码片段包含，直接安装插件即可使用。
 
 ## Vue.html
 
-| Prefix   | Snippets                                |
-| -------- | --------------------------------------- |
-| ` click` | @click="$1"                             |
-| ` if`    | v-if="$1"                               |
-| ` eif`   | v-else-if="$1"                          |
-| ` else`  | v-else="$1"                             |
-| ` fori`  | v-for="item in $1" :key="item"          |
-| ` forii` | v-for="(item, index) in $1" :key="item" |
-| ` model` | v-model="$1"                            |
-| ` cData` | :class="{ $1 : $2 }"                    |
-| ` cCalc` | :class="[ $1 ? $2 : $3 ]"               |
-| ` style` | :style="{}"                             |
-| ` sData` | :style="{ $1 : $2 }"                    |
-| ` sCalc` | :style="{ $1 : $2 ? $3 : $4}"           |
+| Prefix  | Snippets                                |
+| ------- | --------------------------------------- |
+| `click` | @click="$1"                             |
+| `if`    | v-if="$1"                               |
+| `eif`   | v-else-if="$1"                          |
+| `else`  | v-else="$1"                             |
+| `fori`  | v-for="item in $1" :key="item"          |
+| `forii` | v-for="(item, index) in $1" :key="item" |
+| `model` | v-model="$1"                            |
+| `cData` | :class="{ $1 : $2 }"                    |
+| `cCalc` | :class="[ $1 ? $2 : $3 ]"               |
+| `style` | :style="{}"                             |
+| `sData` | :style="{ $1 : $2 }"                    |
+| `sCalc` | :style="{ $1 : $2 ? $3 : $4}"           |
 
 ## Vue base
 
@@ -79,18 +78,18 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | ------------- | ------------------------------------ |
 | `vdata`       | vue2 data                            |
 | `vComponents` | vue2 components                      |
-| `vProp`       | vue2 props                           |
-| `vPD`         | vue2 props ( default )               |
-| `vPDR`        | vue2 props ( default required )      |
+| `vProps`      | vue2 props                           |
+| `vPropsD`     | vue2 props ( default )               |
+| `vPropsDR`    | vue2 props ( default required )      |
 | `vEmit`       | vue2 emit                            |
 | `vMixins`     | vue2 混入 mixins                     |
 | `vMethods`    | vue2 方法 methods                    |
 | `vComputed`   | vue2 计算属性 computed               |
-| `vCS`         | vue2 计算属性 computed ( setter )    |
+| `vComputedS`  | vue2 计算属性 computed ( setter )    |
 | `vWatch`      | vue2 侦听器 watch                    |
-| `vWD`         | vue2 侦听器 watch ( deep )           |
-| `vWI`         | vue2 侦听器 watch ( immediate )      |
-| `vWDI`        | vue2 侦听器 watch ( deep immediate ) |
+| `vWatchD`     | vue2 侦听器 watch ( deep )           |
+| `vWatchI`     | vue2 侦听器 watch ( immediate )      |
+| `vWatchDI`    | vue2 侦听器 watch ( deep immediate ) |
 | `vFilters`    | vue2 过滤器 filters                  |
 | `vNextNick`   | vue2 NextNick                        |
 | `vBCreate`    | vue2 生命周期 beforeCreate           |
@@ -101,51 +100,51 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `vUpdated`    | vue2 生命周期 updated                |
 | `vBUnmount`   | vue2 生命周期 beforeUnmount          |
 | `vUnmounted`  | vue2 生命周期 unmounted              |
-| `vCommit`     | vue2 提交一个 commit                 |
-| `vDispatch`   | vue2 提交一个 dispatch               |
 
 ## Vue3
 
-| Prefix         | Snippets                                  |
-| -------------- | ----------------------------------------- |
-| `vvFun`        | vue3 定义一个函数                         |
-| `vvSetup`      | vue3 setup(){}                            |
-| `vvRoute`      | vue3 useRoute                             |
-| `vvRouter`     | vue3 useRouter                            |
-| `vvStore`      | vue3 useStore                             |
-| `vvCommit`     | vue3 store.commit("")                     |
-| `vvDispatch`   | vue3 store.dispatch("")                   |
-| `vvRef`        | vue3 ref                                  |
-| `vvReactive`   | vue3 reactive                             |
-| `vvProps`      | vue3 defineProps                          |
-| `vvEmits`      | vue3 defineEmits                          |
-| `vvSlots`      | vue3 useSlots                             |
-| `vvAttrs`      | vue3 useAttrs                             |
-| `vvExpose`     | vue3 暴露数据 defineExpose                |
-| `vvComputed`   | vue3 计算属性 computed                    |
-| `vvWatch`      | vue3 侦听器 watch                         |
-| `vvWD`         | vue3 侦听器 watch ( deep )                |
-| `vvWI`         | vue3 侦听器 watch ( immediate )           |
-| `vvWDI`        | vue3 侦听器 watch ( deep immediate )      |
-| `vvWMRef`      | vue3 侦听器 Watch more ref                |
-| `vvWSReactive` | vue3 侦听器 Watch single data in reactive |
-| `vvWE`         | vue3 侦听器 watchEffect                   |
-| `vvBMounted`   | vue3 生命周期 onBeforeMount               |
-| `vvMounted`    | vue3 生命周期 onMounted                   |
-| `vvBUpdate`    | vue3 生命周期 onBeforeUpdate              |
-| `vvUpdated`    | vue3 生命周期 onUpdated                   |
-| `vvBUnmount`   | vue3 生命周期 onBeforeUnmount             |
-| `vvUnmounted`  | vue3 生命周期 onUnmounted                 |
-| `vvGP`         | vue3 全局属性 globalProperties            |
-| `vvNextTick`   | vue3 NextTick                             |
+| Prefix          | Snippets                                  |
+| --------------- | ----------------------------------------- |
+| `vvFun`         | vue3 定义一个函数                         |
+| `vvSetup`       | vue3 setup(){}                            |
+| `vvSetup-param` | vue3 setup(props, {attrs, slots, emit}){} |
+| `vvRoute`       | vue3 useRoute                             |
+| `vvRouter`      | vue3 useRouter                            |
+| `vvStore`       | vue3 useStore                             |
+| `vvRef`         | vue3 ref                                  |
+| `vvReactive`    | vue3 reactive                             |
+| `vvProps`       | vue3 defineProps                          |
+| `vvEmits`       | vue3 defineEmits                          |
+| `vvSlots`       | vue3 useSlots                             |
+| `vvAttrs`       | vue3 useAttrs                             |
+| `vvExpose`      | vue3 暴露数据 defineExpose                |
+| `vvComputed`    | vue3 计算属性 computed                    |
+| `vvWatch`       | vue3 侦听器 watch                         |
+| `vvWatchD`      | vue3 侦听器 watch ( deep )                |
+| `vvWatchI`      | vue3 侦听器 watch ( immediate )           |
+| `vvWatchDI`     | vue3 侦听器 watch ( deep immediate )      |
+| `vvWMRef`       | vue3 侦听器 Watch more ref                |
+| `vvWSReactive`  | vue3 侦听器 Watch single data in reactive |
+| `vvWE`          | vue3 侦听器 watchEffect                   |
+| `vvBMounted`    | vue3 生命周期 onBeforeMount               |
+| `vvMounted`     | vue3 生命周期 onMounted                   |
+| `vvBUpdate`     | vue3 生命周期 onBeforeUpdate              |
+| `vvUpdated`     | vue3 生命周期 onUpdated                   |
+| `vvBUnmount`    | vue3 生命周期 onBeforeUnmount             |
+| `vvUnmounted`   | vue3 生命周期 onUnmounted                 |
+| `vvGP`          | vue3 全局属性 globalProperties            |
+| `vvNextTick`    | vue3 NextTick                             |
 
 ## vueRouter
 
 | Prefix       | Snippets                                  |
 | ------------ | ----------------------------------------- |
-| `vrPush`     | this.$router.push()                       |
-| `vrReplace`  | this.$router.replace()                    |
-| `vrGo`       | this.$router.go()                         |
+| `vrPush`     | v2 this.$router.push()                    |
+| `vrReplace`  | v2 this.$router.replace()                 |
+| `vrGo`       | v2 this.$router.go()                      |
+| `vvrPush`    | v3 router.push()                          |
+| `vvrReplace` | v3 router.replace()                       |
+| `vvrGo`      | v3 router.go()                            |
 | `vrBEach`    | beforeEach 全局前置守卫                   |
 | `vrBResolve` | beforeResolve 全局解析守卫                |
 | `vrAEach`    | afterEach 全局后置钩子                    |
@@ -154,15 +153,14 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `vrBRUpdate` | beforeRouteUpdate 组件内的守卫 ( Update ) |
 | `vrBRLeave`  | beforeRouteLeave 组件内的守卫 ( Leave )   |
 
-## less & scss
+## vuex
 
-| Prefix                 | Snippets            |
-| ---------------------- | ------------------- |
-| `flex`                 | display flex        |
-| `fcc`                  | flex 横向垂直居中   |
-| `txt1` ,`txt2`, `txt3` | 文本溢出省略 1~3 行 |
-| `scrollX`              | X 滚动条样式        |
-| `scrollY`              | Y 滚动条样式        |
+| Prefix       | Snippets                |
+| ------------ | ----------------------- |
+| `vCommit`    | vue2 提交一个 commit    |
+| `vDispatch`  | vue2 提交一个 dispatch  |
+| `vvCommit`   | vue3 store.commit("")   |
+| `vvDispatch` | vue3 store.dispatch("") |
 
 ## pinia
 

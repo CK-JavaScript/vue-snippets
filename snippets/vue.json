@@ -1,5 +1,5 @@
 {
-  "🎯 v2 base ( css )": {
+  "v2 base ( css )": {
     "prefix": "vcss",
     "body": [
       "<template>",
@@ -23,7 +23,7 @@
       "</style>"
     ]
   },
-  "🎯 v2 base ( less )": {
+  "v2 base ( less )": {
     "prefix": "vless",
     "body": [
       "<template>",
@@ -47,7 +47,7 @@
       "</style>"
     ]
   },
-  "🎯 v2 base ( scss )": {
+  "v2 base ( scss )": {
     "prefix": "vscss",
     "body": [
       "<template>",
@@ -71,7 +71,7 @@
       "</style>"
     ]
   },
-  "🎯 v3 base ( css )": {
+  "v3 base ( css )": {
     "prefix": "vvcss",
     "body": [
       "<template>",
@@ -93,7 +93,7 @@
       "</style>"
     ]
   },
-  "🎯 v3 base ( less )": {
+  "v3 base ( less )": {
     "prefix": "vvless",
     "body": [
       "<template>",
@@ -115,7 +115,7 @@
       "</style>"
     ]
   },
-  "🎯 v3 base ( scss )": {
+  "v3 base ( scss )": {
     "prefix": "vvscss",
     "body": [
       "<template>",
@@ -137,7 +137,7 @@
       "</style>"
     ]
   },
-  "🎯 v3 base ( css dc )": {
+  "v3 base ( css dc )": {
     "prefix": "vvcss-DC",
     "body": [
       "<template>",
@@ -160,7 +160,7 @@
       "</style>"
     ]
   },
-  "🎯 v3 base ( less dc )": {
+  "v3 base ( less dc )": {
     "prefix": "vvless-DC",
     "body": [
       "<template>",
@@ -183,7 +183,7 @@
       "</style>"
     ]
   },
-  "🎯 v3 base ( scss dc )": {
+  "v3 base ( scss dc )": {
     "prefix": "vvscss-DC",
     "body": [
       "<template>",
@@ -206,7 +206,7 @@
       "</style>"
     ]
   },
-  "🎯 v3 base ( setup css )": {
+  "v3 base ( setup css )": {
     "prefix": "vvcss-setup",
     "body": [
       "<template>",
@@ -224,7 +224,7 @@
       "</style>"
     ]
   },
-  "🎯 v3 base ( setup less )": {
+  "v3 base ( setup less )": {
     "prefix": "vvless-setup",
     "body": [
       "<template>",
@@ -242,7 +242,7 @@
       "</style>"
     ]
   },
-  "🎯 v3 base ( setup scss )": {
+  "v3 base ( setup scss )": {
     "prefix": "vvscss-setup",
     "body": [
       "<template>",

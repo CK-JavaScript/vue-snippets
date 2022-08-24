@@ -1,74 +1,80 @@
 {
-  "🎯 @click=''": {
-    "prefix": " click",
+  "@click=''": {
+    "prefix": "click",
     "body": [
       " @click=\"$1\""
     ]
   },
-  "🎯 vIf=''": {
-    "prefix": " if",
+  "vIf=''": {
+    "prefix": "if",
     "body": [
       " v-if=\"$1\""
     ]
   },
-  "🎯 vElseIf=''": {
-    "prefix": " eif",
+  "vElseIf=''": {
+    "prefix": "eif",
     "body": [
       " v-else-if=\"$1\""
     ]
   },
-  "🎯 vElse": {
-    "prefix": " else",
+  "vElse": {
+    "prefix": "else",
     "body": [
       " v-else=\"$1\""
     ]
   },
-  "🎯 vFor='item in data'": {
-    "prefix": " fori",
+  "vFor='item in data'": {
+    "prefix": "fori",
     "body": [
       " v-for=\"item in $1\" :key=\"item\""
     ]
   },
-  "🎯 vFor='(item,index) in data'": {
-    "prefix": " forii",
+  "vFor='(item,index) in data'": {
+    "prefix": "forii",
     "body": [
       " v-for=\"(item,index) in $1\" :key=\"item\""
     ]
   },
-  "🎯 vModel": {
-    "prefix": " model",
+  "vModel": {
+    "prefix": "model",
     "body": [
       " v-model=\"${1:variable}\""
     ]
   },
-  "🎯 :class='{class:calc}'": {
-    "prefix": " cData",
+  ":class='{class:calc}'": {
+    "prefix": "cData",
     "body": [
       " :class=\"{${1:class}:${2:data}}\""
     ]
   },
-  "🎯 :class='[calc ? classA : classB]'": {
-    "prefix": " cCalc",
+  ":class='[calc ? classA : classB]'": {
+    "prefix": "cCalc",
     "body": [
       " :class=\"[${1:calc} ? '${2:classA}' : '${3:classB}']\""
     ]
   },
-  "🎯 :style='{}'": {
-    "prefix": " style",
+  ":style='{}'": {
+    "prefix": "style",
     "body": [
       " :style=\"{}\""
     ]
   },
-  "🎯 :style='{style:calc}'": {
-    "prefix": " sData",
+  ":style='{style:calc}'": {
+    "prefix": "sData",
     "body": [
       " :style=\"{${1:style}:${2:data}}\""
     ]
   },
-  "🎯 :style='[styleName:calc ? styleA : styleB]'": {
-    "prefix": " sCalc",
+  ":style='[styleName:calc ? styleA : styleB]'": {
+    "prefix": "sCalc",
     "body": [
       " :style=\"{${1:styleName}:${2:calc}?${3:styleA}:${4:styleB}}\""
+    ]
+  },
+  "fac": {
+    "prefix": "fac",
+    "body": [
+      " align-center"
     ]
   }
 }
