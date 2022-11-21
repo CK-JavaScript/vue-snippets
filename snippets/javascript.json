@@ -926,7 +926,7 @@
   "Pinia $patch": {
     "prefix": "pPatch",
     "body": [
-      "this.$patch(state => {",
+      "this.\\$patch(state => {",
       "  $1",
       "})"
     ]
