@@ -68,9 +68,9 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `vvcss-DC`      | vue3 css 基础代码 ( defineComponent )  |
 | `vvless-DC`     | vue3 less 基础代码 ( defineComponent ) |
 | `vvscss-DC`     | vue3 scss 基础代码 ( defineComponent ) |
-| `vvcss-setup`   | vue2 css 基础代码 ( setup 语法糖 )     |
-| `vvless-setup ` | vue2 less 基础代码 ( setup 语法糖 )    |
-| `vvscss-setup ` | vue2 scss 基础代码 ( setup 语法糖 )    |
+| `vvcss-setup`   | vue3 css 基础代码 ( setup 语法糖 )     |
+| `vvless-setup ` | vue3 less 基础代码 ( setup 语法糖 )    |
+| `vvscss-setup ` | vue3 scss 基础代码 ( setup 语法糖 )    |
 
 ## Vue2
 
@@ -112,7 +112,15 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `vvRouter`      | vue3 useRouter                            |
 | `vvStore`       | vue3 useStore                             |
 | `vvRef`         | vue3 ref                                  |
+| `vvToRef`       | vue3 toRef                                |
+| `vvIsRef`       | vue3 isRef                                |
 | `vvReactive`    | vue3 reactive                             |
+| `vvToRefs`      | vue3 toRefs                               |
+| `vvUnref`       | vue3 unref                                |
+| `vvIsProxy`     | vue3 isProxy                              |
+| `vvIsReactive`  | vue3 isReactive                           |
+| `vvReadonly`    | vue3 readonly                             |
+| `vvIsReadonly`  | vue3 isReadonly                           |
 | `vvProps`       | vue3 defineProps                          |
 | `vvEmits`       | vue3 defineEmits                          |
 | `vvSlots`       | vue3 useSlots                             |
@@ -123,8 +131,8 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `vvWatchD`      | vue3 侦听器 watch ( deep )                |
 | `vvWatchI`      | vue3 侦听器 watch ( immediate )           |
 | `vvWatchDI`     | vue3 侦听器 watch ( deep immediate )      |
-| `vvWMRef`       | vue3 侦听器 Watch more ref                |
-| `vvWSReactive`  | vue3 侦听器 Watch single data in reactive |
+| `vvWatchArr`    | vue3 侦听器 Watch 多个 ref                |
+| `vvWatchObj`    | vue3 侦听器 Watch reactive 中单个 key     |
 | `vvWE`          | vue3 侦听器 watchEffect                   |
 | `vvBMounted`    | vue3 生命周期 onBeforeMount               |
 | `vvMounted`     | vue3 生命周期 onMounted                   |
@@ -164,10 +172,11 @@ VSCode 代码片段包含，直接安装插件即可使用。
 
 ## pinia
 
-| Prefix         | Snippets          |
-| -------------- | ----------------- |
-| `pinia`        | pinia base        |
-| `pinia-toRefs` | pinia storeToRefs |
+| Prefix    | Snippets          |
+| --------- | ----------------- |
+| `pinia`   | pinia base        |
+| `pToRefs` | pinia storeToRefs |
+| `pPatch`  | pinia $patch      |
 
 # Contact
 

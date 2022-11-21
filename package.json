@@ -3,7 +3,7 @@
     "publisher": "public-snippets",
     "displayName": "public snippets",
     "description": "public snippets",
-    "version": "1.0.17",
+    "version": "1.0.18",
     "engines": {
         "vscode": "^1.66.0"
     },

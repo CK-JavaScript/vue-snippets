@@ -121,13 +121,13 @@
   "import": {
     "prefix": "imp",
     "body": [
-      "import $1 from '$2'"
+      "import $2 from '$1'"
     ]
   },
   "import 解构": {
     "prefix": "imd",
     "body": [
-      "import { $1 } from '$2'"
+      "import { $1 } from '$1'"
     ]
   },
   "import reactive": {
@@ -590,16 +590,58 @@
       "store.dispatch(\"${1:method}\",$0)"
     ]
   },
+  "v3 ref": {
+    "prefix": "vvRef",
+    "body": [
+      "const {${1:variable}} = ref(${2:variable})"
+    ]
+  },
+  "v3 isRef": {
+    "prefix": "vvIsRef",
+    "body": [
+      "isRef(${1:variable})"
+    ]
+  },
+  "v3 unref": {
+    "prefix": "vvUnref",
+    "body": [
+      "unref(${1:variable})"
+    ]
+  },
+  "v3 isProxy": {
+    "prefix": "vvIsProxy",
+    "body": [
+      "isProxy(${1:variable})"
+    ]
+  },
+  "v3 isReactive": {
+    "prefix": "vvIsReactive",
+    "body": [
+      "isReactive(${1:variable})"
+    ]
+  },
+  "v3 readonly": {
+    "prefix": "vvReadonly",
+    "body": [
+      "const read = readonly(${1:variable})"
+    ]
+  },
+  "v3 isReadonly": {
+    "prefix": "vvIsReadonly",
+    "body": [
+      "isReadonly(${1:variable})"
+    ]
+  },
   "v3 toRef": {
     "prefix": "vvToRef",
     "body": [
-      "const {${2:variable}} = toRef(${2:variable})"
+      "const {${1:variable}} = toRef(${2:variable})"
     ]
   },
   "v3 toRefs": {
-    "prefix": "vvToRef",
+    "prefix": "vvToRefs",
     "body": [
-      "const {${2:variable}} = toRefs({${1:variable}})"
+      "const {${1:variable}} = toRefs({${2:variable}})"
     ]
   },
   "v3 reactive": {
@@ -627,10 +669,18 @@
       "})"
     ]
   },
-  "v3 defineEmits": {
-    "prefix": "vvEmits",
+  "v3 defineEmits Array": {
+    "prefix": "vvEmitsArr",
     "body": [
-      "const emit = defineEmits(['$1'])"
+      "const emits = defineEmits(['$1'])"
+    ]
+  },
+  "v3 defineEmits Object": {
+    "prefix": "vvEmitsObj",
+    "body": [
+      "const emits = defineEmits({",
+      "  $1",
+      "})"
     ]
   },
   "v3 useSlots": {
@@ -694,18 +744,18 @@
       "},{ deep: true }, { immediate: true })"
     ]
   },
-  "v3 watch 多个 ref 数据": {
-    "prefix": "vvWMRef",
+  "v3 [多个 ref]": {
+    "prefix": "vvWatchArr",
     "body": [
-      "watch([name$1, name$2], (newValue, oldValue) => {",
+      "watch([${1:name}], (newValue, oldValue) => {",
       "  $0",
       "})"
     ]
   },
-  "v3 watch reactive 中的单个数据": {
-    "prefix": "vvWSReactive",
+  "v3 [reactive 中单个 key]": {
+    "prefix": "vvWatchObj",
     "body": [
-      "watch(() => ${1:a.b}, (newValue, oldValue) => {",
+      "watch(() => ${1:key}, (newValue, oldValue) => {",
       "  $0",
       "})"
     ]
@@ -856,7 +906,7 @@
     "prefix": "pinia",
     "body": [
       "import { defineStore } from \"pinia\";",
-      "export const userStore = defineStore(\"${1:id}\", {",
+      "export const useStore = defineStore(\"${1:id}\", {",
       "  state: () => {",
       "    return {",
       "      $0",
@@ -868,10 +918,17 @@
     ]
   },
   "Pinia storeToRefs": {
-    "prefix": "pinia-toRefs",
+    "prefix": "pToRefs",
     "body": [
-      "import { storeToRefs } from \"pinia\"",
-      "const { $0 } = storeToRefs(${1:name})"
+      "import { storeToRefs } from \"pinia\""
+    ]
+  },
+  "Pinia $patch": {
+    "prefix": "pPatch",
+    "body": [
+      "this.$patch(state => {",
+      "  $1",
+      "})"
     ]
   }
 }
