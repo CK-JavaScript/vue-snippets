@@ -593,7 +593,7 @@
   "v3 ref": {
     "prefix": "vvRef",
     "body": [
-      "const {${1:variable}} = ref(${2:variable})"
+      "const ${1:variable} = ref(${2:variable})"
     ]
   },
   "v3 isRef": {
@@ -635,7 +635,7 @@
   "v3 toRef": {
     "prefix": "vvToRef",
     "body": [
-      "const {${1:variable}} = toRef(${2:variable})"
+      "const ${1:variable} = toRef(${2:variable})"
     ]
   },
   "v3 toRefs": {
