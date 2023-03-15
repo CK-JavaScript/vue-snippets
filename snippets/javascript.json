@@ -856,7 +856,7 @@
     ]
   },
   "required props": {
-    "prefix": "dProp",
+    "prefix": "rProp",
     "body": [
       "  ${1:name}: {",
       "    type: String,",
