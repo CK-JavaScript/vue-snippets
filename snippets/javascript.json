@@ -27,7 +27,7 @@
       "}"
     ]
   },
-  "箭头函数": {
+  "箭头函数回调": {
     "prefix": "af",
     "body": [
       "res => {",
@@ -44,7 +44,7 @@
     ]
   },
   "for 循环": {
-    "prefix": "for",
+    "prefix": "forL",
     "body": [
       "for (let i = 0; i < ${1:array}; i++) {",
       "  $0",
@@ -52,7 +52,7 @@
     ]
   },
   "for-of 循环": {
-    "prefix": "fof",
+    "prefix": "fofL",
     "body": [
       "for (const item of ${1:object}) {",
       "  $0",
@@ -60,7 +60,7 @@
     ]
   },
   "for-in 循环": {
-    "prefix": "fin",
+    "prefix": "finL",
     "body": [
       "for (const item in ${1:object}) {",
       "  $0",
@@ -68,7 +68,7 @@
     ]
   },
   "switch case 循环": {
-    "prefix": "sc",
+    "prefix": "scL",
     "body": [
       "switch (${1:v}) {",
       "  case \"$2\":",
@@ -305,34 +305,6 @@
       "    required: true",
       "  }",
       "},"
-    ]
-  },
-  "default props": {
-    "prefix": "dProp",
-    "body": [
-      "  ${1:name}: {",
-      "    type: String,",
-      "    default: \"\"",
-      "  }"
-    ]
-  },
-  "required props": {
-    "prefix": "dProp",
-    "body": [
-      "  ${1:name}: {",
-      "    type: String,",
-      "    required: true",
-      "  }"
-    ]
-  },
-  "required default props": {
-    "prefix": "rdProp",
-    "body": [
-      "  ${1:name}: {",
-      "    type: String,",
-      "    required: true",
-      "    default: \"\"",
-      "  }"
     ]
   },
   "v2 emit": {
@@ -872,6 +844,34 @@
       "nextTick(()=>{",
       "  $0",
       "})"
+    ]
+  },
+  "default props": {
+    "prefix": "dProp",
+    "body": [
+      "  ${1:name}: {",
+      "    type: String,",
+      "    default: \"\"",
+      "  }"
+    ]
+  },
+  "required props": {
+    "prefix": "dProp",
+    "body": [
+      "  ${1:name}: {",
+      "    type: String,",
+      "    required: true",
+      "  }"
+    ]
+  },
+  "required default props": {
+    "prefix": "rdProp",
+    "body": [
+      "  ${1:name}: {",
+      "    type: String,",
+      "    required: true",
+      "    default: \"\"",
+      "  }"
     ]
   },
   "vueRouter beforeEach 全局前置守卫": {

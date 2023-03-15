@@ -22,10 +22,10 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `of`         | name(){}                               |
 | `af`         | arrow function                         |
 | `afn`        | named arrow function                   |
-| `for`        | for loop                               |
-| `fof`        | fof loop                               |
-| `fin`        | fin loop                               |
-| `sc`         | switch case loop                       |
+| `forL`       | for loop                               |
+| `fofL`       | fof loop                               |
+| `finL`       | fin loop                               |
+| `scL`        | switch case loop                       |
 | `sit`        | setInterval                            |
 | `st`         | setTimeout                             |
 | `promise`    | new Promise                            |
@@ -145,11 +145,11 @@ VSCode 代码片段包含，直接安装插件即可使用。
 
 ## Vue2&Vue3
 
-| Prefix   | Snippets                   |
-| -------- | -------------------------- |
-| `dProp`  | vue2 default prop          |
-| `rProp`  | vue2 required prop         |
-| `rdProp` | vue2 required default prop |
+| Prefix   | Snippets                  |
+| -------- | ------------------------- |
+| `dProp`  | vue default prop          |
+| `rProp`  | vue required prop         |
+| `rdProp` | vue required default prop |
 
 ## vueRouter
 
