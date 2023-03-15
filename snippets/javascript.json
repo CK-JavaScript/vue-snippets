@@ -307,6 +307,34 @@
       "},"
     ]
   },
+  "default props": {
+    "prefix": "dProp",
+    "body": [
+      "  ${1:name}: {",
+      "    type: String,",
+      "    default: \"\"",
+      "  }"
+    ]
+  },
+  "required props": {
+    "prefix": "dProp",
+    "body": [
+      "  ${1:name}: {",
+      "    type: String,",
+      "    required: true",
+      "  }"
+    ]
+  },
+  "required default props": {
+    "prefix": "rdProp",
+    "body": [
+      "  ${1:name}: {",
+      "    type: String,",
+      "    required: true",
+      "    default: \"\"",
+      "  }"
+    ]
+  },
   "v2 emit": {
     "prefix": "vEmit",
     "body": [
@@ -518,7 +546,7 @@
       "this.\\$store.dispatch('${1:actionName}', ${2:payload})"
     ]
   },
-  "v3 定义一个函数 ": {
+  "v3 箭头函数 ": {
     "prefix": "vvFun",
     "body": [
       "const ${1:name} = () => {",
@@ -593,7 +621,7 @@
   "v3 ref": {
     "prefix": "vvRef",
     "body": [
-      "const ${1:variable} = ref(${2:variable})"
+      "let ${1:variable} = ref(${2:variable})"
     ]
   },
   "v3 isRef": {
@@ -648,7 +676,7 @@
     "prefix": "vvReactive",
     "body": [
       "const ${1:variable} = reactive({",
-      "  $0",
+      "  $2",
       "})"
     ]
   },

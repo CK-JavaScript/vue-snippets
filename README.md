@@ -57,20 +57,20 @@ VSCode 代码片段包含，直接安装插件即可使用。
 
 ## Vue base
 
-| Prefix          | Snippets                               |
-| --------------- | -------------------------------------- |
-| `vcss `         | vue2 css 基础代码                      |
-| `vless `        | vue2 less 基础代码                     |
-| `vscss`         | vue2 scss 基础代码                     |
-| `vvcss`         | vue3 css 基础代码                      |
-| `vvless`        | vue3 less 基础代码                     |
-| `vvscss`        | vue3 scss 基础代码                     |
-| `vvcss-DC`      | vue3 css 基础代码 ( defineComponent )  |
-| `vvless-DC`     | vue3 less 基础代码 ( defineComponent ) |
-| `vvscss-DC`     | vue3 scss 基础代码 ( defineComponent ) |
-| `vvcss-setup`   | vue3 css 基础代码 ( setup 语法糖 )     |
-| `vvless-setup ` | vue3 less 基础代码 ( setup 语法糖 )    |
-| `vvscss-setup ` | vue3 scss 基础代码 ( setup 语法糖 )    |
+| Prefix         | Snippets                               |
+| -------------- | -------------------------------------- |
+| `vcss`         | vue2 css 基础代码                      |
+| `vless`        | vue2 less 基础代码                     |
+| `vscss`        | vue2 scss 基础代码                     |
+| `vvcss`        | vue3 css 基础代码                      |
+| `vvless`       | vue3 less 基础代码                     |
+| `vvscss`       | vue3 scss 基础代码                     |
+| `vvcss-DC`     | vue3 css 基础代码 ( defineComponent )  |
+| `vvless-DC`    | vue3 less 基础代码 ( defineComponent ) |
+| `vvscss-DC`    | vue3 scss 基础代码 ( defineComponent ) |
+| `vvcss-setup`  | vue3 css 基础代码 ( setup 语法糖 )     |
+| `vvless-setup` | vue3 less 基础代码 ( setup 语法糖 )    |
+| `vvscss-setup` | vue3 scss 基础代码 ( setup 语法糖 )    |
 
 ## Vue2
 
@@ -142,6 +142,14 @@ VSCode 代码片段包含，直接安装插件即可使用。
 | `vvUnmounted`   | vue3 生命周期 onUnmounted                 |
 | `vvGP`          | vue3 全局属性 globalProperties            |
 | `vvNextTick`    | vue3 NextTick                             |
+
+## Vue2&Vue3
+
+| Prefix   | Snippets                   |
+| -------- | -------------------------- |
+| `dProp`  | vue2 default prop          |
+| `rProp`  | vue2 required prop         |
+| `rdProp` | vue2 required default prop |
 
 ## vueRouter
 
